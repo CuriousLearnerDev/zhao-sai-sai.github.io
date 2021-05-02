@@ -12250,4 +12250,32 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
         <tag>编程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>git基本命令</title>
+    <url>/2021/03/16/git/</url>
+    <content><![CDATA[<h1 id="git版本控制"><a href="#git版本控制" class="headerlink" title="git版本控制"></a>git版本控制</h1><div class="note info simple"><p>版本控制有两个 1. 分布式版本控制 2. 集中式版本控制</p>
+</div>
+
+
+<h2 id="集中式版本控制"><a href="#集中式版本控制" class="headerlink" title="集中式版本控制"></a>集中式版本控制</h2><p>就是叫一个中央服务器存在代码，我修改好的代码了给传送上去，这个项目的其他人在下载下来做他的项目，然后再上传上面。</p>
+<p><strong>他有一个缺点就是服务器坏了，没有历史记录了</strong></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210502112122566.png" alt="image-20210502112122566"></p>
+<h2 id="分布式版本控制"><a href="#分布式版本控制" class="headerlink" title="分布式版本控制"></a>分布式版本控制</h2><p>分布式版本控制和集中式版本控制区别就是，每个开发者自己的电脑上都有自己的，完整版本库分布式版本控制系统可通过推送版本库到比如Github上面，实现项目共享开发</p>
+<p><strong>就算服务器坏了，你自己也有完整的版本库</strong></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210502113148806.png" alt="image-20210502113148806"></p>
+<h1 id="git工作机制"><a href="#git工作机制" class="headerlink" title="git工作机制"></a>git工作机制</h1><ol>
+<li>工作区：就是你的代码存放的那个目录</li>
+<li>暂存区：工作区的代码需要用git add添加到暂存区</li>
+<li>本地库：git commit命令叫暂存区提交到本地库就是历史版本</li>
+<li>远程库：将代码从本地库推送到远程库用git pash</li>
+</ol>
+<h1 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>安装</category>
+      </categories>
+      <tags>
+        <tag>安装</tag>
+      </tags>
+  </entry>
 </search>
