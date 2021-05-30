@@ -11646,8 +11646,6 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
     <content><![CDATA[<div class="note info simple"><p>下面会用到到网站<a href="https://regex101.com/">https://regex101.com/</a></p>
 </div>
 
-
-
 <h1 id="正则表达式的函数"><a href="#正则表达式的函数" class="headerlink" title="正则表达式的函数"></a>正则表达式的函数</h1><p>python提供了一个<code>re</code>模块这个模块提供了很多的方法和函数</p>
 <h1 id="match-函数"><a href="#match-函数" class="headerlink" title="match()函数"></a>match()函数</h1><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><div class="note info simple"><p>他的格式，他有三参数，这个函数会从起始位置进行匹配如果匹配失败就返回<code>none</code></p>
 </div>
@@ -11697,7 +11695,7 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span>  re</span><br><span class="line"></span><br><span class="line">a=<span class="string">&quot;abc&quot;</span></span><br><span class="line">b=<span class="string">&quot;abc def ghi&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># a和b进行匹配</span></span><br><span class="line">c=re.match(a,b)</span><br><span class="line"><span class="comment"># 输出结果</span></span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
 <p>结果：匹配正确，返回一个对象</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210418084957128.png" alt="image-20210418084957128"></p>
-<h2 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h2><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>他进行是返回一个对象那么我们就可以用里面的方法了</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>他进行是返回一个对象那么我们就可以用里面的方法了</p>
 </div> 
 
 <p>查看里面的方法可以用<code>dir</code>函数</p>
@@ -11724,6 +11722,10 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <tr>
 <td align="left">start()</td>
 <td align="left">返回从那开始匹配的</td>
+</tr>
+<tr>
+<td align="left">groups()</td>
+<td align="left">返回全部分组</td>
 </tr>
 </tbody></table>
 <ol>
@@ -12046,6 +12048,72 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 1), match&#x3D;&#39;w&#39;&gt;</span><br></pre></td></tr></table></figure>
 
 
+<h3 id="分组"><a href="#分组" class="headerlink" title="( )分组"></a><code>( )</code>分组</h3><p>学习网址<a href="https://www.bilibili.com/video/BV1N64y1u7Ty?p=10">https://www.bilibili.com/video/BV1N64y1u7Ty?p=10</a></p>
+<h4 id="基本分组"><a href="#基本分组" class="headerlink" title="基本分组"></a>基本分组</h4><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>什么是分组，比如我们匹配一个字符串他只能匹配输出一组，我们可以用<code>()</code>进行分组</p>
+</div> 
+
+<p><strong>演示</strong></p>
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;zhao:2737977997&#x27;</span></span><br><span class="line"></span><br><span class="line">x =re.match(<span class="string">&#x27;\w*:\d*&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br><span class="line">print(x.group())</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 15), match&#x3D;&#39;zhao:2737977997&#39;&gt;</span><br><span class="line">zhao:2737977997</span><br></pre></td></tr></table></figure>
+<div class="note info simple"><p>比如我们想叫<code>zhao</code>和<code>2737977997</code>进行分开我们就可以用<code>()</code>进行分组</p>
+</div>
+
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;zhao:2737977997&#x27;</span></span><br><span class="line"></span><br><span class="line">x =re.match(<span class="string">&#x27;(\w*):(\d*)&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br><span class="line"><span class="comment"># 输出全部分组</span></span><br><span class="line">print(x.groups())</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 15), match&#x3D;&#39;zhao:2737977997&#39;&gt;</span><br><span class="line">(&#39;zhao&#39;, &#39;2737977997&#39;)</span><br></pre></td></tr></table></figure>
+<div class="note info simple"><p>我们还可以选择要选择输出的分组用<code>group()</code>咧<code>group(1)</code>或者<code>groups()[1]</code></p>
+</div>
+
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;zhao:2737977997&#x27;</span></span><br><span class="line"></span><br><span class="line">x =re.match(<span class="string">&#x27;(\w*):(\d*)&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br><span class="line"><span class="comment"># 用group(1)指定输出分组</span></span><br><span class="line">print(<span class="string">&quot;用group(1)指定输出分组&quot;</span>)</span><br><span class="line">print(x.group(<span class="number">1</span>))</span><br><span class="line">print(x.group(<span class="number">2</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用groups()[0]指定输出分组</span></span><br><span class="line">print(<span class="string">&quot;用groups()[0]指定输出分组&quot;</span>)</span><br><span class="line">print(x.groups()[<span class="number">0</span>])</span><br><span class="line">print(x.groups()[<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 15), match&#x3D;&#39;zhao:2737977997&#39;&gt;</span><br><span class="line">用group(1)指定输出分组</span><br><span class="line">zhao</span><br><span class="line">2737977997</span><br><span class="line">用groups()[0]指定输出分组</span><br><span class="line">zhao</span><br><span class="line">2737977997</span><br></pre></td></tr></table></figure>
+<h4 id="分组引用"><a href="#分组引用" class="headerlink" title="分组引用"></a>分组引用</h4><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>比如我们想匹配一个<code>HTML</code>代码</p>
+</div> 
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;&lt;bead&gt;匹配&lt;/h1&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line">x =re.match(<span class="string">&#x27;&lt;.+&gt;.+&lt;/.+&gt;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 28), match&#x3D;&#39;&lt;bead&gt;匹配&lt;&#x2F;bead&gt;&#39;&gt;</span><br></pre></td></tr></table></figure>
+<p>上面的代码如果我匹配不同的比如<code>&lt;bead&gt;匹配&lt;/h1&gt;</code>上面的代码他也会被匹配到</p>
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;&lt;bead&gt;匹配&lt;/h1&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line">x =re.match(<span class="string">&#x27;&lt;.+&gt;.+&lt;/.+&gt;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 13), match&#x3D;&#39;&lt;bead&gt;匹配&lt;&#x2F;h1&gt;&#39;&gt;</span><br></pre></td></tr></table></figure>
+
+
+<div class="note info simple"><p>如果我们只匹配对应的HTML比如<code>&lt;bead&gt;&lt;/bead&gt;</code>这样对应如果不对应就不匹配我们就可以用分组引用</p>
+</div>
+
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;&lt;bead&gt;匹配&lt;/h1&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># \1就是分组1，我又添加一个防止转义r不让\转义</span></span><br><span class="line">x =re.match(<span class="string">r&#x27;&lt;(.+)&gt;.+&lt;/\1&gt;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 15), match&#x3D;&#39;&lt;bead&gt;匹配&lt;&#x2F;bead&gt;&#39;&gt;</span><br></pre></td></tr></table></figure>
+<p>如果我改成</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;&lt;bead&gt;匹配&lt;/bead&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># \1就是分组1，我又添加一个防止转义r不让\转义</span></span><br><span class="line">x =re.match(<span class="string">r&#x27;&lt;(.+)&gt;.+&lt;/\1&gt;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">None</span><br></pre></td></tr></table></figure>
+<h4 id="引用起别名"><a href="#引用起别名" class="headerlink" title="引用起别名"></a>引用起别名</h4><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>起别名格式<code>(?p&lt;起的名字&gt;表达式)</code></p>
+<p>引用<code>(?p=引用的分组名字)</code></p>
+</div> 
+
+
+
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;&lt;bead&gt;匹配&lt;/bead&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 我又添加一个防止转义r不让\转义</span></span><br><span class="line">x =re.match(<span class="string">r&#x27;&lt;(?P&lt;dead&gt;.+)&gt;.+&lt;/*(?P=dead)&gt;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(0, 15), match&#x3D;&#39;&lt;bead&gt;匹配&lt;&#x2F;bead&gt;&#39;&gt;</span><br></pre></td></tr></table></figure>
+
+
+<div class="note info simple"><p>如果我匹配到不一样比如<code>&lt;bead&gt;匹配&lt;/h1&gt;</code></p>
+</div>
+
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;&lt;bead&gt;匹配&lt;/h1&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 我又添加一个防止转义r不让\转义</span></span><br><span class="line">x =re.match(<span class="string">r&#x27;&lt;(?P&lt;dead&gt;.+)&gt;.+&lt;/*(?P=dead)&gt;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">None</span><br></pre></td></tr></table></figure>
 <h3 id="转义符"><a href="#转义符" class="headerlink" title="\转义符"></a><code>\</code>转义符</h3><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>比如我们想输入<code>\n</code>这个，在代码里面不能直接输入<code>\n</code>要通过<code>\</code>来转义了</p>
 <p>在python里面可以在前面添加上一个<code>r</code>防止字符转义的，可以省略<code>\</code>转义符下面有演示</p>
 </div> 
@@ -12174,18 +12242,27 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 
 
 
-<h1 id="sub-函数"><a href="#sub-函数" class="headerlink" title="sub()函数"></a>sub()函数</h1><div class="note info simple"><p>sub()这个函数是替换用的，可以叫文本的指定的字符替换掉</p>
+<h1 id="sub-和subn-函数"><a href="#sub-和subn-函数" class="headerlink" title="sub()和subn()函数"></a>sub()和subn()函数</h1><div class="note info simple"><p>sub()这个函数是替换用的，可以叫文本的指定的字符替换掉</p>
 </div>
 
-<p>代码</p>
+<div class="note info simple"><p>他俩的区别就是</p>
+<ul>
+<li>sub()：他返回替换后的结果</li>
+<li>subn()：他返回的是一个元组</li>
+</ul>
+</div>
+
+<h2 id="sub"><a href="#sub" class="headerlink" title="sub()"></a>sub()</h2><p>代码</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">content = <span class="string">&#x27;54aK54yr5oiR54ix5L2g&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 叫数字的字符都替换成没有</span></span><br><span class="line">content = re.sub(<span class="string">&#x27;\d+&#x27;</span>, <span class="string">&#x27;&#x27;</span>, content)</span><br><span class="line"><span class="comment"># 输出结果</span></span><br><span class="line">print(content)</span><br></pre></td></tr></table></figure>
 <p>结果</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aKyroiRixLg</span><br></pre></td></tr></table></figure>
-<h1 id="compile-函数"><a href="#compile-函数" class="headerlink" title="compile()函数"></a>compile()函数</h1><div class="note info simple"><p>compile()函数将指定的源作为代码对象返回，并准备执行</p>
+<h1 id="compile-函数"><a href="#compile-函数" class="headerlink" title="compile()函数"></a>compile()函数</h1><div class="note info simple"><p>compile()函数将指定的源作为代码对象返回，并准备执行，他里面也是包含<code>sub(),findall(),search(),match()</code>等方法</p>
 </div>
 
-
-
+<p>下面代码演示一下</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span>  re</span><br><span class="line"></span><br><span class="line">s=<span class="string">&quot;ds21212adsa212dsa&quot;</span></span><br><span class="line"></span><br><span class="line">rea=re.compile(<span class="string">&#x27;\d&#x27;</span>) <span class="comment"># 只匹配数字</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用compile()的findall方法来匹配s变量里面的内容</span></span><br><span class="line">print(rea.findall(s))</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210524225156472.png" alt="image-20210524225156472"></p>
 <p><a href="https://www.bilibili.com/video/BV1q4411y7Zh?t=338&p=1">视频参考</a></p>
 ]]></content>
       <categories>
