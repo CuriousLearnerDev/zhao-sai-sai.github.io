@@ -12231,9 +12231,31 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;re.Match object; span&#x3D;(13, 18), match&#x3D;&#39;Hello&#39;&gt;</span><br></pre></td></tr></table></figure>
 
 
-<h1 id="findall-函数"><a href="#findall-函数" class="headerlink" title="findall()函数"></a>findall()函数</h1><div class="note info simple"><p>findall()他会获得表达式里面的全部内容</p>
+<h1 id="findall-函数"><a href="#findall-函数" class="headerlink" title="findall()函数"></a>findall()函数</h1><div class="note info simple"><p>findall()他会获得表达式里面的全部内容，返回形式为数组</p>
 </div>
 
+<p>他的语法</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">re.findall(pattern, string, flags=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th align="left">字符</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">pattern</td>
+<td align="center">匹配的正则表达式</td>
+</tr>
+<tr>
+<td align="left">string</td>
+<td align="center">要匹配到字符串</td>
+</tr>
+<tr>
+<td align="left">flags</td>
+<td align="center">该标志通过给予你更灵活的格式以便你将正则表达式写得更易于理解</td>
+</tr>
+</tbody></table>
 <p>代码</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">pattern=<span class="string">&#x27;蔡徐坤 13500000001 18岁&#x27;</span></span><br><span class="line"></span><br><span class="line">x =re.findall(<span class="string">&#x27;\d&#123;11&#125;&#x27;</span>,pattern)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
 <p>结果：他和这个<a href="https://regex101.com/r/Ljaf9U/1">https://regex101.com/r/Ljaf9U/1</a>差不多的他会返回表达式所匹配的全部内容</p>
