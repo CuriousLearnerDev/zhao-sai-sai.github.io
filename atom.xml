@@ -6,7 +6,7 @@
   <link href="https://wzass.github.io/atom.xml" rel="self"/>
   
   <link href="https://wzass.github.io/"/>
-  <updated>2021-06-03T09:18:30.940Z</updated>
+  <updated>2021-06-03T10:52:49.718Z</updated>
   <id>https://wzass.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ranger配置和使用</title>
+    <link href="https://wzass.github.io/2021/06/03/ranger/"/>
+    <id>https://wzass.github.io/2021/06/03/ranger/</id>
+    <published>2021-06-03T10:19:30.000Z</published>
+    <updated>2021-06-03T10:52:49.718Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h1&gt;&lt;p&gt;&lt;img src= &quot;/img/loading2.gif&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="好软件使用" scheme="https://wzass.github.io/categories/%E5%A5%BD%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="好软件使用" scheme="https://wzass.github.io/tags/%E5%A5%BD%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>python正则表达式</title>
@@ -136,7 +161,7 @@
     <link href="https://wzass.github.io/2021/03/23/pythonGUI/"/>
     <id>https://wzass.github.io/2021/03/23/pythonGUI/</id>
     <published>2021-03-23T10:19:30.000Z</published>
-    <updated>2021-05-01T23:57:08.331Z</updated>
+    <updated>2021-06-03T10:52:53.074Z</updated>
     
     
       
@@ -455,31 +480,6 @@
     
     
     <category term="图床" scheme="https://wzass.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ranger配置和使用</title>
-    <link href="https://wzass.github.io/2021/01/28/ranger/"/>
-    <id>https://wzass.github.io/2021/01/28/ranger/</id>
-    <published>2021-01-28T10:19:30.000Z</published>
-    <updated>2021-05-01T23:57:08.327Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h1&gt;&lt;p&gt;&lt;img src= &quot;/img/loading2.gif&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="好软件使用" scheme="https://wzass.github.io/categories/%E5%A5%BD%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="好软件使用" scheme="https://wzass.github.io/tags/%E5%A5%BD%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
