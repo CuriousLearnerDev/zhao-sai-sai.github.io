@@ -6,7 +6,7 @@
   <link href="https://wzass.github.io/atom.xml" rel="self"/>
   
   <link href="https://wzass.github.io/"/>
-  <updated>2021-06-03T10:52:49.718Z</updated>
+  <updated>2021-06-09T09:54:07.518Z</updated>
   <id>https://wzass.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python迭代器</title>
+    <link href="https://wzass.github.io/2021/06/09/pythonddq/"/>
+    <id>https://wzass.github.io/2021/06/09/pythonddq/</id>
+    <published>2021-06-09T10:20:55.000Z</published>
+    <updated>2021-06-09T09:54:07.518Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;什么是迭代&quot;&gt;&lt;a href=&quot;#什么是迭代&quot; class=&quot;headerlink&quot; title=&quot;什么是迭代&quot;&gt;&lt;/a&gt;什么是迭代&lt;/h1&gt;&lt;div class=&quot;note info</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://wzass.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="https://wzass.github.io/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    
+    <category term="编程" scheme="https://wzass.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>ranger配置和使用</title>
@@ -46,7 +73,7 @@
     <link href="https://wzass.github.io/2021/04/21/pythonzhengze/"/>
     <id>https://wzass.github.io/2021/04/21/pythonzhengze/</id>
     <published>2021-04-21T10:20:55.000Z</published>
-    <updated>2021-06-03T09:18:30.940Z</updated>
+    <updated>2021-06-09T08:50:53.155Z</updated>
     
     
       
@@ -523,33 +550,6 @@
         
     <summary type="html">&lt;p&gt;看看开机他的启动显示卡在这个要30秒然后才启动&lt;/p&gt;
 &lt;p&gt;&lt;img src= &quot;/img/loading2.gif&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="问题的解决" scheme="https://wzass.github.io/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-    
-    <category term="问题的解决" scheme="https://wzass.github.io/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>格式化数据恢复</title>
-    <link href="https://wzass.github.io/2021/01/25/Windowshf/"/>
-    <id>https://wzass.github.io/2021/01/25/Windowshf/</id>
-    <published>2021-01-25T00:19:30.000Z</published>
-    <updated>2021-05-01T23:57:08.327Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;我在配置分区的时候不小心叫硬盘格式化了，里面的东西很终于很多我看到书籍，笔记和写的代码&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;然后我就用很多恢复软件进行恢复&lt;/p&gt;
-&lt;h1 id=&quot;DiskGenius恢复&quot;&gt;&lt;a href=&quot;#DiskGenius恢复&quot;</summary>
         
       
     
