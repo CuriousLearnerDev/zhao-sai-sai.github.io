@@ -12463,10 +12463,29 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <p><strong>使用这个方法</strong></p>
 <p>代码，可以看见他是一个listiterator(列表迭代器)对象</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.__iter__()</span><br><span class="line">&lt;listiterator object at <span class="number">0x7f90176f7150</span>&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p>在<code>__iter__()</code> 方法里面有下面这么多的方法，</p>
+<p>在<code>__iter__()</code> 方法里面有下面这么多的方法，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[&#39;__class__&#39;, &#39;__delattr__&#39;, &#39;__dir__&#39;, &#39;__doc__&#39;, &#39;__eq__&#39;, &#39;__format__&#39;, &#39;__ge__&#39;, &#39;__getattribute__&#39;, &#39;__gt__&#39;, &#39;__hash__&#39;, &#39;__init__&#39;, &#39;__init_subclass__&#39;, &#39;__iter__&#39;, &#39;__le__&#39;, &#39;__length_hint__&#39;, &#39;__lt__&#39;, &#39;__ne__&#39;, &#39;__new__&#39;, &#39;__next__&#39;, &#39;__reduce__&#39;, &#39;__reduce_ex__&#39;, &#39;__repr__&#39;, &#39;__setattr__&#39;, &#39;__setstate__&#39;, &#39;__sizeof__&#39;, &#39;__str__&#39;, &#39;__subclasshook__&#39;]</span><br></pre></td></tr></table></figure>
 <p>其中<code>__length_hint__()</code>，<code>__next__()</code>和<code>__setstate__()</code></p>
-]]></content>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>__length_hint__()</code></td>
+<td>元素数量</td>
+</tr>
+<tr>
+<td><code>__setstate__(开始位置)</code></td>
+<td>位置信息来重建文件对象</td>
+</tr>
+</tbody></table>
+<h2 id="length-hint-方法"><a href="#length-hint-方法" class="headerlink" title="__length_hint__()方法"></a><code>__length_hint__()</code>方法</h2><p>for循环是怎么知道数组他有几个，用的就是<code>__iter__()</code> 方法里面<code>__length_hint__()</code>方法</p>
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.__iter__().__length_hint__()</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h2 id="setstate-方法"><a href="#setstate-方法" class="headerlink" title="__setstate__()方法"></a><code>__setstate__()</code>方法</h2>]]></content>
       <categories>
         <category>编程</category>
         <category>python</category>
