@@ -3944,9 +3944,66 @@
       </tags>
   </entry>
   <entry>
+    <title>Xray安全评估工具</title>
+    <url>/2021/07/02/Xray/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>学习总结</strong></p>
+<p>xray是长亭科技的一款社区版漏洞扫描工具</p>
+<p>他的github项目地址：<a href="https://github.com/chaitin/xray%EF%BC%88%E4%B8%8D%E6%98%AF%E6%BA%90%E7%9A%84%E9%A1%B9%E7%9B%AE%EF%BC%89">https://github.com/chaitin/xray（不是源的项目）</a></p>
+<p>官方使用文档：<a href="https://docs.xray.cool/#/">https://docs.xray.cool/#/</a></p>
+<p><strong>目前支持的漏洞检测类型包括:</strong></p>
+<ul>
+<li>XSS漏洞检测 (key: xss)</li>
+<li>SQL 注入检测 (key: sqldet)</li>
+<li>命令/代码注入检测 (key: cmd-injection)</li>
+<li>目录枚举 (key: dirscan)</li>
+<li>路径穿越检测 (key: path-traversal)</li>
+<li>XML 实体注入检测 (key: xxe)</li>
+<li>文件上传检测 (key: upload)</li>
+<li>弱口令检测 (key: brute-force)</li>
+<li>jsonp 检测 (key: jsonp)</li>
+<li>ssrf 检测 (key: ssrf)</li>
+<li>基线检查 (key: baseline)</li>
+<li>任意跳转检测 (key: redirect)</li>
+<li>CRLF 注入 (key: crlf-injection)</li>
+<li>Struts2 系列漏洞检测 (高级版，key: struts)</li>
+<li>Thinkphp系列漏洞检测 (高级版，key: thinkphp)</li>
+<li>POC 框架 (key: phantasm)</li>
+</ul>
+<p>其中 POC 框架默认内置 Github 上贡献的 poc，用户也可以根据需要自行构建 poc 并运行。</p>
+<h1 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h1><p>下载地址：<a href="https://github.com/chaitin/xray/releases">https://github.com/chaitin/xray/releases</a></p>
+<p>我的系统是kali linux下载的是这个版本</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702144539632.png" alt="image-20210702144539632"></p>
+<p>安装好解压出来直接就可以用</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702145148369.png" alt="image-20210702145148369"></p>
+<p>查看版本<code>./xray_linux_amd64 version</code></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702145232163.png" alt="image-20210702145232163"></p>
+<h1 id="代理扫描"><a href="#代理扫描" class="headerlink" title="代理扫描"></a>代理扫描</h1><h2 id="证书安装"><a href="#证书安装" class="headerlink" title="证书安装"></a>证书安装</h2><h3 id="生成证书"><a href="#生成证书" class="headerlink" title="生成证书"></a>生成证书</h3><p>命令</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">./xray_linux_amd64  genca </span><br></pre></td></tr></table></figure>
+<p>他会生成两个文件</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702145439858.png" alt="image-20210702145439858"></p>
+<h3 id="安装证书"><a href="#安装证书" class="headerlink" title="安装证书"></a>安装证书</h3><p>我用的是谷歌浏览器</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702145540051.png" alt="image-20210702145540051"></p>
+<p>找到文件</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702145607903.png" alt="image-20210702145607903"></p>
+<h2 id="启动代理扫描"><a href="#启动代理扫描" class="headerlink" title="启动代理扫描"></a>启动代理扫描</h2><p>命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;xray_linux_amd64 webscan --listen 127.0.0.1:7777 --html-output xray-testphp.html</span><br></pre></td></tr></table></figure>
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210702150346836.png" alt="image-20210702150346836"></p>
+]]></content>
+      <categories>
+        <category>渗透工具使用</category>
+        <category>Xray</category>
+      </categories>
+      <tags>
+        <tag>Xray安全评估工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git基本命令</title>
     <url>/2021/03/16/git/</url>
-    <content><![CDATA[<h1 id="git版本控制"><a href="#git版本控制" class="headerlink" title="git版本控制"></a>git版本控制</h1><div class="note info simple"><p>版本控制有两个 1. 分布式版本控制 2. 集中式版本控制</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>时间少学习慢</strong></p>
+<h1 id="git版本控制"><a href="#git版本控制" class="headerlink" title="git版本控制"></a>git版本控制</h1><div class="note info simple"><p>版本控制有两个 1. 分布式版本控制 2. 集中式版本控制</p>
 </div>
 
 
@@ -5437,7 +5494,8 @@
   <entry>
     <title>ranger配置和使用</title>
     <url>/2021/06/03/ranger/</url>
-    <content><![CDATA[<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/qqqqq.png" alt="qqqqq"></p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>在一个无意中发现了一个终端文件管理器，在没有鼠标的情况下可以进行文件操作，下面是我的总结</strong></p>
+<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/qqqqq.png" alt="qqqqq"></p>
 <h1 id="ranger介绍"><a href="#ranger介绍" class="headerlink" title="ranger介绍"></a>ranger介绍</h1><div class="note success simple"><p>他是一个终端文件管理器</p>
 </div>
 
@@ -7215,7 +7273,7 @@
   <entry>
     <title>Docker使用最很详细的学习</title>
     <url>/2020/12/16/Docker%E7%9A%84%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>笔记</strong></p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>应为Docker这个还是很长的一个东西，我怕以后忘了就习惯性写成了笔记</strong></p>
 <p><strong>他的官方</strong><a href="https://www.docker.com/">https://www.docker.com/</a><br><strong>官方手册地址很详细的</strong><a href="https://docs.docker.com/">https://docs.docker.com/</a><br><strong>官方文档非常详细</strong><a href="https://docs.docker.com/engine">https://docs.docker.com/engine</a><br><strong>看的视频</strong><a href="https://www.bilibili.com/video/BV1sK4y1s7Cj">https://www.bilibili.com/video/BV1sK4y1s7Cj</a><br><strong>看的视频</strong><a href="https://www.bilibili.com/video/BV1og4y1q7M4">https://www.bilibili.com/video/BV1og4y1q7M4</a><br><strong>参考的文章</strong><a href="https://www.jianshu.com/p/d3006b8a22ee">https://www.jianshu.com/p/d3006b8a22ee</a><br><strong>参考的文章</strong><a href="https://www.runoob.com/docker/docker-tutorial.html">https://www.runoob.com/docker/docker-tutorial.html</a><br><strong>参考的文章</strong><a href="https://www.cnblogs.com/dazhoushuoceshi/p/7066041.html">https://www.cnblogs.com/dazhoushuoceshi/p/7066041.html</a></p>
 <h2 id="什么是Docker"><a href="#什么是Docker" class="headerlink" title="什么是Docker"></a>什么是Docker</h2><p>Docker 是一个开源的应用容器引擎</p>
 <p>他可以解决环境不一致，叫整个环境打包成一个集装箱，然后别人下载下来运行就不会出错了</p>
@@ -8617,7 +8675,8 @@
   <entry>
     <title>python正则表达式</title>
     <url>/2021/04/21/pythonzhengze/</url>
-    <content><![CDATA[<div class="note info simple"><p>下面会用到到网站<a href="https://regex101.com/">https://regex101.com/</a></p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>爬虫需要学习记录</strong></p>
+<div class="note info simple"><p>下面会用到到网站<a href="https://regex101.com/">https://regex101.com/</a></p>
 </div>
 
 <h1 id="正则表达式的函数"><a href="#正则表达式的函数" class="headerlink" title="正则表达式的函数"></a>正则表达式的函数</h1><p>python提供了一个<code>re</code>模块这个模块提供了很多的方法和函数</p>
@@ -10292,7 +10351,7 @@
   <entry>
     <title>python基础总结</title>
     <url>/2020/05/01/python%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p><strong>为什么我要总结</strong></p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>为什么我要总结</strong></p>
 <p><strong>应为就是编程语言学习的多了容易搞混，比如c语言的数组和python的列字典等搞混</strong></p>
 <p><strong>还有我英语真的是小学等级的很多函数方法属性记不住我就写到这个了</strong></p>
 <h1 id="总结方法-函数"><a href="#总结方法-函数" class="headerlink" title="总结方法/函数"></a>总结方法/函数</h1><h2 id="修改字符串"><a href="#修改字符串" class="headerlink" title="修改字符串"></a>修改字符串</h2><table>
@@ -10538,6 +10597,18 @@
 <tr>
 <td><code>isinstance()</code></td>
 <td>如果要判断两个类型是否相同推荐使用</td>
+</tr>
+</tbody></table>
+<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><table>
+<thead>
+<tr>
+<th>函数/关键字</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>raise</code></td>
+<td>关键字用于引发异常</td>
 </tr>
 </tbody></table>
 <h2 id="常用的函数"><a href="#常用的函数" class="headerlink" title="常用的函数"></a>常用的函数</h2><table>
@@ -10890,6 +10961,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">abcd</span><br></pre></td></tr></table></figure>
 <h2 id="self是什么"><a href="#self是什么" class="headerlink" title="self是什么"></a>self是什么</h2><p>python里面self是必须有的</p>
 <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>我当前记得学习这个的时候研究了很长时间下面就简单解释一下</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#创建类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Name</span>:</span></span><br><span class="line">    <span class="comment"># 创建方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">metode</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="comment"># 输出self内存地址</span></span><br><span class="line">        print(id(self))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建对象</span></span><br><span class="line">Dog=Name()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出对象内存地址</span></span><br><span class="line">print(id(Dog))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用Name类里面的metode()方法</span></span><br><span class="line">Dog.metode()</span><br></pre></td></tr></table></figure>
 <p>代码</p>
 <p>下面<code>id()</code>函数是显示变量内存地址的</p>
 <p>下面创建一个<code>Name()</code>类里面有一个<code>metode()</code>方法，</p>
@@ -10897,7 +10969,6 @@
 <p><code>print(id(Dog))</code>输出输出对象内存地址</p>
 <p><code>Dog.metode()</code>调用Name类里面的metode()方法</p>
 <p><code>print(id(self)) </code>输出self内存地址</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#创建类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Name</span>:</span></span><br><span class="line">    <span class="comment"># 创建方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">metode</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="comment"># 输出self内存地址</span></span><br><span class="line">        print(id(self))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建对象</span></span><br><span class="line">Dog=Name()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出对象内存地址</span></span><br><span class="line">print(id(Dog))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用Name类里面的metode()方法</span></span><br><span class="line">Dog.metode()</span><br></pre></td></tr></table></figure>
 <p>结果</p>
 <p>可以看见结果是一样的</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">140682412227600</span><br><span class="line">140682412227600</span><br></pre></td></tr></table></figure>
@@ -10918,16 +10989,15 @@
 <p>结果</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">你不调用我，我也会自己被调用！</span><br></pre></td></tr></table></figure>
 <h2 id="传参"><a href="#传参" class="headerlink" title="传参"></a>传参</h2><p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Name</span>:</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 创建对象的时候自动被调用</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,a</span>):</span></span><br><span class="line">    </span><br><span class="line">        <span class="comment"># 添加属性默认值</span></span><br><span class="line">    	self.a=a</span><br><span class="line">    <span class="comment"># 创建方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Uitset</span>(<span class="params">self</span>):</span></span><br><span class="line">    </span><br><span class="line">        <span class="comment"># 用self输出属性</span></span><br><span class="line">        print(self.a)</span><br><span class="line">        </span><br><span class="line"><span class="comment"># 创建对象       </span></span><br><span class="line">Dog=Name(<span class="string">&quot;你好！&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对象Dog调用Uitset</span></span><br><span class="line">Dog.Uitset()</span><br></pre></td></tr></table></figure>
 <p><code>__init__</code>方法里面添加一个形参a</p>
 <p>任何创新对象的时候传参是<code>“你好”</code></p>
 <p><code>__init__</code>方法在创建对象的时候被调用然后添加属性<code>self.a</code>值是传的<code>“你好”</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Name</span>:</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 创建对象的时候自动被调用</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,a</span>):</span></span><br><span class="line">    </span><br><span class="line">        <span class="comment"># 添加属性默认值</span></span><br><span class="line">    	self.a=a</span><br><span class="line">    <span class="comment"># 创建方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Uitset</span>(<span class="params">self</span>):</span></span><br><span class="line">    </span><br><span class="line">        <span class="comment"># 用self输出属性</span></span><br><span class="line">        print(self.a)</span><br><span class="line">        </span><br><span class="line"><span class="comment"># 创建对象       </span></span><br><span class="line">Dog=Name(<span class="string">&quot;你好！&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对象Dog调用Uitset</span></span><br><span class="line">Dog.Uitset()</span><br></pre></td></tr></table></figure>
-
 <p>结果</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">你好！</span><br></pre></td></tr></table></figure>
 <h2 id="添加属性默认值"><a href="#添加属性默认值" class="headerlink" title="添加属性默认值"></a>添加属性默认值</h2><p>代码</p>
-<p>下面在<code>__init__</code>方法里添加<code>self.die</code>属性他值是<code>&quot;我是默认值&quot;</code></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Name</span>:</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 创建对象的时候自动被调用</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,die=<span class="string">&quot;我是默认值&quot;</span></span>):</span></span><br><span class="line">        <span class="comment"># 添加属性默认值</span></span><br><span class="line">    	self.die=die</span><br><span class="line">    <span class="comment"># 创建方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Uitset</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="comment"># 用self输出属性</span></span><br><span class="line">        print(self.die)</span><br><span class="line"><span class="comment"># 创建对象       </span></span><br><span class="line">Dog=Name()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对象Dog调用Uitset</span></span><br><span class="line">Dog.Uitset()</span><br></pre></td></tr></table></figure>
+<p>在<code>__init__</code>方法里添加<code>self.die</code>属性他值是<code>&quot;我是默认值&quot;</code></p>
 <p>结果</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">我是默认值</span><br></pre></td></tr></table></figure>
 <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>比如有两个类，a类和b类里面的有一个不一样，在写代码的时候里面都要写重复的麻烦，我们就可以用继承，类里面用其他的类，</p>
@@ -11207,7 +11277,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(a)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> b:</span><br><span class="line">    print(<span class="string">&quot;未知错误：&quot;</span>+str(b))</span><br></pre></td></tr></table></figure>
 <p>结果</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">未知错误：name &#39;a&#39; is not defined</span><br></pre></td></tr></table></figure>
-<h2 id="其他异常语法"><a href="#其他异常语法" class="headerlink" title="其他异常语法"></a>其他异常语法</h2><p><code>else</code>没有错误的时候执行</p>
+<h2 id="其他异常语法"><a href="#其他异常语法" class="headerlink" title="其他异常语法"></a>其他异常语法</h2><p> <code>else</code>没有错误的时候执行</p>
 <p><code>finally</code>什么时候都会执行</p>
 <p><strong>演示有错误</strong></p>
 <p>代码</p>
@@ -11220,6 +11290,11 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    a=<span class="string">&quot;aaaa&quot;</span></span><br><span class="line">    print(a)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> b:</span><br><span class="line">    print(<span class="string">&quot;未知错误：&quot;</span>+str(b))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&quot;上面没有错误！&quot;</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    print(<span class="string">&quot;什么时候都会执行！&quot;</span>)</span><br></pre></td></tr></table></figure>
 <p>结果</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aaaa</span><br><span class="line">上面没有错误！</span><br><span class="line">什么时候都会执行！</span><br></pre></td></tr></table></figure>
+<p><code>raise</code>关键字用于引发异常，您可以定义要引发的错误类型以及要向用户打印的文本</p>
+<p>代码，他就会指定你报的错误</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; raise StopIteration</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">StopIteration</span><br></pre></td></tr></table></figure>
+
+
 <h1 id="常用的函数-1"><a href="#常用的函数-1" class="headerlink" title="常用的函数"></a>常用的函数</h1><h2 id="split-分隔"><a href="#split-分隔" class="headerlink" title="split()分隔"></a>split()分隔</h2><div class="note info simple"><p>他就是分割用的一个方法，下面这样你应该就能看懂了</p>
 </div>
 
@@ -12418,7 +12493,8 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
   <entry>
     <title>python迭代器</title>
     <url>/2021/06/09/pythonddq/</url>
-    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="什么是迭代"><a href="#什么是迭代" class="headerlink" title="什么是迭代"></a>什么是迭代</h1><div class="note info simple"><p>for遍历就是迭代</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>在学习爬虫的时候认识到到迭代我就顺便记录下面</strong></p>
+<h1 id="什么是迭代"><a href="#什么是迭代" class="headerlink" title="什么是迭代"></a>什么是迭代</h1><div class="note info simple"><p>for遍历就是迭代</p>
 <p>for循环能遍历的就是可迭代，不能遍历的就是不可迭代</p>
 </div>
 
@@ -12500,6 +12576,25 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a=a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>].__iter__()</span><br><span class="line"></span><br><span class="line">print(a.__setstate__(<span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">print(a.__next__())</span><br><span class="line">print(a.__next__())</span><br><span class="line">print(a.__next__())</span><br><span class="line">print(a.__next__())</span><br></pre></td></tr></table></figure>
 <p>结果他是从第三个开始的</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td></tr></table></figure>
+<h1 id="手写迭代器"><a href="#手写迭代器" class="headerlink" title="手写迭代器"></a>手写迭代器</h1><p><code>__iter__() </code>方法返回一个特殊的迭代器对象， 这个迭代器对象实现了 <strong>next</strong>() 方法并通过 StopIteration 异常标识迭代的完成</p>
+<p><code>__next__()</code> 方法（Python 2 里是 next()）会返回下一个迭代器对象</p>
+<p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创一个类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Iterative_generation</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.a = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 定义一个__iter__类</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span>(<span class="params">self</span>):</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span>  self</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 定义一个__next__类</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__next__</span>(<span class="params">self</span>):</span></span><br><span class="line">        b=self.a</span><br><span class="line">        <span class="comment"># 每调用这个类就加1</span></span><br><span class="line">        self.a+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span>  b</span><br><span class="line"></span><br><span class="line">myclass=Iterative_generation()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用myclass的__iter__方法</span></span><br><span class="line">print(myclass.__iter__())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一次调用myclass的__iter__方法</span></span><br><span class="line">print(myclass.__next__())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第二次调用myclass的__iter__方法</span></span><br><span class="line">print(myclass.__next__())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第三次调用myclass的__iter__方法</span></span><br><span class="line">print(myclass.__next__())</span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;__main__.Iterative_generation object at 0x7f863bfc69a0&gt;</span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+<h1 id="手写迭代器可以for"><a href="#手写迭代器可以for" class="headerlink" title="手写迭代器可以for"></a>手写迭代器可以for</h1><h2 id="StopIteration"><a href="#StopIteration" class="headerlink" title="StopIteration"></a>StopIteration</h2><p>StopIteration 异常用于标识迭代的完成，防止出现无限循环的情况，在 <code>__next__() </code>方法中我们可以设置在完成指定循环次数后触发 StopIteration 异常来结束迭代</p>
+<p>我们可以用任意可以迭代的测试一下</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># iter() 函数用来生成迭代器</span></span><br><span class="line">it = iter([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line">print(it.__next__())</span><br><span class="line">print(it.__next__())</span><br><span class="line">print(it.__next__())</span><br><span class="line">print(it.__next__())</span><br></pre></td></tr></table></figure>
+<p>下面的<strong>iter()</strong> 函数用来生成迭代器</p>
+<p>结果，可以看见他报了一个StopIteration错，应为他就只能迭代三次。上面我执行了四次就报了一个StopIteration</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&#x2F;home&#x2F;zss&#x2F;杂东西&#x2F;a2.py&quot;, line 6, in &lt;module&gt;</span><br><span class="line">    print(it.__next__())</span><br><span class="line">StopIteration</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line"></span><br><span class="line">进程已结束，退出代码为 1</span><br></pre></td></tr></table></figure>
+<h2 id="手写迭代器可以for-1"><a href="#手写迭代器可以for-1" class="headerlink" title="手写迭代器可以for"></a>手写迭代器可以for</h2><p>代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创一个类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Iterative_generation</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.a = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 定义一个__iter__类</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span>(<span class="params">self</span>):</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span>  self</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 定义一个__next__类</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__next__</span>(<span class="params">self</span>):</span></span><br><span class="line">        b=self.a</span><br><span class="line">        <span class="comment"># 每调用这个类就加1</span></span><br><span class="line">        self.a+=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># self.a&gt;10就会执行下面的语句</span></span><br><span class="line">        <span class="keyword">if</span> self.a&gt;<span class="number">10</span>:</span><br><span class="line"></span><br><span class="line">            <span class="comment"># StopIteration 异常用于标识迭代的完成</span></span><br><span class="line">            <span class="keyword">raise</span> StopIteration</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span>  b</span><br><span class="line"><span class="comment"># 创建对象</span></span><br><span class="line">myclass = Iterative_generation()</span><br><span class="line"></span><br><span class="line"><span class="comment"># iter() 函数用来生成迭代器</span></span><br><span class="line">myiter = iter(myclass)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> myiter:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<p><strong>iter()</strong> 函数用来生成迭代器</p>
+<p><strong>raise</strong>关键字用于引发异常，您可以定义要引发的错误类型以及要向用户打印的文本</p>
+<p><strong>StopIteration</strong>异常用于标识迭代的完成，防止出现无限循环的情况，在 <strong>next</strong>() 方法中我们可以设置在完成指定循环次数后触发 StopIteration 异常来结束迭代。</p>
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>编程</category>

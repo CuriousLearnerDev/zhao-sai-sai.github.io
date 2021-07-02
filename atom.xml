@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-07-01T10:01:49.719Z</updated>
+  <updated>2021-07-02T07:11:35.193Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Xray安全评估工具</title>
+    <link href="https://www.zssnp.top/2021/07/02/Xray/"/>
+    <id>https://www.zssnp.top/2021/07/02/Xray/</id>
+    <published>2021-07-02T07:11:30.000Z</published>
+    <updated>2021-07-02T07:11:35.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="渗透工具使用" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Xray" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Xray/"/>
+    
+    
+    <category term="Xray安全评估工具" scheme="https://www.zssnp.top/tags/Xray%E5%AE%89%E5%85%A8%E8%AF%84%E4%BC%B0%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python迭代器</title>
     <link href="https://www.zssnp.top/2021/06/09/pythonddq/"/>
     <id>https://www.zssnp.top/2021/06/09/pythonddq/</id>
     <published>2021-06-09T10:20:55.000Z</published>
-    <updated>2021-07-01T10:01:49.719Z</updated>
+    <updated>2021-07-02T05:38:22.221Z</updated>
     
     
       
@@ -48,7 +75,7 @@
     <link href="https://www.zssnp.top/2021/06/03/ranger/"/>
     <id>https://www.zssnp.top/2021/06/03/ranger/</id>
     <published>2021-06-03T10:19:30.000Z</published>
-    <updated>2021-06-03T10:52:49.718Z</updated>
+    <updated>2021-07-02T05:41:20.650Z</updated>
     
     
       
@@ -73,7 +100,7 @@
     <link href="https://www.zssnp.top/2021/04/21/pythonzhengze/"/>
     <id>https://www.zssnp.top/2021/04/21/pythonzhengze/</id>
     <published>2021-04-21T10:20:55.000Z</published>
-    <updated>2021-06-09T08:50:53.155Z</updated>
+    <updated>2021-07-02T05:39:59.714Z</updated>
     
     
       
@@ -206,7 +233,7 @@
     <link href="https://www.zssnp.top/2021/03/16/git/"/>
     <id>https://www.zssnp.top/2021/03/16/git/</id>
     <published>2021-03-16T07:19:21.000Z</published>
-    <updated>2021-05-02T04:11:12.858Z</updated>
+    <updated>2021-07-02T05:42:15.162Z</updated>
     
     
       
@@ -489,31 +516,6 @@
     <link href="https://www.zssnp.top/2021/01/25/linuxcor/"/>
     <id>https://www.zssnp.top/2021/01/25/linuxcor/</id>
     <published>2021-01-25T07:19:30.000Z</published>
-    <updated>2021-05-01T23:57:08.327Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kali 解决a start job is running for/dev/disk/bg-uuid</title>
-    <link href="https://www.zssnp.top/2021/01/25/linuxswap/"/>
-    <id>https://www.zssnp.top/2021/01/25/linuxswap/</id>
-    <published>2021-01-25T04:19:30.000Z</published>
     <updated>2021-05-01T23:57:08.327Z</updated>
     
     
