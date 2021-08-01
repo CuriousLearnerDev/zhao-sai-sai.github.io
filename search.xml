@@ -3199,7 +3199,7 @@
   <entry>
     <title>Python爬虫2.基础</title>
     <url>/2021/01/18/Python%E7%88%AC%E8%99%AB2/</url>
-    <content><![CDATA[<p>看的书《Python3 网络爬虫开发实战教程》学习笔记</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>看的书《Python3 网络爬虫开发实战教程》学习笔记</p>
 <h1 id="URI和URL和URN"><a href="#URI和URL和URN" class="headerlink" title="URI和URL和URN"></a>URI和URL和URN</h1><p><strong>URI：</strong>Uniform Resource Identifier（统一资源标识符）<br><strong>URL：</strong>Uniform Resource Location（统一资源定位符）</p>
 <p><strong>URN：</strong>Universal Resource Name（即统一资源名称）</p>
 <p><strong>URL和URN 是 URI 的子集</strong></p>
@@ -3256,8 +3256,7 @@
 <h2 id="常见代理设置"><a href="#常见代理设置" class="headerlink" title="常见代理设置"></a>常见代理设置</h2><p>我自己用的是机场</p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>Python爬虫</tag>
@@ -5876,7 +5875,8 @@
   <entry>
     <title>setoolkit社工盗号</title>
     <url>/2021/04/10/setoolkit/</url>
-    <content><![CDATA[<div class="note info simple"><p>我同学今天说了一下你会盗号不，这个问题真的不好回答，现在大部分盗号都是社工钓鱼，没有那种直接用什么方法黑入到管理用户密码的地方（除非你是大佬中的大佬）！</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>setoolkit工具使用总结</p>
+<div class="note info simple"><p>我同学今天说了一下你会盗号不，这个问题真的不好回答，现在大部分盗号都是社工钓鱼，没有那种直接用什么方法黑入到管理用户密码的地方毕竟是方法的不能这样做对吧！</p>
 </div>
 
 <h1 id="安装setoolkit"><a href="#安装setoolkit" class="headerlink" title="安装setoolkit"></a>安装setoolkit</h1><div class="note info simple"><p>kali默认是安装setoolkit了的</p>
@@ -7802,7 +7802,7 @@
   <entry>
     <title>Python爬虫1.环境</title>
     <url>/2021/01/15/Python%E7%88%AC%E8%99%AB/</url>
-    <content><![CDATA[<p>看的书《Python3 网络爬虫开发实战教程》学习笔记</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>看的书《Python3 网络爬虫开发实战教程》学习笔记</p>
 <p><strong>我光安装都快安装一下午了</strong></p>
 <h1 id="python的安装我就不说了"><a href="#python的安装我就不说了" class="headerlink" title="python的安装我就不说了"></a>python的安装我就不说了</h1><h1 id="请求库的安装"><a href="#请求库的安装" class="headerlink" title="请求库的安装"></a>请求库的安装</h1><h2 id="安装requests"><a href="#安装requests" class="headerlink" title="安装requests"></a>安装requests</h2><p>之前介绍的 Requests 库是一个阻塞式 HTTP 请求库，当我们发出一个请求后，程序会一直等待服务器响应，直到得到响应后，程序才会进行下一步处理</p>
 <p>Requests 项目的地址是：<a href="https://github.com/kennethreitz/requests">https://github.com/kennethreitz/requests</a></p>
@@ -7994,8 +7994,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip3 install scrapyd</span><br></pre></td></tr></table></figure>
 <h1 id="后面的我就不安装了可能用不到"><a href="#后面的我就不安装了可能用不到" class="headerlink" title="后面的我就不安装了可能用不到"></a>后面的我就不安装了可能用不到</h1>]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>Python爬虫</tag>
@@ -9322,8 +9321,7 @@
 <p><a href="https://www.bilibili.com/video/BV1q4411y7Zh?t=338&p=1">视频参考</a></p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>编程</tag>
@@ -9332,7 +9330,7 @@
   <entry>
     <title>Python爬虫4requests库使用</title>
     <url>/2021/03/04/python%E7%88%AC%E8%99%AB4/</url>
-    <content><![CDATA[<h1 id="requests库介绍和安装"><a href="#requests库介绍和安装" class="headerlink" title="requests库介绍和安装"></a>requests库介绍和安装</h1><div class="note warning simple"><p>urllib库是python自带的一个库，requests库是第三方的库，需要安装</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="requests库介绍和安装"><a href="#requests库介绍和安装" class="headerlink" title="requests库介绍和安装"></a>requests库介绍和安装</h1><div class="note warning simple"><p>urllib库是python自带的一个库，requests库是第三方的库，需要安装</p>
 </div>
 
 <div class="note info simple"><p>urllib库用起来很麻烦，比较繁琐</p>
@@ -9760,8 +9758,7 @@
 <p>内容是<code>username=admin&amp;password=a&amp;Login=Login&amp;user_token=b5ac2d72b51b99c325a33189b8858922</code></p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>Python爬虫</tag>
@@ -9770,7 +9767,7 @@
   <entry>
     <title>Python爬虫3.urllib库最详细</title>
     <url>/2021/02/12/Python%E7%88%AC%E8%99%AB3/</url>
-    <content><![CDATA[<div class="note blue icon simple"><i class="note-icon fas fa-bullhorn"></i><p>书名《Python3 网络爬虫开发实战》，笔记这个都是我自己测试和网上找文章，书里面有的没有测试到位的我也补充了很多，先声明我是菜鸡</p>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><div class="note blue icon simple"><i class="note-icon fas fa-bullhorn"></i><p>书名《Python3 网络爬虫开发实战》，笔记这个都是我自己测试和网上找文章，书里面有的没有测试到位的我也补充了很多，先声明我是菜鸡</p>
 </div>
 
 <p><strong>Python 的强大之处就是提供了功能齐全的类库来帮助我们完成这些请求。最基础的 HTTP 库有 urllib、httplib2、requests、treq 等</strong></p>
@@ -10341,8 +10338,7 @@
 <p><img src= "/img/loading2.gif" data-lazy-src="https://gitee.com/wzass/zp/raw/master/img/image-20210212193635655.png" alt="image-20210212193635655"></p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>Python爬虫</tag>
@@ -12597,8 +12593,7 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
         <tag>编程</tag>
