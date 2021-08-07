@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-07-02T07:11:35.193Z</updated>
+  <updated>2021-08-07T03:57:00.577Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nikto web服务器扫描器工具</title>
+    <link href="https://www.zssnp.top/2021/08/07/nikto/"/>
+    <id>https://www.zssnp.top/2021/08/07/nikto/</id>
+    <published>2021-08-07T11:42:30.000Z</published>
+    <updated>2021-08-07T03:57:00.577Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="渗透工具使用" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="nikto" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/nikto/"/>
+    
+    
+    <category term="渗透工具使用" scheme="https://www.zssnp.top/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Xray安全评估工具</title>
@@ -500,31 +527,6 @@
     
     
     <category term="图床" scheme="https://www.zssnp.top/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kali linux解决you are in emergency mode</title>
-    <link href="https://www.zssnp.top/2021/01/25/linuxcor/"/>
-    <id>https://www.zssnp.top/2021/01/25/linuxcor/</id>
-    <published>2021-01-25T07:19:30.000Z</published>
-    <updated>2021-05-01T23:57:08.327Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   

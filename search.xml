@@ -6979,10 +6979,10 @@
 </ol>
 ]]></content>
       <categories>
-        <category>工具使用</category>
+        <category>问题的解决</category>
       </categories>
       <tags>
-        <tag>工具使用</tag>
+        <tag>问题的解决</tag>
       </tags>
   </entry>
   <entry>
@@ -12599,6 +12599,418 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
       </categories>
       <tags>
         <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nikto web服务器扫描器工具</title>
+    <url>/2021/08/07/nikto/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><a href="https://github.com/sullo/nikto/wiki">官方工具的使用</a></p>
+<p><strong>之前学习的时候没有做好笔记导致现在忘完了，下面就叫我学习给记录下来</strong></p>
+<p>Nikto 是一款开源 (GPL) 网络服务器扫描器，可针对多个项目对网络服务器执行全面测试，包括 6700 多个具有潜在危险的文件/程序、检查 1250 多个服务器的过时版本以及 270 多个服务器上的版本特定问题。它还会检查服务器配置项目，例如是否存在多个索引文件、HTTP 服务器选项，并将尝试识别已安装的 Web 服务器和软件。扫描项目和插件经常更新，可以自动更新</p>
+<h1 id="nikto工具安装"><a href="#nikto工具安装" class="headerlink" title="nikto工具安装"></a>nikto工具安装</h1><div class="note warning simple"><p>kali默认是安装了的</p>
+</div>
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807103712146.png" alt="image-20210807103712146"></p>
+<p><strong>其他linux的安装方法很简单</strong></p>
+<p>克隆github</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/sullo/nikto</span><br></pre></td></tr></table></figure>
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807084226366.png" alt="image-20210807084226366"></p>
+<p>proxychains4是我添加了代理</p>
+<p>进入目录<code>cd nikto/program</code></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807084433328.png" alt="image-20210807084433328"></p>
+<p>运行<code>./nikto.pl   </code></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807084525664.png" alt="image-20210807084525664"></p>
+<h1 id="nikto工具的使用"><a href="#nikto工具的使用" class="headerlink" title="nikto工具的使用"></a>nikto工具的使用</h1><h2 id="全部参数"><a href="#全部参数" class="headerlink" title="全部参数"></a>全部参数</h2><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-ask</td>
+<td>是否询问提交更新： yes - 询问每个（默认） *no - 不询问，不发送 *auto - 不询问，只发送</td>
+</tr>
+<tr>
+<td>-Cgidirs</td>
+<td>扫描这些 CGI 目录： * none * all * 或类似 “/cgi/ /cgi-a/“ 的值</td>
+</tr>
+<tr>
+<td>-config</td>
+<td>使用这个配置文件</td>
+</tr>
+<tr>
+<td>-Display</td>
+<td>打开/关闭显示输出：</td>
+</tr>
+<tr>
+<td></td>
+<td>1 显示重定向</td>
+</tr>
+<tr>
+<td></td>
+<td>2 显示收到的 cookie</td>
+</tr>
+<tr>
+<td></td>
+<td>3 显示所有 200/OK 响应</td>
+</tr>
+<tr>
+<td></td>
+<td>4 显示需要身份验证的 URL * D 调试输出 * E 显示所有 HTTP 错误 * P 打印进度到 STDOUT * S Scrub IP 和主机名的 输出 * V 详细输出</td>
+</tr>
+<tr>
+<td>-dbcheck</td>
+<td>检查数据库和其他关键文件的语法错误</td>
+</tr>
+<tr>
+<td>-evasion</td>
+<td>编码技术：用来逃避</td>
+</tr>
+<tr>
+<td></td>
+<td>1 随机 URI 编码（非 UTF8）</td>
+</tr>
+<tr>
+<td></td>
+<td>2 目录自引用（/./）</td>
+</tr>
+<tr>
+<td></td>
+<td>3 过早的 URL 结尾</td>
+</tr>
+<tr>
+<td></td>
+<td>4 前置长随机字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>5 假参数</td>
+</tr>
+<tr>
+<td></td>
+<td>6 TAB 作为请求间隔</td>
+</tr>
+<tr>
+<td></td>
+<td>7 更改URL的大小写</td>
+</tr>
+<tr>
+<td></td>
+<td>8 使用Windows目录分隔符()</td>
+</tr>
+<tr>
+<td></td>
+<td>A 使用回车 (0x0d) 作为请求间隔</td>
+</tr>
+<tr>
+<td></td>
+<td>B 使用二进制值 0x0b 作为请求间隔</td>
+</tr>
+<tr>
+<td>-Format/-o</td>
+<td>保存文件 (-o) 格式：</td>
+</tr>
+<tr>
+<td></td>
+<td>csv 逗号分隔值</td>
+</tr>
+<tr>
+<td></td>
+<td>json JSON 格式</td>
+</tr>
+<tr>
+<td></td>
+<td>htm HTML 格式</td>
+</tr>
+<tr>
+<td></td>
+<td>nbe Nessus NBE 格式</td>
+</tr>
+<tr>
+<td></td>
+<td>sql 通用 SQL（有关架构，请参阅文档）</td>
+</tr>
+<tr>
+<td></td>
+<td>txt 纯文本</td>
+</tr>
+<tr>
+<td></td>
+<td>xml XML 格式</td>
+</tr>
+<tr>
+<td></td>
+<td>（如果未指定，格式将从传递给 -output 的文件扩展名中获取）</td>
+</tr>
+<tr>
+<td>-Help</td>
+<td>此帮助信息</td>
+</tr>
+<tr>
+<td>-host</td>
+<td>目标主机/URL</td>
+</tr>
+<tr>
+<td>-404code</td>
+<td>忽略这些 HTTP 代码作为否定响应（始终）。格式为“302,301”。</td>
+</tr>
+<tr>
+<td>-404string</td>
+<td>在响应正文内容中忽略此字符串作为否定响应（始终）。可以是正则表达式。</td>
+</tr>
+<tr>
+<td>-id</td>
+<td>要使用的主机身份验证，格式为 id:pass 或 id:pass:realm</td>
+</tr>
+<tr>
+<td>-key</td>
+<td>客户端证书密钥文件</td>
+</tr>
+<tr>
+<td>-list-plugins</td>
+<td>列出所有可用的插件</td>
+</tr>
+<tr>
+<td>-maxtime</td>
+<td>每台主机的最长测试时间（例如，1h、60m、3600s）</td>
+</tr>
+<tr>
+<td>-mutate</td>
+<td>猜测其他文件名：</td>
+</tr>
+<tr>
+<td></td>
+<td>1 使用所有根目录测试所有文件</td>
+</tr>
+<tr>
+<td></td>
+<td>2 猜测密码文件名</td>
+</tr>
+<tr>
+<td></td>
+<td>3 通过 Apache 枚举用户名（/~user 类型请求）</td>
+</tr>
+<tr>
+<td></td>
+<td>4 通过 cgiwrap 枚举用户名（/cgi-bin/cgiwrap/~user 类型请求）</td>
+</tr>
+<tr>
+<td></td>
+<td>5 尝试暴力破解子域名，假设主机名是父域</td>
+</tr>
+<tr>
+<td></td>
+<td>6 尝试从提供的字典文件中猜测目录名</td>
+</tr>
+<tr>
+<td>-mutate-options</td>
+<td>提供变异信息</td>
+</tr>
+<tr>
+<td>-nointeractive</td>
+<td>禁用交互功能</td>
+</tr>
+<tr>
+<td>-nolookup</td>
+<td>禁用 DNS 查找</td>
+</tr>
+<tr>
+<td>-nossl</td>
+<td>禁用 SSL</td>
+</tr>
+<tr>
+<td>-no404</td>
+<td>禁用 nikto 尝试猜测 404 页面</td>
+</tr>
+<tr>
+<td>-Option</td>
+<td>覆盖 nikto.conf 中的一个选项，可以多次发出</td>
+</tr>
+<tr>
+<td>-output</td>
+<td>将输出写入此文件（“.”代表自动名称）</td>
+</tr>
+<tr>
+<td>-Pause</td>
+<td>在测试之间暂停（秒、整数或浮点数）</td>
+</tr>
+<tr>
+<td>-Plugins</td>
+<td>要运行的插件列表（默认值：ALL）</td>
+</tr>
+<tr>
+<td>-port</td>
+<td>要使用的端口（默认 80）</td>
+</tr>
+<tr>
+<td>-RSAcert</td>
+<td>客户端证书文件</td>
+</tr>
+<tr>
+<td>-root</td>
+<td>为所有请求添加根值，格式为 /directory</td>
+</tr>
+<tr>
+<td>-Save</td>
+<td>保存对该目录的肯定响应（’.’ 表示自动命名）</td>
+</tr>
+<tr>
+<td>-ssl</td>
+<td>在端口上强制 ssl 模式</td>
+</tr>
+<tr>
+<td>-Tuning/-T</td>
+<td>扫描调谐：</td>
+</tr>
+<tr>
+<td></td>
+<td>1 个有趣的文件 / 在日志中看到</td>
+</tr>
+<tr>
+<td></td>
+<td>2 错误配置/默认文件</td>
+</tr>
+<tr>
+<td></td>
+<td>3 信息披露</td>
+</tr>
+<tr>
+<td></td>
+<td>4 注入（XSS/脚本/HTML）</td>
+</tr>
+<tr>
+<td></td>
+<td>5 远程文件检索 - 内部 Web Root</td>
+</tr>
+<tr>
+<td></td>
+<td>6 拒绝服务</td>
+</tr>
+<tr>
+<td></td>
+<td>7 远程文件检索 - 服务器范围</td>
+</tr>
+<tr>
+<td></td>
+<td>8 命令执行/远程Shell</td>
+</tr>
+<tr>
+<td></td>
+<td>9 SQL注入</td>
+</tr>
+<tr>
+<td></td>
+<td>0 文件上传</td>
+</tr>
+<tr>
+<td></td>
+<td>a身份验证绕过</td>
+</tr>
+<tr>
+<td></td>
+<td>b 软件标识</td>
+</tr>
+<tr>
+<td></td>
+<td>c 远程源包含</td>
+</tr>
+<tr>
+<td></td>
+<td>d 网络服务</td>
+</tr>
+<tr>
+<td></td>
+<td>e管理控制台</td>
+</tr>
+<tr>
+<td></td>
+<td>x 反向调整选项（即，包括除指定之外的所有选项）</td>
+</tr>
+<tr>
+<td>-timeout</td>
+<td>请求超时（默认 10 秒）</td>
+</tr>
+<tr>
+<td>-Userdbs</td>
+<td>仅加载用户数据库，而不加载标准数据库</td>
+</tr>
+<tr>
+<td></td>
+<td>all 禁用标准数据库并仅加载用户数据库</td>
+</tr>
+<tr>
+<td></td>
+<td>测试仅禁用 db_tests 并加载 udb_tests</td>
+</tr>
+<tr>
+<td>-useragent</td>
+<td>覆盖默认的用户代理</td>
+</tr>
+<tr>
+<td>-until</td>
+<td>运行到指定的时间或持续时间</td>
+</tr>
+<tr>
+<td>-update</td>
+<td>从 CIRT.net 更新数据库和插件</td>
+</tr>
+<tr>
+<td>-url</td>
+<td>目标主机/URL（-host 的别名）</td>
+</tr>
+<tr>
+<td>-useproxy</td>
+<td>使用 nikto.conf 中定义的代理，例如<a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a></td>
+</tr>
+<tr>
+<td>-Version</td>
+<td>打印插件和数据库版本</td>
+</tr>
+<tr>
+<td>-vhost</td>
+<td>一个IP拥有多个网站时使用</td>
+</tr>
+</tbody></table>
+<h2 id="常用的参数"><a href="#常用的参数" class="headerlink" title="常用的参数"></a>常用的参数</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">-config            使用这个配置文件</span><br><span class="line">-Display          打开/关闭显示输出</span><br><span class="line">-dbcheck            检查数据库和其他关键文件的语法错误</span><br><span class="line">-Format            保存文件（-o）格式</span><br><span class="line">-Help               帮助信息</span><br><span class="line">-host              目标主机/URL</span><br><span class="line">-id                 要使用的主机认证，格式为 id:pass 或 id:pass:realm</span><br><span class="line">-list-plugins       列出所有可用的插件</span><br><span class="line">-output            将输出写入此文件</span><br><span class="line">-nossl              禁用 SSL</span><br><span class="line">-no404              禁用 404 检查</span><br><span class="line">-Plugins           要运行的插件列表（默认：ALL）</span><br><span class="line">-port              要使用的端口（默认为 80）</span><br><span class="line">-root              为所有请求添加根值，格式为 /directory</span><br><span class="line">-ssl                在端口上强制 ssl 模式</span><br><span class="line">-Tuning            扫描调谐</span><br><span class="line">-timeout           请求超时（默认 10 秒）</span><br><span class="line">-update             从 CIRT.net 更新数据库和插件t</span><br><span class="line">-Version            打印插件和数据库版本</span><br><span class="line">-vhost         	  一个IP拥有多个网站时使用</span><br><span class="line">-useproxy  中定义的代理，例如http://127.0.0.1:8080</span><br></pre></td></tr></table></figure>
+<h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><div class="note warning simple"><p>查所有可用的插件</p>
+</div>
+
+
+
+<p>我们进行大量的扫描都是用的插件进行判断的</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">nikto  -list-plugins</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807103952072.png" alt="image-20210807103952072"></p>
+<div class="note warning simple"><p>基本扫描</p>
+</div>
+
+<p><code>-h</code>即是<code>-host</code></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">nikto -h 192.168.1.1 <span class="comment">#单个ip目标指定</span></span><br><span class="line">nikto -h www.xxx.com <span class="comment">#单个目标指定</span></span><br><span class="line">nikto -h http://www.xxx.com/abc/ <span class="comment">#单个目标指定和指定目录</span></span><br><span class="line">nikto -h a.txt <span class="comment">#多个目标扫描</span></span><br></pre></td></tr></table></figure>
+<div class="note warning simple"><p>设置代理用<code>-useproxy </code>参数</p>
+</div>
+
+
+
+<p>格式</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">nikto  xxxxxxx -useproxy http://xxxx:xxxxx </span><br></pre></td></tr></table></figure>
+<p>下面的演示的命令</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo nikto  -h www.baidu.com -useproxy http://127.0.0.1:8889</span><br></pre></td></tr></table></figure>
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807113757684.png" alt="image-20210807113757684"></p>
+<h2 id="其他的就不演示了你们看参数吧"><a href="#其他的就不演示了你们看参数吧" class="headerlink" title="其他的就不演示了你们看参数吧"></a>其他的就不演示了你们看参数吧</h2><h1 id="扫描中的操作"><a href="#扫描中的操作" class="headerlink" title="扫描中的操作"></a>扫描中的操作</h1><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">空格		是查看当前扫描百分之多少了剩余时间等等等</span><br><span class="line">v			是查看扫描状态正在扫描什么东西在按v暂停</span><br><span class="line">d			是查看详细发的信息在按d暂停</span><br><span class="line">e			显示错误信息在按e暂停</span><br><span class="line">p			显示扫描进度在按p暂停</span><br><span class="line">r			显示重定向信息在按r暂停</span><br><span class="line">c			显示cookie在按c暂停</span><br><span class="line">a			身份认证过程显示出来在按a暂停</span><br><span class="line">q			退出</span><br><span class="line">N		扫描下一个目标就是在指定文件扫描的使用用的</span><br><span class="line">P			暂停扫描</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>渗透工具使用</category>
+        <category>nikto</category>
+      </categories>
+      <tags>
+        <tag>渗透工具使用</tag>
       </tags>
   </entry>
 </search>
