@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-08-07T09:32:53.839Z</updated>
+  <updated>2021-08-08T14:43:42.390Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Xray安全评估工具</title>
-    <link href="https://www.zssnp.top/2021/08/07/Xray/"/>
-    <id>https://www.zssnp.top/2021/08/07/Xray/</id>
-    <published>2021-08-07T09:32:30.000Z</published>
-    <updated>2021-08-07T09:32:53.839Z</updated>
+    <title>kali 2021安装burpsuite pro破解版</title>
+    <link href="https://www.zssnp.top/2021/08/08/burp/"/>
+    <id>https://www.zssnp.top/2021/08/08/burp/</id>
+    <published>2021-08-08T09:32:30.000Z</published>
+    <updated>2021-08-08T14:43:42.390Z</updated>
     
     
       
@@ -34,9 +34,36 @@
     
     
     
-    <category term="渗透工具使用" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <category term="安装" scheme="https://www.zssnp.top/categories/%E5%AE%89%E8%A3%85/"/>
     
-    <category term="Xray" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Xray/"/>
+    <category term="黑客工具" scheme="https://www.zssnp.top/categories/%E5%AE%89%E8%A3%85/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="burpsuite" scheme="https://www.zssnp.top/tags/burpsuite/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xray安全评估工具</title>
+    <link href="https://www.zssnp.top/2021/08/07/Xray/"/>
+    <id>https://www.zssnp.top/2021/08/07/Xray/</id>
+    <published>2021-08-07T09:32:30.000Z</published>
+    <updated>2021-08-08T14:45:13.378Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Xray" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Xray/"/>
     
     
     <category term="Xray安全评估工具" scheme="https://www.zssnp.top/tags/Xray%E5%AE%89%E5%85%A8%E8%AF%84%E4%BC%B0%E5%B7%A5%E5%85%B7/"/>
@@ -48,7 +75,7 @@
     <link href="https://www.zssnp.top/2021/08/07/nikto/"/>
     <id>https://www.zssnp.top/2021/08/07/nikto/</id>
     <published>2021-08-07T02:42:30.000Z</published>
-    <updated>2021-08-07T09:32:43.975Z</updated>
+    <updated>2021-08-08T14:45:50.947Z</updated>
     
     
       
@@ -61,9 +88,9 @@
     
     
     
-    <category term="渗透工具使用" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-    <category term="nikto" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/nikto/"/>
+    <category term="nikto" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/nikto/"/>
     
     
     <category term="渗透工具使用" scheme="https://www.zssnp.top/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
@@ -177,7 +204,7 @@
     <link href="https://www.zssnp.top/2021/04/10/setoolkit/"/>
     <id>https://www.zssnp.top/2021/04/10/setoolkit/</id>
     <published>2021-04-10T07:40:30.000Z</published>
-    <updated>2021-07-02T07:27:25.469Z</updated>
+    <updated>2021-08-08T14:45:29.237Z</updated>
     
     
       
@@ -190,9 +217,9 @@
     
     
     
-    <category term="渗透工具使用" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-    <category term="setoolkit" scheme="https://www.zssnp.top/categories/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/setoolkit/"/>
+    <category term="setoolkit" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/setoolkit/"/>
     
     
     <category term="社工setoolkit" scheme="https://www.zssnp.top/tags/%E7%A4%BE%E5%B7%A5setoolkit/"/>
@@ -500,33 +527,6 @@
     
     
     <category term="网络协议" scheme="https://www.zssnp.top/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub+jsdelivr+PicGo+typora照片存储</title>
-    <link href="https://www.zssnp.top/2021/02/09/githubtc/"/>
-    <id>https://www.zssnp.top/2021/02/09/githubtc/</id>
-    <published>2021-02-09T01:54:30.000Z</published>
-    <updated>2021-05-01T23:57:08.327Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="搭建" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="其他" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/%E5%85%B6%E4%BB%96/"/>
-    
-    
-    <category term="图床" scheme="https://www.zssnp.top/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
