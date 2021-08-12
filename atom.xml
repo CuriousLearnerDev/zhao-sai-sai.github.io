@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>w啥都学</title>
+  <title>ZSSのW啥都学</title>
   
   
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-08-10T14:48:52.318Z</updated>
+  <updated>2021-08-12T02:20:18.628Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
-    <name>w啥都学</name>
+    <name>W啥都学</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="https://www.zssnp.top/2021/08/08/burp/"/>
     <id>https://www.zssnp.top/2021/08/08/burp/</id>
     <published>2021-08-08T09:32:30.000Z</published>
-    <updated>2021-08-10T14:48:52.318Z</updated>
+    <updated>2021-08-12T02:20:18.628Z</updated>
     
     
       
@@ -48,7 +48,7 @@
     <link href="https://www.zssnp.top/2021/08/07/Xray/"/>
     <id>https://www.zssnp.top/2021/08/07/Xray/</id>
     <published>2021-08-07T09:32:30.000Z</published>
-    <updated>2021-08-08T14:45:13.378Z</updated>
+    <updated>2021-08-12T02:20:43.949Z</updated>
     
     
       
