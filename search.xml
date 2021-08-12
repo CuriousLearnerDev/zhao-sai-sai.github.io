@@ -3758,7 +3758,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Xray安全评估工具</title>
+    <title></title>
     <url>/2021/08/07/Xray/</url>
     <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>学习总结</strong></p>
 <p>xray是长亭科技的一款社区版漏洞扫描工具</p>
@@ -3822,6 +3822,18 @@
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807173112156.png" alt="image-20210807173112156"></p>
 <p>我访问指定运行扫描的网站他就会进行扫描</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807173204027.png" alt="image-20210807173204027"></p>
+<h1 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a>高级用法</h1><h2 id="xray-与-Burpsuite-联动"><a href="#xray-与-Burpsuite-联动" class="headerlink" title="xray 与 Burpsuite 联动"></a>xray 与 Burpsuite 联动</h2><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>我们知道xray是可以代理的，Burpsuite工具也是可以代理的，我们就可以叫他俩的代理连接起来</p>
+</div> 
+
+<p>下面是他原理图</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/2bc0fa0a0f17fc587346b1030e8822b6.png"></p>
+<p>burp默认代理是8080端口</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812190050122.png" alt="image-20210812190050122"></p>
+<p>在xray配置文件里面，配置成下面这样就可以叫请求发送给burp了</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">http:</span></span><br><span class="line">  <span class="attr">proxy:</span> <span class="string">&quot;http://127.0.0.1:8080&quot;</span>   <span class="string">//这个设置成burp的代理</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812190704988.png" alt="image-20210812190704988"></p>
+<p>然后我访问百度可以看见burp就可以拦截请求了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812190752168.png" alt="image-20210812190752168"></p>
 <h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>我们只启动扫描的时候他会生成一个配置文件</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210807172656908.png" alt="image-20210807172656908"></p>
 <h2 id="配置文件的大类"><a href="#配置文件的大类" class="headerlink" title="配置文件的大类"></a>配置文件的大类</h2><div class="note info simple"><p>默认他是展开的</p>
@@ -4208,7 +4220,18 @@
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">./burp.sh</span><br></pre></td></tr></table></figure>
 <p><strong>启动成功</strong></p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210809164446605.png" alt="image-20210809164446605"></p>
-<h1 id="创建快捷方式"><a href="#创建快捷方式" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h1>]]></content>
+<h1 id="创建快捷方式"><a href="#创建快捷方式" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h1><p>在   /usr/share/applications/     要.desktop为后缀 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]  文件头</span><br><span class="line">Encoding&#x3D;UTF-8		 编码</span><br><span class="line">Name&#x3D;BurpSuite 应用名称</span><br><span class="line">Exec&#x3D;&quot;java -Dfile.encoding&#x3D;utf-8 -javaagent:BurpSuiteCnV2.0.jar  -javaagent:BurpLoaderKeygen.jar -noverify -jar burpsuite_pro.jar</span><br><span class="line">&quot; %U 执行的命令</span><br><span class="line">Icon&#x3D;&#x2F;home&#x2F;zss&#x2F;YingYong&#x2F;Borpsuite2021&#x2F;BurpSuitePro&#x2F;.install4j&#x2F;BurpSuitePro.png  图标路径</span><br><span class="line">Categories&#x3D;Application;   应用的类型（内容相关）</span><br><span class="line">StartupWMClass&#x3D;install4j-burp-StartBurp</span><br></pre></td></tr></table></figure>
+<p>保存后就可以看见文件了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812192316360.png" alt="image-20210812192316360"></p>
+<p>或者在直接在程序菜单里面添加</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812192451000.png" alt="image-20210812192451000"></p>
+<p>命令配置成下面这样，保存退出</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812192956654.png" alt="image-20210812192956654"></p>
+<p>就可以看见启动器了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812193026971.png" alt="image-20210812193026971"></p>
+<p>点击正常启动</p>
+]]></content>
       <categories>
         <category>黑客工具使用</category>
         <category>Burpsuite</category>
