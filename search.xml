@@ -3758,7 +3758,7 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>Xray安全评估工具</title>
     <url>/2021/08/07/Xray/</url>
     <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p><strong>学习总结</strong></p>
 <p>xray是长亭科技的一款社区版漏洞扫描工具</p>
@@ -4231,6 +4231,7 @@
 <p>就可以看见启动器了</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812193026971.png" alt="image-20210812193026971"></p>
 <p>点击正常启动</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210812193128709.png" alt="image-20210812193128709"></p>
 ]]></content>
       <categories>
         <category>黑客工具使用</category>
@@ -10083,6 +10084,7 @@
 
 <p>下载安装</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip3 install  requests</span><br></pre></td></tr></table></figure>
+<p>可以在调用的使用有点可能需要root权限才行</p>
 <h1 id="requests请求的方法"><a href="#requests请求的方法" class="headerlink" title="requests请求的方法"></a>requests请求的方法</h1><div class="note info simple"><p>requests支持很多种的请求方法，下面的八种请求方法</p>
 </div>
 
