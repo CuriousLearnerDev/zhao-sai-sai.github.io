@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-08-18T13:55:36.808Z</updated>
+  <updated>2021-08-20T08:47:30.483Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>解析库XPath的使用</title>
+    <link href="https://www.zssnp.top/2021/08/20/XPath/"/>
+    <id>https://www.zssnp.top/2021/08/20/XPath/</id>
+    <published>2021-08-20T07:10:30.000Z</published>
+    <updated>2021-08-20T08:47:30.483Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>脚本编写实现简单登录爆破</title>
     <link href="https://www.zssnp.top/2021/08/18/jiaoben/"/>
     <id>https://www.zssnp.top/2021/08/18/jiaoben/</id>
     <published>2021-08-18T14:00:30.000Z</published>
-    <updated>2021-08-18T13:55:36.808Z</updated>
+    <updated>2021-08-20T08:33:37.773Z</updated>
     
     
       
@@ -129,7 +154,7 @@
     <link href="https://www.zssnp.top/2021/06/09/pythonddq/"/>
     <id>https://www.zssnp.top/2021/06/09/pythonddq/</id>
     <published>2021-06-09T10:20:55.000Z</published>
-    <updated>2021-08-01T13:59:42.432Z</updated>
+    <updated>2021-08-20T00:04:29.200Z</updated>
     
     
       
@@ -142,7 +167,7 @@
     
     
     
-    <category term="爬虫" scheme="https://www.zssnp.top/categories/%E7%88%AC%E8%99%AB/"/>
+    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
     
     
     <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
@@ -179,7 +204,7 @@
     <link href="https://www.zssnp.top/2021/04/21/pythonzhengze/"/>
     <id>https://www.zssnp.top/2021/04/21/pythonzhengze/</id>
     <published>2021-04-21T10:20:55.000Z</published>
-    <updated>2021-08-16T09:13:02.097Z</updated>
+    <updated>2021-08-20T00:04:43.141Z</updated>
     
     
       
@@ -192,7 +217,7 @@
     
     
     
-    <category term="爬虫" scheme="https://www.zssnp.top/categories/%E7%88%AC%E8%99%AB/"/>
+    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
     
     
     <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
@@ -437,7 +462,7 @@
     <link href="https://www.zssnp.top/2021/03/04/python%E7%88%AC%E8%99%AB4/"/>
     <id>https://www.zssnp.top/2021/03/04/python%E7%88%AC%E8%99%AB4/</id>
     <published>2021-03-04T10:28:30.000Z</published>
-    <updated>2021-08-17T04:32:43.558Z</updated>
+    <updated>2021-08-20T00:04:39.743Z</updated>
     
     
       
@@ -450,7 +475,7 @@
     
     
     
-    <category term="爬虫" scheme="https://www.zssnp.top/categories/%E7%88%AC%E8%99%AB/"/>
+    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
     
     
     <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
@@ -506,31 +531,6 @@
     
     
     <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python爬虫3.urllib库最详细</title>
-    <link href="https://www.zssnp.top/2021/02/12/Python%E7%88%AC%E8%99%AB3/"/>
-    <id>https://www.zssnp.top/2021/02/12/Python%E7%88%AC%E8%99%AB3/</id>
-    <published>2021-02-12T11:42:30.000Z</published>
-    <updated>2021-08-01T23:42:55.458Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="爬虫" scheme="https://www.zssnp.top/categories/%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
