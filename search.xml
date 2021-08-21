@@ -3991,8 +3991,12 @@
 <td>查询的子标签，比如<code>//div/span</code>就会叫<code>div</code>标签下的<code>span</code>子标签</td>
 </tr>
 <tr>
-<td align="left">@</td>
-<td>指定标签里面属性来查询，[]括起来，比如<code>//div[@class]</code>就是查询<code>div</code>标签里面带<code>class</code>属性的</td>
+<td align="left">[@xxx]</td>
+<td>指定标签里面属性来查询，比如<code>//div[@class]</code>就是查询<code>div</code>标签里面带<code>class</code>属性的</td>
+</tr>
+<tr>
+<td align="left">/@xxx</td>
+<td>指定查询的属性内容，比如<code>//a/img/@src</code> 意思就是要<code>a</code>标签下的<code>img</code>里面的<code>src</code>属性的内容，可以用来提取照片</td>
 </tr>
 <tr>
 <td align="left">.</td>
@@ -4028,7 +4032,7 @@
 
 
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210820150113015.png" alt="image-20210820150113015"></p>
-<h2 id="指定查询属性"><a href="#指定查询属性" class="headerlink" title="@指定查询属性"></a>@指定查询属性</h2><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>上面我们看见<code>//</code>指定父标签<code>/</code>指定子标签查询的结果还是有点多我们可以通过<code>@</code>指定查询标签里面的属性来查询</p>
+<h2 id="xxx-指定查询属性"><a href="#xxx-指定查询属性" class="headerlink" title="[@xxx]指定查询属性"></a>[@xxx]指定查询属性</h2><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>上面我们看见<code>//</code>指定父标签<code>/</code>指定子标签查询的结果还是有点多我们可以通过<code>[@xxx]</code>指定查询标签里面的属性来查询</p>
 <p>可以看下面他有一个<code>property=&quot;v:initialReleaseDate&quot;</code>属性我们就可以通过这个属性来查询了</p>
 </div> 
 
@@ -4048,6 +4052,8 @@
 <p>我们就可以这样写</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;div[@class&#x3D;&quot;tags-body&quot;]&#x2F;a  # div是父标签 class&#x3D;&quot;tags-body&quot;是父标签的属性  a是子标签</span><br></pre></td></tr></table></figure>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210820153917538.png" alt="image-20210820153917538"></p>
+<h2 id="指定查询的属性内容"><a href="#指定查询的属性内容" class="headerlink" title="@指定查询的属性内容"></a>@指定查询的属性内容</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#96;&#x2F;&#x2F;a[class&#x3D;&quot;nbgnbg&quot;]&#x2F;img&#x2F;@src&#96;  # 意思就是要&#96;a&#96;标签里面有&#96;class&#x3D;&quot;nbgnbg&quot;&#96;属性下的&#96;img&#96;里面的&#96;src&#96;属性的内容</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210821185317596.png" alt="image-20210821185317596"></p>
 <h1 id="XPath表达式"><a href="#XPath表达式" class="headerlink" title="XPath表达式"></a>XPath表达式</h1><table>
 <thead>
 <tr>
@@ -4066,6 +4072,14 @@
 <tr>
 <td align="left">[position()&lt;n]</td>
 <td>指定前面<code>n</code>个结果，比如<code>[position()&lt;4]</code>就是指定输出前面<code>3</code>个</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td>这个|就是和或者是或，比如`//a</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td>* 代表匹配所有节点</td>
 </tr>
 </tbody></table>
 <h2 id="指定查询我想要的"><a href="#指定查询我想要的" class="headerlink" title="[]指定查询我想要的"></a>[]指定查询我想要的</h2><div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>可以看见的时间有好几个但是我只想要一个怎么办，我们就可以用<code>[]</code>来指定了,这个是从1开始的不是0</p>
@@ -4086,6 +4100,10 @@
 <div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>我们也可以指定父目录比如<code>//div[3]/span[@property=&quot;v:initialReleaseDate&quot;]</code>我就不演示了</p>
 </div> 
 
+<div class="note red icon simple"><i class="note-icon fas fa-fan"></i><p>他还可以用多个<code>[]</code></p>
+</div> 
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210821183122580.png" alt="image-20210821183122580"></p>
 <h2 id="last-指定最后一个"><a href="#last-指定最后一个" class="headerlink" title="[last()]指定最后一个"></a>[last()]指定最后一个</h2><div class="note info simple"><p><code>[last()]</code>  指定最后一个，一个你查询的结果太多我就想要最后一个就可以用<code>last()</code></p>
 </div>
 
@@ -4096,10 +4114,36 @@
 <h2 id="position-lt-n-指定前面n个结果"><a href="#position-lt-n-指定前面n个结果" class="headerlink" title="[position()&lt;n]  指定前面n个结果"></a>[position()&lt;n]  指定前面<code>n</code>个结果</h2><div class="note info simple"><p>[position()&lt;n]  指定前面<code>n</code>个结果，比如<code>[position()&lt;4]</code>就是指定输出前面<code>3</code>个</p>
 </div>
 
+
+
 <p>比如下面我只想要前面三个结果就可以用[position()&lt;n]  指定前面<code>n</code>个结果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;div[@class&#x3D;&quot;tags-body&quot;]&#x2F;a</span><br></pre></td></tr></table></figure>
+
+
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210820160037782.png" alt="image-20210820160037782"></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;div[@class&#x3D;&quot;tags-body&quot;]&#x2F;a[position()&lt;4]</span><br></pre></td></tr></table></figure>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210820160130203.png" alt="image-20210820160130203"></p>
+<h2 id="和或者是或"><a href="#和或者是或" class="headerlink" title="|和或者是或"></a>|和或者是或</h2><div class="note info simple"><p>这个|就是和或者是或，比如<code>//a | //b</code>意思是如果他俩都有都匹配，如果只有一个他也会匹配那个有点</p>
+</div>
+
+<p>测试</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;div&#x2F;span[@property&#x3D;&quot;v:initialReleaseDate&quot;] </span><br></pre></td></tr></table></figure>
+<p>我没有添加<code>|</code>他会匹配3个</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210821181852860.png" alt="image-20210821181852860"></p>
+<div class="note info simple"><p>如果我还想在匹配一个那我们就可以添加<code>|</code>来实现了</p>
+</div>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;div&#x2F;span[@property&#x3D;&quot;v:initialReleaseDate&quot;] | &#x2F;&#x2F;div[@class&#x3D;&quot;tags-body&quot;]&#x2F;a</span><br></pre></td></tr></table></figure>
+<p>可以看见结果是11个</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210821182029158.png" alt="image-20210821182029158"></p>
+<div class="note info simple"><p>如果他其中一个是有问题的他也会匹配那个没有问题的这个就是或</p>
+</div>
+
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;div&#x2F;spa| &#x2F;&#x2F;div[@class&#x3D;&quot;tags-body&quot;]&#x2F;a</span><br></pre></td></tr></table></figure>
+<p>下面这个前面我故意写错可以看见他会匹配后面的</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/image-20210821182241449.png" alt="image-20210821182241449"></p>
 ]]></content>
       <categories>
         <category>Python爬虫</category>
