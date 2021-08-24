@@ -658,7 +658,7 @@
   </entry>
   <entry>
     <title>Windows系统提权</title>
-    <url>/2021/08/22/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</url>
+    <url>/2021/08/24/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</url>
     <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><div class="note info simple"><p>学习总结</p>
 </div>
 
@@ -13677,6 +13677,198 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
       </categories>
       <tags>
         <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>php代码审计</title>
+    <url>/2021/08/24/php/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="PHP配置文件"><a href="#PHP配置文件" class="headerlink" title="PHP配置文件"></a>PHP配置文件</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>他是一个全局的配置文件<br>在PHP启动的时候会被读取，他启动的时候只读取一次，如果要生效要重启PHP<br>文件配置在这个里面<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630143902607.png" alt="在这里插入图片描述"><br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630145127206.png" alt="在这里插入图片描述"></p>
+<p>汉化版出来的内容<br><a href="https://blog.csdn.net/qq_41860876/article/details/107042443">https://blog.csdn.net/qq_41860876/article/details/107042443</a></p>
+<h2 id="配置的基本语法"><a href="#配置的基本语法" class="headerlink" title="配置的基本语法"></a>配置的基本语法</h2><ul>
+<li><p>大小写敏感</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">directive&#x3D; value指令&#x3D;值)</span><br><span class="line">foo&#x3D;bar≠FOo&#x3D;bar</span><br></pre></td></tr></table></figure></li>
+<li><p>运算符</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">|,&amp;,~,!</span><br></pre></td></tr></table></figure></li>
+<li><p>空值的表达方式</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">foo&#x3D;   ;</span><br><span class="line">o&#x3D; none;</span><br><span class="line">o&#x3D; &quot;none&quot;;</span><br></pre></td></tr></table></figure>
+<h2 id="基本配置的安全模式"><a href="#基本配置的安全模式" class="headerlink" title="基本配置的安全模式"></a>基本配置的安全模式</h2></li>
+</ul>
+<h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><pre><code>`safe_mode = off`</code></pre>
+<p>安全模式，用来限制文档的存取、限制环境变量的存取，控制外部程序的执行。<br><code>本特性已在PHP5.4.0被移除</code><br>看一下他默认是关闭的状态<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630150141291.png" alt="在这里插入图片描述"></p>
+<h4 id="对比一下他开启和关闭的区别"><a href="#对比一下他开启和关闭的区别" class="headerlink" title="对比一下他开启和关闭的区别"></a>对比一下他开启和关闭的区别</h4><p><strong>我用的PHP的版本是5.2</strong></p>
+<ol>
+<li>关闭的情况下<br>php代码<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line">system($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+URL地址：<code>http://192.168.31.95/a.php?cmd=ipconfig</code><br>结果<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630150635360.png" alt="在这里插入图片描述"></li>
+<li>开启的情况下<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630150940504.png" alt="在这里插入图片描述"><br>然后在重启服务器<br>PHP代码<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line">system($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+URL：    <code>http://192.168.31.95/a.php?cmd=ipconfig</code><br>结果<br>可以看到没有任何结果<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630151150700.png" alt="在这里插入图片描述"></li>
+</ol>
+<h3 id="限制环境变量存取"><a href="#限制环境变量存取" class="headerlink" title="限制环境变量存取"></a>限制环境变量存取</h3><p><code>safe_mode allowed_env_vars = string</code><br>指定 PHP 程序可以改变的环境变量的前缀,当这个选项的值为空时，那么 php 可以<br>改变任何环境变量。如:safe_mode_allowed_env_vars = PHP_，当这个选项的值为空时，那么 php<br>可以改变任何环境变量</p>
+<h3 id="外部程序执行目录"><a href="#外部程序执行目录" class="headerlink" title="外部程序执行目录"></a>外部程序执行目录</h3><p><code>safe mode exec dir = “E:\Local Test\WWW&quot;</code></p>
+<h3 id="禁用函数"><a href="#禁用函数" class="headerlink" title="禁用函数"></a>禁用函数</h3><p><code>disable_functions</code><br>为了更安全的运行PHP，可以用此指令来禁止一些敏感函数的使用，当你想用本指<br>令禁止一些危险函数时，切忌把dl()函数也加到禁止列表，攻击者可以利用dl()函数加载<br>自定义的php扩展来突破disable_function。配置禁用函数时可以使用逗号分隔函数名<br><strong>默认情况下是什么都没有</strong><br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630152122299.png" alt="在这里插入图片描述"><br>咧<br>现在我禁用一个函数然后再重启服务器<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/2020063015242314.png" alt="在这里插入图片描述"><br>然后使用这个函数<br>PHP代码<br>    &lt;?php</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"> </span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line">system($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>结果</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200630152557557.png" alt="在这里插入图片描述"></p>
+<h3 id="com组件"><a href="#com组件" class="headerlink" title="com组件"></a>com组件</h3><p><code>com.allow dcom = false</code><br>PHP设置在安全模式下(safe_mode)，仍旧允许攻击者使用COM()函数来创建系统<br>组件来执行任意命令，我推荐关闭这个函数来防止出现此漏洞<br>使用COM()函数需要在PHP.ini中配置extension=php_com_dotnet.dll，如果PHP<br>VERSION&lt;5.4.5 则不需要</p>
+<h2 id="基本配置控制变量"><a href="#基本配置控制变量" class="headerlink" title="基本配置控制变量"></a>基本配置控制变量</h2><h3 id="全局变量注册开关"><a href="#全局变量注册开关" class="headerlink" title="全局变量注册开关"></a>全局变量注册开关</h3><p><code>register_globals = off</code><br>php.ini的register_globals选项的默认值预设为Off，在4.2版本之前是默认开启的，当 register globals 的设定为 On 时，程序可以接收来自服务器的各种环境变量，包括表单提交的变量，这是对服务器来讲是非常不安全的，<br>所以我们不能让它注册为全局变量。</p>
+<ul>
+<li><code>rr egister_globals=Off</code>时，服务器端获取数据的时候用$_GET[‘name’]来获取数据</li>
+<li><code>register_globals=On</code>时，服务端使用POST或者GET提交的变量，都将自动使用全使用局变量的值来接受值<h4 id="开启和关闭的比较"><a href="#开启和关闭的比较" class="headerlink" title="开启和关闭的比较"></a>开启和关闭的比较</h4>我用的PHP版本是5.2<ol>
+<li>关闭的状态<br>php代码</li>
+</ol>
+</li>
+</ul>
+<h3 id="魔术引号自动过滤"><a href="#魔术引号自动过滤" class="headerlink" title="魔术引号自动过滤"></a>魔术引号自动过滤</h3><p><code>magic_quotes_gpc= on</code>        <strong>本特性已在PHP5.4.0被移除</strong><br>magic_quotes_gpc = Off 在php.ini里是默认关闭的，如果它打开后将自动把用户提交对sql的查询语句进行转换，如果设置成ON的话，php会把所有的单引号（“”),双引号(“”) ，反斜杠（“\”)和空字符(NULL)加上反斜杠进行转义，它会影响 HTTP 请求的数据有(GET、POST、Cookies)，开启它会提高网站的安全性，当然，您也可以使用 addslashes 来转义提交的 HTTP 请求数据，或者用 stripslashes 来删除转义</p>
+<h2 id="基本配置，远程文件"><a href="#基本配置，远程文件" class="headerlink" title="基本配置，远程文件"></a>基本配置，远程文件</h2><h3 id="是否允许包含远程文件"><a href="#是否允许包含远程文件" class="headerlink" title="是否允许包含远程文件"></a>是否允许包含远程文件</h3><p><code>allow—uri include = off</code></p>
+<p>该配置_为on的情况下，可以直接包含远程文件，若包含的变通为司投的慵况下，可以直接控制変置来执行PHP代码</p>
+<h3 id="是否允许打开远程文件"><a href="#是否允许打开远程文件" class="headerlink" title="是否允许打开远程文件"></a>是否允许打开远程文件</h3><p><code> allow uri open = on</code></p>
+<p>允许文件通过调用 URL重写来打开和关闭写权限，默认的封装协议提<br>供的ftp和http协议来访问文件</p>
+<h2 id="基本配置，目录权限"><a href="#基本配置，目录权限" class="headerlink" title="基本配置，目录权限"></a>基本配置，目录权限</h2><h3 id="HTTP头部版本信息"><a href="#HTTP头部版本信息" class="headerlink" title="HTTP头部版本信息"></a>HTTP头部版本信息</h3><p><code>expose_php = off</code><br>防止了通过http头部泄露的php版本信息</p>
+<h3 id="文件上传临时目录"><a href="#文件上传临时目录" class="headerlink" title="文件上传临时目录"></a>文件上传临时目录</h3><p><code>upload_tmp_dir</code><br>上传文件临时保存的目录</p>
+<h3 id="用户可访问目录"><a href="#用户可访问目录" class="headerlink" title="用户可访问目录"></a>用户可访问目录</h3><p><code>open_basedir = E:\Local Test\WWW</code><br>该访问的文件，一定程度上限制了phpshell的危害，如果不设置的话，则采用系统的临时目录能够控制PHP脚本只能访问指定的目录，这样能够避免PHP脚本访问，不应</p>
+<h2 id="基本配置，报错休息"><a href="#基本配置，报错休息" class="headerlink" title="基本配置，报错休息"></a>基本配置，报错休息</h2><h3 id="内部错误选项"><a href="#内部错误选项" class="headerlink" title="内部错误选项"></a>内部错误选项</h3><p><code>display_errors = on</code><br>候通常把PHP错误显示打开</p>
+<h3 id="错误报告级别"><a href="#错误报告级别" class="headerlink" title="错误报告级别"></a>错误报告级别</h3><p><code>error_reporting = E_ALL &amp; ~ E NOTICE</code><br>表明显示PHP脚本的内部错误，网站发布后建议关闭PHP的错误回显，在调试的时这个设置的作用是将错误级别调到最高，显示所有问题，方便排错</p>
+<h1 id="代码审计SQL注入漏洞"><a href="#代码审计SQL注入漏洞" class="headerlink" title="代码审计SQL注入漏洞"></a>代码审计SQL注入漏洞</h1><h2 id="SQL注入的类型"><a href="#SQL注入的类型" class="headerlink" title="SQL注入的类型"></a>SQL注入的类型</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200704162459663.png" alt="在这里插入图片描述"><br>字符型注入是有单引号的<br>咧</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *  <span class="keyword">FROM</span> <span class="keyword">users</span> <span class="keyword">WHERE</span>  <span class="keyword">id</span>=<span class="string">&#x27;$id&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>数字型注入是没有单引号的<br>咧</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *  <span class="keyword">FROM</span> <span class="keyword">users</span> <span class="keyword">WHERE</span>  <span class="keyword">id</span>=$<span class="keyword">id</span>;</span><br></pre></td></tr></table></figure>
+<p>这个前面博客有写</p>
+<h2 id="预防"><a href="#预防" class="headerlink" title="预防"></a>预防</h2><p> addslashes()函数在每个双引号（”）前添加反斜杠<br> 代码</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"> <span class="meta">&lt;?php</span> </span><br><span class="line">$a=$_GET[<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line"><span class="keyword">echo</span>  addslashes($a);</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200709122952236.png" alt="在这里插入图片描述"></p>
+<h1 id="代码审计宽字节注入及二次注入"><a href="#代码审计宽字节注入及二次注入" class="headerlink" title="代码审计宽字节注入及二次注入"></a>代码审计宽字节注入及二次注入</h1><h2 id="宽字节注入"><a href="#宽字节注入" class="headerlink" title="宽字节注入"></a>宽字节注入</h2><ol>
+<li>字符、字符集与字符序<br>字符( character)是组成字符集( character set)的基本单位。对字符赋予一个数值( encoding)来确定这个字符在谤字符集中的位置。<br>字符序( collation)指同一字符集內字符间的比较规则。</li>
+<li>UTF8<br>由于AsC表示的字符只有128个,因此网络世界的规范是使用 UNICODE编码,但是用ASC表示的字符使用 UNICODE并不高效。因此出现了中间格式字符集,被称为通用转换格式,及UTF<br>(Universal Transformation Format)</li>
+<li>宽字节<br>GB2312、GBK、GB18030、BG5、 Shift jIs等这些都是常说的宽字节,实际上只有两字节。宽字节带来的安全问题主要是吃ASC字符(一字节)的现象</li>
+</ol>
+<h3 id="sql预防"><a href="#sql预防" class="headerlink" title="sql预防"></a>sql预防</h3><p>addslashes()函数在每个双引号（”）前添加反斜杠<br>代码</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"> <span class="meta">&lt;?php</span> </span><br><span class="line">$a=$_GET[<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line"><span class="keyword">echo</span>  addslashes($a);</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200709122952236.png" alt="在这里插入图片描述"></p>
+<h3 id="用addslashes-写一个预防sql查询"><a href="#用addslashes-写一个预防sql查询" class="headerlink" title="用addslashes()写一个预防sql查询"></a>用<code>addslashes()</code>写一个预防sql查询</h3><ol>
+<li><p>a.html文件</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta http-equiv=<span class="string">&quot;Content-Type&quot;</span> content=<span class="string">&quot;text/html; charset=utf-8&quot;</span> /&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>   &lt;title&gt;登陆&lt;/title&gt;</code></pre>
+   </head>
+   <body>
+       <form action="a.php" method="GET">
+       <input type="text" name="id"><br/>
+       <input type="submit" value="点击"/>
+   </form>
+   </body>
+   </html>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5. a.php文件,加上了&#96;addslashes()&#96;函数字符转义</span><br><span class="line"></span><br><span class="line">	&#96;&#96;&#96;php</span><br><span class="line">	&lt;?php</span><br><span class="line">		$id&#x3D;addslashes($_GET[&#39;id&#39;]);</span><br><span class="line">		$s &#x3D; &quot;192.168.0.105&quot;;</span><br><span class="line">		$u&#x3D; &quot;root&quot;;</span><br><span class="line">		$p &#x3D; &quot;&quot;;</span><br><span class="line">	</span><br><span class="line">		&#x2F;&#x2F; 创建连接</span><br><span class="line">		$conn &#x3D; mysqli_connect($s, $u, $p);	 </span><br><span class="line">		&#x2F;&#x2F; 检测连接</span><br><span class="line">		if (!$conn) &#123;</span><br><span class="line">		    die(&quot;连接失败： &quot; . mysqli_connect_error());</span><br><span class="line">		&#125;</span><br><span class="line">		echo &quot;数据库连接成功&quot;.&quot;&lt;br&#x2F;&gt;&quot;;</span><br><span class="line">		</span><br><span class="line">		mysqli_select_db($conn,&#39;dvwa&#39;);</span><br><span class="line">		$a&#x3D;&quot;SELECT last_name,password FROM users WHERE user_id&#x3D;&#39;$id&#39;&quot;;</span><br><span class="line">		$b&#x3D;mysqli_query($conn,$a);</span><br><span class="line">		while ($DuQu&#x3D;mysqli_fetch_assoc($b)) &#123;</span><br><span class="line">			echo &quot;\&quot;&quot;.$DuQu[&#39;last_name&#39;].&quot;\&quot;&quot;.$DuQu[&#39;password&#39;].&quot;&lt;br&#x2F;&gt;&quot;;</span><br><span class="line">		&#125;</span><br><span class="line">	</span><br><span class="line">		echo &quot;-------------------------------------------&quot;.&quot;&lt;br &#x2F;&gt;&quot;;</span><br><span class="line">		echo &quot;&lt;br&#x2F;&gt;&quot;.&quot;你的sql查询语句是&lt;br&#x2F;&gt;&quot;.$a.&quot;&lt;br&#x2F;&gt;&quot;;</span><br><span class="line">	</span><br><span class="line">		&#x2F;&#x2F;关闭数据库</span><br><span class="line">		mysqli_close($conn);</span><br><span class="line">	?&gt;</span><br></pre></td></tr></table></figure>
+ 演示一下、
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/202007100808548.png)
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200710080909920.png)
+ 现在我输入`'`会被转义了，无法sql注入
+
+
+</li>
+</ol>
+<pre><code><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">1 &#x27; union <span class="keyword">select</span> <span class="keyword">user</span>(),<span class="number">2</span> <span class="comment">-- </span></span><br></pre></td></tr></table></figure>
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200710081917161.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200710081938454.png)</code></pre>
+<h3 id="绕过addslashes-进行sql注入"><a href="#绕过addslashes-进行sql注入" class="headerlink" title="绕过addslashes()进行sql注入"></a>绕过addslashes()进行sql注入</h3><ol>
+<li>宽字节注入<br> 也就是逃避单引号注入<br> 输入<code>%df</code><br> 下面这个是个中文应为没有编码就乱码了<img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200710083414597.png" alt="在这里插入图片描述"></li>
+</ol>
+<h2 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h2><p>二次注入就是，叫注入的数据写入到数据库，然后通过写入到查询语句进行查询<br>编写一个简单的注册，和查询页面</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200710141642301.png" alt="在这里插入图片描述"><br>可以看见还是能过滤掉的<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200710141714349.png" alt="在这里插入图片描述"><br>但是写入数据库里面<code>\</code>就没有了<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200710141815196.png" alt="在这里插入图片描述"></p>
+<h1 id="代码审计之代码执行漏洞"><a href="#代码审计之代码执行漏洞" class="headerlink" title="代码审计之代码执行漏洞"></a>代码审计之代码执行漏洞</h1><p>就是通过php函数执行系统的命令，比如cmd，shell</p>
+<h2 id="挖机思路"><a href="#挖机思路" class="headerlink" title="挖机思路"></a>挖机思路</h2><ol>
+<li>用户输入的内容能够控制函数</li>
+<li>存在输入可执行代码的危险函数<h2 id="代码执行的类型"><a href="#代码执行的类型" class="headerlink" title="代码执行的类型"></a>代码执行的类型</h2></li>
+<li>代码的过滤的不严</li>
+<li>系统的漏洞造成命令注入</li>
+<li>调用第三方的组件存在执行代码执行漏洞</li>
+</ol>
+<h2 id="命令执行常见的函数"><a href="#命令执行常见的函数" class="headerlink" title="命令执行常见的函数"></a>命令执行常见的函数</h2><ol>
+<li>system()函数<br> 格式</li>
+</ol>
+<pre><code><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">system(要执行的命令,则外部命令执行后的返回状态将会被设置到此变量中)</span><br></pre></td></tr></table></figure>
+咧
+代码
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a=$_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line">system($a);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+URL`xxxx?cmd=ipconfig`
+结果
+
+
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200714213040878.png)
+URL`xxxx?cmd=echo 222&gt;a.txt`
+结果
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200714213451402.png)</code></pre>
+<ol start="2">
+<li><p>passthru()函数<br>  system() 函数还会尝试在每行输出完毕之后， 自动刷新 web 服务器的输出缓存而passthru()函数获取一个命令未经任何处理的<br>  咧<br>  咧<br>  代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line">passthru($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 结果<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200628191805860.png" alt="在这里插入图片描述"></p>
+</li>
+<li><p>exec()函数<br> 函数执行系统命令和<br> 函数是PHP中的内置函数，用于执行外部程序并返回输出的最后一行。如果没有正确运行命令，它也返回NULL<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> exec($a,$file);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;/br&gt;&quot;</span>;</span><br><span class="line">print_r($file);</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 结果<br> 他应为用的用的是echo输出的只能输出一行<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200628190556847.png" alt="在这里插入图片描述"></p>
+</li>
+<li><p>shell_exec()函数<br> shell_exec()函数是PHP中的一个内置函数，用于通过shell执行命令并以字符串的形式返回完整的输出。shell_exec是backtick操作符的别名，用于*nix。如果命令失败，则返回NULL，并且这些值对于错误检查不可靠。<br> 咧<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line"><span class="keyword">echo</span> shell_exec($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 结果<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200628193137790.png" alt="在这里插入图片描述"></p>
+</li>
+<li><p>``反引号<br> 与shell_exec是一样的，就是用的shell_exec函数<br> 咧<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line">$a = $_GET[<span class="string">&#x27;cmd&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre&gt;&quot;</span>;</span><br><span class="line"><span class="keyword">echo</span> `$a`;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;pre/&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 结果<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200628193442387.png" alt="在这里插入图片描述"></p>
+</li>
+</ol>
+<h2 id="过滤和预防函数"><a href="#过滤和预防函数" class="headerlink" title="过滤和预防函数"></a>过滤和预防函数</h2><h3 id="1-过滤"><a href="#1-过滤" class="headerlink" title="1. 过滤"></a>1. 过滤</h3><ol>
+<li><p>escapeshellcmd()函数<br> 这个函数是过滤整条命令的，他会叫符号前面加上^<br> 咧<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a=escapeshellcmd($_GET[<span class="string">&#x27;cmd&#x27;</span>]);</span><br><span class="line">system($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;br/&gt;&quot;</span>.$a;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 结果<br> 他不会叫222写入到a.txt文件里面<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200714215800959.png" alt="在这里插入图片描述"><br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200714215830301.png" alt="在这里插入图片描述"></p>
+</li>
+<li><p>escapeshellarg()函数<br> 将给字符串增加一个单引号并且能引用或者转码任何已经存在的单引号，这样以确保能够直接将一个字符串传入 shell 函数，并且还是确保安全的<br> 咧<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a=escapeshellarg($_GET[<span class="string">&#x27;cmd&#x27;</span>]);</span><br><span class="line">system($a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">&quot;&lt;br/&gt;&quot;</span>.$a;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 结果<br> <img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/2020071422024691.png" alt="在这里插入图片描述"></p>
+<pre><code> ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/wzass/zp/20200714215830301.png)</code></pre>
+</li>
+</ol>
+<h1 id="代码审计之XSS漏洞"><a href="#代码审计之XSS漏洞" class="headerlink" title="代码审计之XSS漏洞"></a>代码审计之XSS漏洞</h1><h2 id="XSS漏洞的危害"><a href="#XSS漏洞的危害" class="headerlink" title="XSS漏洞的危害"></a>XSS漏洞的危害</h2><ol>
+<li><p>盗取用户的cookie</p>
+</li>
+<li><p>跳转的钓鱼网站</p>
+</li>
+<li><p>蠕虫</p>
+</li>
+<li><p>查看浏览器信息</p>
+<h2 id="1-反射型XSS"><a href="#1-反射型XSS" class="headerlink" title="1.反射型XSS"></a>1.反射型XSS</h2><p>非持久性XSS，也叫反射性XSS，通过GET和POST方法,向股务器端输入数据。用<br>户输入的数据通常被放置在URL的 query string中,或者是form数据中,如果服务<br>器端对输入的数据不进行过滤,验证或编码,就直接将用户输入的信息直接星瑙给<br>客户,则可能会造成反射型XSS<br>反射型XS是比校昔遍的XSS,其危害程度遹常被认为较小,但是某些反射型<br>XSS造成的后果会很严重,如在输入框的name中输入metahttp<br>equI’ refresh’ content=”5’/&gt;,殷务器不加处理,将name的值直接送到浏<br>器,则浏岚器会每5秒自动新一次严重者会导致服务器崩溃</p>
+</li>
+<li><p>测试<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta http-equiv=<span class="string">&quot;Content-Type&quot;</span> content=<span class="string">&quot;text/html;charset=utf-8&quot;</span>&gt;</span><br><span class="line">	&lt;title&gt;测试XSS测试&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;请输入&lt;/h1&gt;</span><br><span class="line">&lt;form action=<span class="string">&quot;&quot;</span> method=<span class="string">&quot;post&quot;</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;fname&quot;</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">&quot;submit&quot;</span> value=<span class="string">&quot;提交&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($_POST[<span class="string">&#x27;fname&#x27;</span>]))&#123;</span><br><span class="line">	$a=$_POST[<span class="string">&#x27;fname&#x27;</span>];</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;&lt;br/&gt;&quot;</span>.<span class="string">&quot;你输入的是:&quot;</span>.$a;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/2020071715271654.png" alt="在这里插入图片描述"><br> 输入什么他就返回什么，没有进行过滤<br> 我们输入<code>&lt;script&gt;alert(&#39;a&#39;)&lt;/script&gt;</code><br> 可以看到在web页面上被执行了<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200717153209410.png" alt="在这里插入图片描述"></p>
+</li>
+<li><p>闭合xss<br> 代码</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span>  </span><br><span class="line">$a=$_GET[<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	<span class="keyword">var</span> xss=<span class="string">&#x27;&lt;?php echo $a; ?&gt;&#x27;</span>;</span><br><span class="line">	document.write(xss);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p> 代码介绍<br> <code>&lt;script&gt;</code> 标签用于定义客户端脚本，比如 JavaScript，上面就是js代码<br> <code>var</code>是定义一个xss变量，里面是’<?php echo $a; ?>‘<br> <code>write()</code> 方法可向文档写入 HTML 表达式或 JavaScript 代码，上面的就是叫输出出来<br> 上面这个其实存在xss漏洞的<br> URL</p>
+</li>
+</ol>
+<pre><code><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">http:<span class="comment">//127.0.0.1/a.php?a=123&#x27;;&lt;/script&gt;&lt;script&gt;alert(&#x27;a&#x27;)&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+URL介绍
+`&lt;/script&gt;`s使用来闭合前面的
+`&lt;script&gt;alert(&#39;a&#39;)&lt;/script&gt;`就可以执行了![在这里插入图片描述](https://img-blog.csdnimg.cn/20200717160132832.png)</code></pre>
+<h2 id="存储型XSS"><a href="#存储型XSS" class="headerlink" title="存储型XSS"></a>存储型XSS</h2><p>持久型,也叫存储型XSS。通常是因为服务器端将用户输入的恶意脚本没有通过<br>验证就直接存储在数据库,并且毎次通过调用数据库的方式,将数据呈现在浏览器<br>上。则该XSS跨站脚本攻击将一直存在。若其他用户访问该页面,则恶意脚本就会<br>被触发,用于盗取其他用户的私人信息。</p>
+<ol>
+<li><p>测试<br> 代码<br> 写入数据库<br> 文件<code>a.php</code></p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta http-equiv=<span class="string">&quot;Content-Type&quot;</span> content=<span class="string">&quot;text/html; charset=utf-8&quot;</span> /&gt;</span><br><span class="line">	&lt;title&gt;登陆&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;form action=<span class="string">&quot;&quot;</span> method=<span class="string">&quot;post&quot;</span>&gt;</span><br><span class="line">		请输入ID:&lt;input type=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;id&quot;</span>&gt;&lt;br/&gt;</span><br><span class="line">		要保存的内容:&lt;input type=<span class="string">&quot;text&quot;</span> name=<span class="string">&quot;user&quot;</span>&gt;&lt;br/&gt;</span><br><span class="line">		&lt;input type=<span class="string">&quot;submit&quot;</span> value=<span class="string">&quot;点击&quot;</span>/&gt;</span><br><span class="line">	&lt;/form&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">if</span>(<span class="keyword">isset</span>($_POST[<span class="string">&#x27;id&#x27;</span>])&amp;&amp;<span class="keyword">isset</span>($_POST[<span class="string">&#x27;user&#x27;</span>]))&#123;</span><br><span class="line">	$id=$_POST[<span class="string">&#x27;id&#x27;</span>];</span><br><span class="line">	$user=$_POST[<span class="string">&#x27;user&#x27;</span>];</span><br><span class="line">	$s = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">	$u= <span class="string">&quot;root&quot;</span>;</span><br><span class="line">	$p = <span class="string">&quot;123456&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 创建连接</span></span><br><span class="line">	$conn = mysqli_connect($s, $u, $p);	 </span><br><span class="line">	<span class="comment">// 检测连接</span></span><br><span class="line">	<span class="keyword">if</span> (!$conn) &#123;</span><br><span class="line">	    <span class="keyword">die</span>(<span class="string">&quot;连接失败： &quot;</span> . mysqli_connect_error());</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	mysqli_select_db($conn,<span class="string">&#x27;xss&#x27;</span>);</span><br><span class="line"></span><br><span class="line">	$a=<span class="string">&quot;INSERT INTO user VALUES ($id,$user)&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span>(mysqli_query($conn,$a))&#123;</span><br><span class="line">		<span class="keyword">echo</span> <span class="string">&quot;创建成功&quot;</span>.<span class="string">&#x27;&lt;br/&gt;&#x27;</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">echo</span> <span class="string">&quot;创建失败&quot;</span>.<span class="string">&quot;&lt;br/&gt;&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	mysqli_close($conn);</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;关闭成功&quot;</span>;</span><br><span class="line"></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p> 存储的内容如下<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200717164958819.png" alt="在这里插入图片描述"><br>查看一下数据库已经存入到数据库里面了<br><img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200717165045402.png" alt="在这里插入图片描述"></p>
+</li>
+<li><p>输出数据库</p>
+ <figure class="highlight php"><table><tr><td class="code"><pre><span class="line">	<span class="meta">&lt;?php</span></span><br><span class="line">	$s = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">	$u= <span class="string">&quot;root&quot;</span>;</span><br><span class="line">	$p = <span class="string">&quot;123456&quot;</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 创建连接</span></span><br><span class="line">	$conn = mysqli_connect($s, $u, $p);	 </span><br><span class="line">	<span class="comment">// 检测连接</span></span><br><span class="line">	<span class="keyword">if</span> (!$conn) &#123;</span><br><span class="line">	    <span class="keyword">die</span>(<span class="string">&quot;连接失败： &quot;</span> . mysqli_connect_error());</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;连接成功&quot;</span>.<span class="string">&quot;&lt;br/&gt;&quot;</span>;</span><br><span class="line">	</span><br><span class="line">	mysqli_select_db($conn,<span class="string">&#x27;xss&#x27;</span>);</span><br><span class="line">	$a=<span class="string">&quot;SELECT * FROM user&quot;</span>;</span><br><span class="line">	$b=mysqli_query($conn,$a);</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;当前数据库有&quot;</span>.<span class="string">&quot;&lt;br/&gt;&quot;</span>;</span><br><span class="line">	<span class="keyword">while</span> ($DuQu=mysqli_fetch_assoc($b)) &#123;</span><br><span class="line">		<span class="keyword">echo</span> <span class="string">&quot;\&quot;&quot;</span>.$DuQu[<span class="string">&#x27;id&#x27;</span>].<span class="string">&quot;\&quot;&quot;</span>.$DuQu[<span class="string">&#x27;user&#x27;</span>].<span class="string">&quot;&lt;br/&gt;&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	mysqli_close($conn);</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">&quot;关闭成功&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 可以看到直接就执行js代码了<br> <img src= "/img/loading2.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200717165755695.png" alt="在这里插入图片描述"></p>
+</li>
+</ol>
+<h2 id="MOD型XSS"><a href="#MOD型XSS" class="headerlink" title="MOD型XSS"></a>MOD型XSS</h2><p>DOM,全称 Document Object Model,是一个平台和语言都中立的<br>接口,可以使程序和脚本能够动态访问和更新文档的内容、结构以及<br>样式。<br>DOM型ⅩSS其实是一种特殊类型的SS,它是基于DOM文档对象模<br>型的一种漏洞。</p>
+<h1 id="代码审计之CSRF漏洞"><a href="#代码审计之CSRF漏洞" class="headerlink" title="代码审计之CSRF漏洞"></a>代码审计之CSRF漏洞</h1><h2 id="CSRF漏洞介绍"><a href="#CSRF漏洞介绍" class="headerlink" title="CSRF漏洞介绍"></a>CSRF漏洞介绍</h2><p>CSRF( Cross- site request forgery)跨站请求伪造,也有人写出XSRF。黑客伪<br>造用户木匾用户的HTTP请求。然后将这个HTTP请求发送给存在CSRF的网站,有<br>CSRF的网站执行了伪造的HTTP请求,就引发了跨站请求伪造</p>
+<h2 id="挖机思路-1"><a href="#挖机思路-1" class="headerlink" title="挖机思路"></a>挖机思路</h2><p>后台功能模块:管理后台、会员中心、添加用户等<br>被引用的核心文件里面有没有验证 token和 referer相关的代码<br>没带 token:可以直接请求这个页面<br>没带 Referer:返回相同的数据</p>
+<h1 id="学习中"><a href="#学习中" class="headerlink" title="学习中"></a>学习中</h1>]]></content>
+      <categories>
+        <category>代码审计</category>
+      </categories>
+      <tags>
+        <tag>代码审计</tag>
       </tags>
   </entry>
 </search>
