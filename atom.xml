@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-08-21T10:55:54.963Z</updated>
+  <updated>2021-08-24T11:00:49.631Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>解析库XPath的使用</title>
+    <title>lxml解析库用XPath语言提取数据</title>
+    <link href="https://www.zssnp.top/2021/08/24/lxml/"/>
+    <id>https://www.zssnp.top/2021/08/24/lxml/</id>
+    <published>2021-08-24T11:10:30.000Z</published>
+    <updated>2021-08-24T11:00:49.631Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows系统提权</title>
+    <link href="https://www.zssnp.top/2021/08/22/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/"/>
+    <id>https://www.zssnp.top/2021/08/22/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</id>
+    <published>2021-08-22T02:02:25.000Z</published>
+    <updated>2021-08-22T10:00:59.087Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="提权" scheme="https://www.zssnp.top/categories/%E6%8F%90%E6%9D%83/"/>
+    
+    
+    <category term="提权" scheme="https://www.zssnp.top/tags/%E6%8F%90%E6%9D%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解析库XPath的语法</title>
     <link href="https://www.zssnp.top/2021/08/20/XPath/"/>
     <id>https://www.zssnp.top/2021/08/20/XPath/</id>
     <published>2021-08-20T07:10:30.000Z</published>
-    <updated>2021-08-21T10:55:54.963Z</updated>
+    <updated>2021-08-22T09:03:13.358Z</updated>
     
     
       
@@ -479,58 +529,6 @@
     
     
     <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IAPP裕语言手册</title>
-    <link href="https://www.zssnp.top/2021/02/28/IAPP/"/>
-    <id>https://www.zssnp.top/2021/02/28/IAPP/</id>
-    <published>2021-02-28T01:21:30.000Z</published>
-    <updated>2021-05-01T23:57:08.327Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="编程" scheme="https://www.zssnp.top/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="裕语言" scheme="https://www.zssnp.top/categories/%E7%BC%96%E7%A8%8B/%E8%A3%95%E8%AF%AD%E8%A8%80/"/>
-    
-    
-    <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>天选姬电脑常见问题和linux的问题解决</title>
-    <link href="https://www.zssnp.top/2021/02/26/tianxuan/"/>
-    <id>https://www.zssnp.top/2021/02/26/tianxuan/</id>
-    <published>2021-02-26T08:51:30.000Z</published>
-    <updated>2021-05-01T23:57:08.331Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
