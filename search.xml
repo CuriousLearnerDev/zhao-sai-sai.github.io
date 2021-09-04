@@ -13975,22 +13975,86 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
   </entry>
   <entry>
     <title>screenfetch工具卡住问题解决</title>
-    <url>/2021/09/01/screenfetch/</url>
-    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>我运行这个命令的时候他一直卡在这个地方等几分钟才运行</p>
-<h1 id="解决问题的思路，"><a href="#解决问题的思路，" class="headerlink" title="解决问题的思路，"></a>解决问题的思路，</h1><p>重新安装不行，还是老样子</p>
-<p>从根部找问题肯定先找到他的启动路径用<code>find / -name &quot;*screenfetch*&quot;</code>全盘搜索他的文件</p>
-<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210901112558281.png" alt="image-20210901112558281"></p>
-<p>发现他是文件内容，他有60000多行代码我要是一个一个分析那不累死</p>
-<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210901112628954.png" alt="image-20210901112628954"></p>
-<p>能看出来他是shell代码</p>
-<p>可以用<code>-x</code>来调试看看</p>
+    <url>/2021/09/04/screenfetch/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><div class="note warning simple"><p>问题解决，</p>
+</div>
+
+
+
+<div class="note warning simple"><p>screenfetch这个是一个显示硬件配置的一个算是一个工具或者说是一个脚本的</p>
+<p>作者发布的开源地址<a href="https://github.com/KittyKatt/screenFetch">https://github.com/KittyKatt/screenFetch</a></p>
+</div>
+
+
+
+<p><strong>我运行这个命令的时候他一直卡在这个地方等几分钟才运行</strong></p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210901111811515.png" alt="image-20210901111811515"></p>
+<div class="note info simple"><p>重新安装不行，还是老样子</p>
+<p>我只能从根部找问题肯定先找到他的启动路径用<code>find / -name &quot;*screenfetch*&quot;</code>全盘搜索他的文件</p>
+</div>
+
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210901112558281.png" alt="image-20210901112558281"></p>
+<div class="note info simple"><p>查看他的源代码，发现他是文件内容，他有60000多行代码我要是一个一个分析那不累死</p>
+</div>
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210901112628954.png" alt="image-20210901112628954"></p>
+<div class="note info simple"><p>能看出来他是shell代码</p>
+<p>可以用<code>-x</code>来调试看看</p>
+</div>
+
+
+
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bash -x /usr/bin/screenfetch </span><br></pre></td></tr></table></figure>
+<p>发现他卡在</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904150149693.png" alt="image-20210904150149693"></p>
+<div class="note info simple"><p> Snap是一个仓库</p>
+<p>我单独拿出来运行一下</p>
+<p><code>snap list </code>命令查询已经安装了的软件</p>
+</div>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">snap list</span><br></pre></td></tr></table></figure>
+<div class="note info simple"><p>他果然卡这个地方那，那应该就是这个问题导致的加载不出</p>
+</div>
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904150325265.png" alt="image-20210904150325265"></p>
+<p>等了一会他报这个错误</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904150531235.png" alt="image-20210904150531235"></p>
+<p>然后我百度了一下，可以看见他说重启一下<code>snap</code>服务就可以了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl restart snapd.service</span><br></pre></td></tr></table></figure>
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904150611257.png" alt="image-20210904150611257"></p>
+<div class="note info simple"><p>启动是没有卡，但是发现他有一个报错，说是在<code>/usr/bin/screenfetch</code>里面的<code>1851</code>行</p>
+</div>
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904183005562.png" alt="image-20210904183005562"></p>
+<p>他说是在下面这个文件的地方</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904183140883.png" alt="image-20210904183140883"></p>
+<p>百度根本不行，我决定自己分析一下</p>
+<p><code>free</code>命令是查看内存的详细用的，没有看见下面这个的确是没有内存信息显示的</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904184517748.png" alt="image-20210904184517748"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904184605813.png" alt="image-20210904184605813"></p>
+<div class="note info simple"><p>awk是分享处理过滤结果用的，:是指定切分的地方，NR=2是在第二行，输出第二个</p>
+<p>我发现这个命令没有毛病啊怎么会错那，怎么会不显示那</p>
+</div>
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904184824100.png" alt="image-20210904184824100"></p>
+<div class="note info simple"><p>我发现这个<code>：</code>和上面这个<code>:</code>有不同一个是中文一个是英文</p>
+</div>
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904185009345.png" alt="image-20210904185009345"></p>
+<p>我把他改成中文的</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904185126971.png" alt="image-20210904185126971"></p>
+<p><strong>问题完美解决</strong></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210904185247670.png" alt="image-20210904185247670"></p>
 ]]></content>
       <categories>
-        <category>Python爬虫</category>
+        <category>问题的解决</category>
       </categories>
       <tags>
-        <tag>Python爬虫</tag>
+        <tag>问题的解决</tag>
       </tags>
   </entry>
 </search>
