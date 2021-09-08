@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-09-07T09:20:34.321Z</updated>
+  <updated>2021-09-08T13:44:58.398Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>screenfetch工具卡住问题解决</title>
-    <link href="https://www.zssnp.top/2021/09/07/screenfetch/"/>
-    <id>https://www.zssnp.top/2021/09/07/screenfetch/</id>
-    <published>2021-09-07T09:10:30.000Z</published>
-    <updated>2021-09-07T09:20:34.321Z</updated>
+    <title>screenfetch脚本工具卡住问题解决</title>
+    <link href="https://www.zssnp.top/2021/09/08/screenfetch/"/>
+    <id>https://www.zssnp.top/2021/09/08/screenfetch/</id>
+    <published>2021-09-08T13:50:30.000Z</published>
+    <updated>2021-09-08T13:44:58.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>双系统linux启动出现error:unknown filesystem</title>
+    <link href="https://www.zssnp.top/2021/09/08/linuxyindao/"/>
+    <id>https://www.zssnp.top/2021/09/08/linuxyindao/</id>
+    <published>2021-09-08T01:10:30.000Z</published>
+    <updated>2021-09-08T13:44:59.238Z</updated>
     
     
       
@@ -71,7 +96,7 @@
     <link href="https://www.zssnp.top/2021/08/26/wyy/"/>
     <id>https://www.zssnp.top/2021/08/26/wyy/</id>
     <published>2021-08-26T07:10:30.000Z</published>
-    <updated>2021-08-28T10:56:31.380Z</updated>
+    <updated>2021-08-29T01:07:35.848Z</updated>
     
     
       
@@ -479,31 +504,6 @@
     
     
     <category term="安装" scheme="https://www.zssnp.top/tags/%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>双系统linux启动出现error:unknown filesystem</title>
-    <link href="https://www.zssnp.top/2021/03/15/linuxyindao/"/>
-    <id>https://www.zssnp.top/2021/03/15/linuxyindao/</id>
-    <published>2021-03-15T01:42:30.000Z</published>
-    <updated>2021-05-01T23:57:08.331Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-    
-    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
