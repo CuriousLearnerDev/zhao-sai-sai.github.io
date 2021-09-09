@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-09-08T13:44:58.398Z</updated>
+  <updated>2021-09-09T11:00:10.818Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>钉钉脚本编写和和思路</title>
+    <link href="https://www.zssnp.top/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/"/>
+    <id>https://www.zssnp.top/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/</id>
+    <published>2021-09-09T11:10:30.000Z</published>
+    <updated>2021-09-09T11:00:10.818Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="脚本编写" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    
+    
+    <category term="钉钉" scheme="https://www.zssnp.top/tags/%E9%92%89%E9%92%89/"/>
+    
+  </entry>
   
   <entry>
     <title>screenfetch脚本工具卡住问题解决</title>
@@ -504,31 +529,6 @@
     
     
     <category term="安装" scheme="https://www.zssnp.top/tags/%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日志文件分析</title>
-    <link href="https://www.zssnp.top/2021/03/08/linuxrz/"/>
-    <id>https://www.zssnp.top/2021/03/08/linuxrz/</id>
-    <published>2021-03-08T03:24:30.000Z</published>
-    <updated>2021-05-01T23:57:08.331Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://www.zssnp.top/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://www.zssnp.top/tags/linux/"/>
     
   </entry>
   
