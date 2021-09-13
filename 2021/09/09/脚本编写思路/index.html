@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909185727600.png">
 <meta property="article:published_time" content="2021-09-09T11:10:30.000Z">
-<meta property="article:modified_time" content="2021-09-13T02:49:34.247Z">
+<meta property="article:modified_time" content="2021-09-13T03:53:26.802Z">
 <meta property="article:author" content="W啥都学">
 <meta property="article:tag" content="钉钉">
 <meta name="twitter:card" content="summary">
@@ -20,7 +20,7 @@ gtag('config', 'G-K6EG4JSPQM');
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: undefined,
-  noticeOutdate: undefined,
+  noticeOutdate: {"limitDay":60,"position":"top","messagePrev":"距离上次更新已经过了","messageNext":"天，文中部分内容可能已经过时，如有疑问，请在下方留言"},
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
   copy: {
     success: '复制成功',
@@ -61,7 +61,7 @@ gtag('config', 'G-K6EG4JSPQM');
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-09-13 10:49:34'
+  postUpdate: '2021-09-13 11:53:26'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -132,8 +132,12 @@ gtag('config', 'G-K6EG4JSPQM');
       }
       const t = saveToLocal.get('theme')
     
-          if (t === 'dark') activateDarkMode()
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
           else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
@@ -144,28 +148,28 @@ gtag('config', 'G-K6EG4JSPQM');
         }
       }
     })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wzass/CDN/zijd.css"><link rel="stylesheet" href="/css/zjjide.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wzass/CDN/macblack.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="ZSSのW啥都学" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/b7003af33a87e950d47cbdc612385343fbf2b435.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">133</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">56</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/7x/"><i class="fa-fw fas fa-heart"></i><span> 七夕</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909185727600.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZSSのW啥都学</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/7x/"><i class="fa-fw fas fa-heart"></i><span> 七夕</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">钉钉脚本编写和和思路</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-09T11:10:30.000Z" title="发表于 2021-09-09 19:10:30">2021-09-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-13T02:49:34.247Z" title="更新于 2021-09-13 10:49:34">2021-09-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/">脚本编写</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><script src="/assets/js/DPlayer.min.js"> </script><div class="note danger simple"><h1 id="只提供学习研究使用，请勿非法使用"><a href="#只提供学习研究使用，请勿非法使用" class="headerlink" title="只提供学习研究使用，请勿非法使用"></a>只提供学习研究使用，请勿非法使用</h1></div>
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/wzass/zp/b7003af33a87e950d47cbdc612385343fbf2b435.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">133</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">56</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/7x/"><i class="fa-fw fas fa-heart"></i><span> 七夕</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909185727600.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZSSのW啥都学</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/7x/"><i class="fa-fw fas fa-heart"></i><span> 七夕</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">钉钉脚本编写和和思路</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-09T11:10:30.000Z" title="发表于 2021-09-09 19:10:30">2021-09-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-13T03:53:26.802Z" title="更新于 2021-09-13 11:53:26">2021-09-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/">脚本编写</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><script src="/assets/js/DPlayer.min.js"> </script><div class="note blue no-icon flat"><h1 id="只提供学习研究使用，请勿非法使用"><a href="#只提供学习研究使用，请勿非法使用" class="headerlink" title="只提供学习研究使用，请勿非法使用"></a>只提供学习研究使用，请勿非法使用</h1></div>
 
-<div class="note info simple"><p>应为我河南这个疫情比较严重，闲着没有事情在家上网课，就看见这个赞挺好玩</p>
+<div class="note blue no-icon flat"><p>应为我河南这个疫情比较严重，闲着没有事情在家上网课，就看见这个赞挺好玩</p>
 </div>
 
-<div class="note info simple"><p>昨天我在老师钉钉直播叫赞刷到了20多亿，应为int类型的最大值<code>2147483647</code>所以赞最多只能刷到<code>2147483647</code>到后面赞就不显示了</p>
+<div class="note blue no-icon flat"><p>昨天我在老师钉钉直播叫赞刷到了20多亿，应为int类型的最大值<code>2147483647</code>所以赞最多只能刷到<code>2147483647</code>到后面赞就不显示了</p>
 <p>下面我就分享一下我的思路</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/a.png" alt="a"></p>
 </div>
 
 
 
-<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><div class="note info simple"><p>首先得判断他是怎么进行点赞增加的，可以抓包进行测试看看</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><div class="note blue no-icon flat"><p>首先得判断他是怎么进行点赞增加的，可以抓包进行测试看看</p>
 </div>
 
-<div class="note info simple"><p>用wireshark进行抓包，发是被加了密的，看不出来是什么东西</p>
+<div class="note blue no-icon flat"><p>用wireshark进行抓包，发是被加了密的，看不出来是什么东西</p>
 </div>
 
 
 
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909150805431.png" alt="image-20210909150805431"></p>
-<div class="note info simple"><p>用burp suite工具截断代理，通过伪造证书进行https解密<br>原理，证书内容都是一样的，就是公钥信息是不同的，请求的内容截断代理会吧自己的私钥，解密会话密钥，会话密钥在解密出成明文数据内容</p>
+<div class="note blue no-icon flat"><p>用burp suite工具截断代理，通过伪造证书进行https解密<br>原理，证书内容都是一样的，就是公钥信息是不同的，请求的内容截断代理会吧自己的私钥，解密会话密钥，会话密钥在解密出成明文数据内容</p>
 </div>
 
 <p>生成证书</p>
@@ -180,7 +184,7 @@ gtag('config', 'G-K6EG4JSPQM');
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909152421031.png" alt="image-20210909152421031"></p>
 <p>发现登录的时候他报错了，他登录的时候可能不是用的http/https协议没有办法啊</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909155537305.png" alt="image-20210909155537305"></p>
-<div class="note info simple"><p>他这个钉钉有好几种代理，但是我看见了浏览器代理，应为浏览器都是走的http/https协议的</p>
+<div class="note blue no-icon flat"><p>他这个钉钉有好几种代理，但是我看见了浏览器代理，应为浏览器都是走的http/https协议的</p>
 </div>
 
 <p>但是他这个代理不能输出地址端口</p>
@@ -191,12 +195,12 @@ gtag('config', 'G-K6EG4JSPQM');
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909160229653.png" alt="image-20210909160229653"></p>
 <p>但是登录还登录不上去</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909162103845.png" alt="image-20210909162103845"></p>
-<div class="note info simple"><p>我用wireshark查看他是什么协议进行请求的，系统还是用的burp代理，wireshark监听网卡的全部流量,,</p>
+<div class="note blue no-icon flat"><p>我用wireshark查看他是什么协议进行请求的，系统还是用的burp代理，wireshark监听网卡的全部流量,,</p>
 </div>
 
 <p>登录应该是用的这个，burp应该是抓取不了的</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909163304441.png" alt="image-20210909163304441"></p>
-<div class="note info simple"><p>代理手机进行抓包用burp看看能不能抓到</p>
+<div class="note blue no-icon flat"><p>代理手机进行抓包用burp看看能不能抓到</p>
 <p>先叫burp的证书安装上</p>
 </div>
 
@@ -212,7 +216,7 @@ gtag('config', 'G-K6EG4JSPQM');
 <p>还是抓不到</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909170515518.png" alt="image-20210909170515518"></p>
 <p>burp我是真的想不到有什么方法可以获取数据包了</p>
-<div class="note info simple"><p>Fiddler数据包抓取，也算是一个web代理工具，可以进行http/https</p>
+<div class="note blue no-icon flat"><p>Fiddler数据包抓取，也算是一个web代理工具，可以进行http/https</p>
 <p>也可以解密HTTPS的，安装自己的证书</p>
 </div>
 
@@ -222,7 +226,7 @@ gtag('config', 'G-K6EG4JSPQM');
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909171828752.png" alt="image-20210909171828752"></p>
 <p>可以正常登录</p>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909171943369.png" alt="image-20210909171943369"></p>
-<div class="note info simple"><p> 进入直播间</p>
+<div class="note blue no-icon flat"><p>进入直播间</p>
 <p>发现时不时的都会发出这个请求</p>
 </div>
 
@@ -248,13 +252,13 @@ gtag('config', 'G-K6EG4JSPQM');
 <p>自己写了一个多线程get请求简单的脚本，下面这个脚本大概1秒就千万赞</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">thread_func</span>():</span>  </span><br><span class="line">    r = requests.get(<span class="string">&#x27;https://lv.dingtalk.com/interaction/createLike?uuid=9659bdb5-69ec-46e3-9a35-f9beb531623d&amp;count=99999&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">threads = []</span><br><span class="line">a=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">1000</span>): <span class="comment"># 线程 </span></span><br><span class="line">    a = a+<span class="number">1</span></span><br><span class="line">    t = threading.Thread(target=thread_func)</span><br><span class="line">    threads.append(t)</span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> threads:  </span><br><span class="line">    t.start()</span><br></pre></td></tr></table></figure>
 <p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20210909185437891.png" alt="image-20210909185437891"></p>
-<h1 id="最笨的方法"><a href="#最笨的方法" class="headerlink" title="最笨的方法"></a>最笨的方法</h1><div class="note info simple"><p>这个方法只能刷大概几万，就是用<code>Python</code>的<code>pyautogui</code>库进行模拟鼠标点击，而且还不能多线程进行点击</p>
+<h1 id="最笨的方法"><a href="#最笨的方法" class="headerlink" title="最笨的方法"></a>最笨的方法</h1><div class="note blue no-icon flat"><p>这个方法只能刷大概几万，就是用<code>Python</code>的<code>pyautogui</code>库进行模拟鼠标点击，而且还不能多线程进行点击</p>
 </div>
 
-<div class="note info simple"><p><code>pyautogui</code>这个库大部分都是写一些自动化的脚步，比如游戏辅助，自动化刷办公，只要是鼠标键盘操作的都可以实现</p>
+<div class="note blue no-icon flat"><p><code>pyautogui</code>这个库大部分都是写一些自动化的脚步，比如游戏辅助，自动化刷办公，只要是鼠标键盘操作的都可以实现</p>
 </div>
 
-<div class="note info simple"><p>他的基本的使用</p>
+<div class="note blue no-icon flat"><p>他的基本的使用</p>
 </div>
 
 <h2 id="屏幕操作"><a href="#屏幕操作" class="headerlink" title="屏幕操作"></a>屏幕操作</h2><h3 id="获得屏幕分辨率"><a href="#获得屏幕分辨率" class="headerlink" title="获得屏幕分辨率"></a>获得屏幕分辨率</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(pyautogui.size())</span><br></pre></td></tr></table></figure>

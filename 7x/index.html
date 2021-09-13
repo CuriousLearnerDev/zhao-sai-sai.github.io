@@ -19,7 +19,7 @@ gtag('config', 'G-K6EG4JSPQM');
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: undefined,
-  noticeOutdate: undefined,
+  noticeOutdate: {"limitDay":60,"position":"top","messagePrev":"距离上次更新已经过了","messageNext":"天，文中部分内容可能已经过时，如有疑问，请在下方留言"},
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
   copy: {
     success: '复制成功',
@@ -131,8 +131,12 @@ gtag('config', 'G-K6EG4JSPQM');
       }
       const t = saveToLocal.get('theme')
     
-          if (t === 'dark') activateDarkMode()
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
           else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
