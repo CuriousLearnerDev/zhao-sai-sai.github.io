@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-09-15T11:47:04.865Z</updated>
+  <updated>2021-10-28T05:18:33.388Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>树莓派Samba文件共享</title>
+    <link href="https://www.zssnp.top/2021/10/17/Samba/"/>
+    <id>https://www.zssnp.top/2021/10/17/Samba/</id>
+    <published>2021-10-17T03:19:30.000Z</published>
+    <updated>2021-10-28T05:18:33.388Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="搭建" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="其他" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="树莓派" scheme="https://www.zssnp.top/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>钉钉脚本编写和和思路</title>
@@ -71,7 +98,7 @@
     <link href="https://www.zssnp.top/2021/09/08/linuxyindao/"/>
     <id>https://www.zssnp.top/2021/09/08/linuxyindao/</id>
     <published>2021-09-08T01:10:30.000Z</published>
-    <updated>2021-09-08T13:44:59.238Z</updated>
+    <updated>2021-10-15T06:13:16.713Z</updated>
     
     
       
@@ -96,7 +123,7 @@
     <link href="https://www.zssnp.top/2021/08/28/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/"/>
     <id>https://www.zssnp.top/2021/08/28/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</id>
     <published>2021-08-28T11:02:25.000Z</published>
-    <updated>2021-08-28T10:56:55.377Z</updated>
+    <updated>2021-10-15T06:13:21.257Z</updated>
     
     
       
@@ -148,7 +175,7 @@
     <link href="https://www.zssnp.top/2021/08/24/lxml/"/>
     <id>https://www.zssnp.top/2021/08/24/lxml/</id>
     <published>2021-08-24T11:10:30.000Z</published>
-    <updated>2021-08-25T04:12:38.481Z</updated>
+    <updated>2021-10-15T06:13:16.713Z</updated>
     
     
       
@@ -173,7 +200,7 @@
     <link href="https://www.zssnp.top/2021/08/20/XPath/"/>
     <id>https://www.zssnp.top/2021/08/20/XPath/</id>
     <published>2021-08-20T07:10:30.000Z</published>
-    <updated>2021-08-25T04:12:52.549Z</updated>
+    <updated>2021-10-15T06:13:16.713Z</updated>
     
     
       
@@ -460,7 +487,7 @@
     <link href="https://www.zssnp.top/2021/03/23/pythonGUI/"/>
     <id>https://www.zssnp.top/2021/03/23/pythonGUI/</id>
     <published>2021-03-23T10:19:30.000Z</published>
-    <updated>2021-06-03T10:52:53.074Z</updated>
+    <updated>2021-10-15T06:13:16.713Z</updated>
     
     
       
@@ -501,31 +528,6 @@
     
     
     <category term="安装" scheme="https://www.zssnp.top/categories/%E5%AE%89%E8%A3%85/"/>
-    
-    
-    <category term="安装" scheme="https://www.zssnp.top/tags/%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Archlinux安装和U盘安装和配置</title>
-    <link href="https://www.zssnp.top/2021/03/16/archlinux/"/>
-    <id>https://www.zssnp.top/2021/03/16/archlinux/</id>
-    <published>2021-03-16T07:19:21.000Z</published>
-    <updated>2021-08-09T03:12:48.868Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://www.zssnp.top/categories/linux/"/>
     
     
     <category term="安装" scheme="https://www.zssnp.top/tags/%E5%AE%89%E8%A3%85/"/>

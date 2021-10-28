@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.zssnp.top/2021/10/17/Samba/</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/08/28/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/02/12/Robots/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/03/04/Spooftooph/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/08/20/XPath/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/03/08/linuxrz/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/09/08/linuxyindao/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/02/26/tianxuan/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/03/16/archlinux/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/08/24/lxml/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/03/23/pythonGUI/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/03/04/python%E7%88%AC%E8%99%AB4/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/02/12/Python%E7%88%AC%E8%99%AB3/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zssnp.top/2021/02/28/IAPP/</loc>
+    <lastmod>2021-10-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.zssnp.top/2021/04/10/linux/</loc>
     <lastmod>2021-09-19</lastmod>
   </url>
@@ -9,16 +65,8 @@
     <lastmod>2021-09-15</lastmod>
   </url>
   <url>
-    <loc>https://www.zssnp.top/2021/09/08/linuxyindao/</loc>
-    <lastmod>2021-09-08</lastmod>
-  </url>
-  <url>
     <loc>https://www.zssnp.top/2021/09/08/screenfetch/</loc>
     <lastmod>2021-09-08</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/03/04/python%E7%88%AC%E8%99%AB4/</loc>
-    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://www.zssnp.top/2020/05/01/python%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</loc>
@@ -29,23 +77,7 @@
     <lastmod>2021-08-29</lastmod>
   </url>
   <url>
-    <loc>https://www.zssnp.top/2021/08/28/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</loc>
-    <lastmod>2021-08-28</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/08/20/XPath/</loc>
-    <lastmod>2021-08-25</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/08/24/lxml/</loc>
-    <lastmod>2021-08-25</lastmod>
-  </url>
-  <url>
     <loc>https://www.zssnp.top/2021/08/18/jiaoben/</loc>
-    <lastmod>2021-08-20</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/02/12/Python%E7%88%AC%E8%99%AB3/</loc>
     <lastmod>2021-08-20</lastmod>
   </url>
   <url>
@@ -65,10 +97,6 @@
     <lastmod>2021-08-20</lastmod>
   </url>
   <url>
-    <loc>https://www.zssnp.top/2021/03/04/Spooftooph/</loc>
-    <lastmod>2021-08-16</lastmod>
-  </url>
-  <url>
     <loc>https://www.zssnp.top/2021/08/07/Xray/</loc>
     <lastmod>2021-08-13</lastmod>
   </url>
@@ -78,10 +106,6 @@
   </url>
   <url>
     <loc>https://www.zssnp.top/2020/12/16/Docker%E7%9A%84%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2021-08-09</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/03/16/archlinux/</loc>
     <lastmod>2021-08-09</lastmod>
   </url>
   <url>
@@ -229,15 +253,7 @@
     <lastmod>2021-07-02</lastmod>
   </url>
   <url>
-    <loc>https://www.zssnp.top/2021/03/23/pythonGUI/</loc>
-    <lastmod>2021-06-03</lastmod>
-  </url>
-  <url>
     <loc>https://www.zssnp.top/2020/12/16/MetInfo4.0%E4%BB%BB%E6%84%8F%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E4%BF%AE%E6%94%B9%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</loc>
-    <lastmod>2021-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/03/08/linuxrz/</loc>
     <lastmod>2021-05-01</lastmod>
   </url>
   <url>
@@ -246,10 +262,6 @@
   </url>
   <url>
     <loc>https://www.zssnp.top/2020/04/02/ms4/</loc>
-    <lastmod>2021-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/02/26/tianxuan/</loc>
     <lastmod>2021-05-01</lastmod>
   </url>
   <url>
@@ -397,10 +409,6 @@
     <lastmod>2021-05-01</lastmod>
   </url>
   <url>
-    <loc>https://www.zssnp.top/2021/02/12/Robots/</loc>
-    <lastmod>2021-05-01</lastmod>
-  </url>
-  <url>
     <loc>https://www.zssnp.top/2020/03/10/SSL%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</loc>
     <lastmod>2021-05-01</lastmod>
   </url>
@@ -526,10 +534,6 @@
   </url>
   <url>
     <loc>https://www.zssnp.top/2019/10/10/5.%E6%89%8B%E5%8A%A8%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98%EF%BC%8Csql%E6%B3%A8%E5%85%A5/</loc>
-    <lastmod>2021-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.zssnp.top/2021/02/28/IAPP/</loc>
     <lastmod>2021-05-01</lastmod>
   </url>
 </urlset> 
