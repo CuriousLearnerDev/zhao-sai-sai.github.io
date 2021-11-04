@@ -44,6 +44,31 @@
   </entry>
   
   <entry>
+    <title>vim/vi编辑器使用</title>
+    <link href="https://www.zssnp.top/2021/10/16/vim/"/>
+    <id>https://www.zssnp.top/2021/10/16/vim/</id>
+    <published>2021-10-16T03:19:30.000Z</published>
+    <updated>2021-10-28T05:10:42.775Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://www.zssnp.top/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://www.zssnp.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>钉钉脚本编写和和思路</title>
     <link href="https://www.zssnp.top/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/"/>
     <id>https://www.zssnp.top/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/</id>
@@ -506,31 +531,6 @@
     
     
     <category term="Python基础" scheme="https://www.zssnp.top/tags/Python%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git基本命令</title>
-    <link href="https://www.zssnp.top/2021/03/16/git/"/>
-    <id>https://www.zssnp.top/2021/03/16/git/</id>
-    <published>2021-03-16T07:19:21.000Z</published>
-    <updated>2021-07-02T05:42:15.162Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="安装" scheme="https://www.zssnp.top/categories/%E5%AE%89%E8%A3%85/"/>
-    
-    
-    <category term="安装" scheme="https://www.zssnp.top/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
