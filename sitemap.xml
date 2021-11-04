@@ -107,6 +107,20 @@
   </url>
   
   <url>
+    <loc>https://www.zssnp.top/2021/11/04/hexo/</loc>
+    
+    <lastmod>2021-11-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.zssnp.top/2020/09/02/pythonmysql/</loc>
+    
+    <lastmod>2021-11-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.zssnp.top/2021/10/17/Samba/</loc>
     
     <lastmod>2021-10-28</lastmod>
@@ -1312,6 +1326,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8Bmysql/</loc>
+    <lastmod>2021-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -1701,6 +1722,13 @@
   
   <url>
     <loc>https://www.zssnp.top/categories/%E7%BC%96%E7%A8%8B/%E8%A3%95%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2021-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zssnp.top/categories/%E7%BC%96%E7%A8%8Bmysql/</loc>
     <lastmod>2021-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
