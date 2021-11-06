@@ -14804,4 +14804,132 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
         <tag>搭建</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Nessus破解安装</title>
+    <url>/2021/11/05/Nessusanzhuang/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>我一共测试了两个版本一个是10，一个是8.15.2</p>
+<p>10版本不能破解8.15.2是可以破解</p>
+<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p> 下载</p>
+<p>地址<a href="https://www.tenable.com/downloads/nessus?loginAttempted=true">https://www.tenable.com/downloads/nessus?loginAttempted=true</a></p>
+<p>下载对应的版本</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105165335049.png" alt="image-20211105165335049"></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i Nessus-8.15.2-debian6_amd64.deb  <span class="comment">#这个是安装包</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105165251803.png" alt="image-20211105165251803"></p>
+<p>启动服务</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">systemctl start  nessusd.service</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105090402660.png" alt="image-20211105090402660"></p>
+<h1 id="Nessus初始化"><a href="#Nessus初始化" class="headerlink" title="Nessus初始化"></a>Nessus初始化</h1><p>在浏览器访问这个地址：<code>https://localhost:8834</code></p>
+<p>选择<code>Managed Scanner</code></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105165005052.png"></p>
+<p>我浏览器翻译出来的可以看看</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105090806748.png" alt="image-20211105090806748"></p>
+<p>选择Tenable.sc</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105090911932.png" alt="image-20211105090911932"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105090958995.png" alt="image-20211105090958995"></p>
+<p>然后设置登录密码</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105091107414.png" alt="image-20211105091107414"></p>
+<p>在初始化配置需要等一段时间</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105091120897.png" alt="image-20211105091120897"></p>
+<p>初始化完后</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211106093002810.png" alt="image-20211106093002810"></p>
+<h1 id="获得Linsence和更新包"><a href="#获得Linsence和更新包" class="headerlink" title="获得Linsence和更新包"></a>获得Linsence和更新包</h1><h2 id="获得激活码"><a href="#获得激活码" class="headerlink" title="获得激活码"></a>获得激活码</h2><p>注册<a href="https://zh-cn.tenable.com/products/nessus/nessus-essentials?tns_redirect=true">https://zh-cn.tenable.com/products/nessus/nessus-essentials?tns_redirect=true</a></p>
+<p>登录</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105093341958.png" alt="image-20211105093341958"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105093513557.png" alt="image-20211105093513557"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105093557776.png" alt="image-20211105093557776"></p>
+<h2 id="查询Challenge值"><a href="#查询Challenge值" class="headerlink" title="查询Challenge值"></a>查询Challenge值</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo /opt/nessus/sbin/nessuscli fetch --challenge</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105092907945.png" alt="image-20211105092907945"></p>
+<h2 id="官网申请下载Linsence和更新包"><a href="#官网申请下载Linsence和更新包" class="headerlink" title="官网申请下载Linsence和更新包"></a>官网申请下载Linsence和更新包</h2><p>找到Challenge和激活码就可以提交了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105093652002.png" alt="image-20211105093652002"></p>
+<p>第一个是更新插件下载地址</p>
+<p>第二个是license证书</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105094127250.png" alt="image-20211105094127250"></p>
+<h3 id="更新包"><a href="#更新包" class="headerlink" title="更新包"></a>更新包</h3><p>叫上面那个插件给下载下来</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105105334090.png" alt="image-20211105105334090"></p>
+<h3 id="下载license证书"><a href="#下载license证书" class="headerlink" title="下载license证书"></a>下载license证书</h3><p>叫证书下载下来也可以复制下来</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105110159956.png" alt="image-20211105110159956"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105110246176.png" alt="image-20211105110246176"></p>
+<h1 id="安装Linsence和更新包"><a href="#安装Linsence和更新包" class="headerlink" title="安装Linsence和更新包"></a>安装Linsence和更新包</h1><h2 id="安装Linsence证书"><a href="#安装Linsence证书" class="headerlink" title="安装Linsence证书"></a>安装Linsence证书</h2><p>他有两种方法可以安装</p>
+<ul>
+<li><p>第一个直接复制</p>
+<p>上面我们已经叫Linsence给下载下来了，我们可以直接叫这个给复制到<code>/opt/nessus/sbin/nessuscli</code></p>
+<p>命令</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/opt/nessus/sbin/nessuscli fetch --register-offline nessus.license</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105110934130.png" alt="image-20211105110934130"></p>
+<p>然后重启服务</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">systemctl stop  nessusd.service</span><br><span class="line">systemctl start  nessusd.service</span><br></pre></td></tr></table></figure>
+<p>可以看见多了一个这个证书</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211106093300565.png" alt="image-20211106093300565"></p>
+</li>
+<li><p>第二种直接复制</p>
+<p>复制下载</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111006823.png" alt="image-20211105111006823"></p>
+<p>进入后台</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111025159.png" alt="image-20211105111025159"></p>
+<p>叫</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111132659.png" alt="image-20211105111132659"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111247129.png" alt="image-20211105111247129"></p>
+</li>
+</ul>
+<h2 id="安装更新包"><a href="#安装更新包" class="headerlink" title="安装更新包"></a>安装更新包</h2><p>上面那个更新包已经下载下来了</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/opt/nessus/sbin/nessuscli update all-2.0.tar.gz</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111654934.png" alt="image-20211105111654934"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">└─# &#x2F;opt&#x2F;nessus&#x2F;sbin&#x2F;nessuscli update all-2.0.tar.gz </span><br><span class="line"></span><br><span class="line">[info] Copying templates version 202110292034 to &#x2F;opt&#x2F;nessus&#x2F;var&#x2F;nessus&#x2F;templates&#x2F;tmp</span><br><span class="line">[info] Finished copying templates.</span><br><span class="line">[info] Moved new templates with version 202110292034 from plugins dir.</span><br><span class="line"> * Update successful.  The changes will be automatically processed by Nessus.</span><br></pre></td></tr></table></figure>
+<p>重启nessusd</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service nessusd restart</span><br></pre></td></tr></table></figure>
+<p>在打开就这样了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111750478.png" alt="image-20211105111750478"></p>
+<h1 id="破解"><a href="#破解" class="headerlink" title="破解"></a>破解</h1><p>可以看见他就只能16ip</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105150042919.png" alt="image-20211105150042919"></p>
+<p>叫<code>/root/nessus</code>你可以复制到然后地方，以后会用到</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cp -r /opt/nessus/lib/nessus/plugins /root/nessus</span><br><span class="line"><span class="comment"># 新版本的Nessus会对plugin_feed_info.inc的信息进行对比，发现plugin_feed_info.inc信息不一致时，会删除/opt/nessus/lib/nessus/plugins/下的插件 </span></span><br></pre></td></tr></table></figure>
+<p>在<code>/root/nessus</code>文件里面创建一个<code>plugin_feed_info.inc</code>文件</p>
+<p>内容下面这个202110292034是将模板版本，在安装到时候生成出来的</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">PLUGIN_SET = 202110292034;</span><br><span class="line">PLUGIN_FEED = <span class="string">&quot;ProfessionalFeed (Direct)&quot;</span>;</span><br><span class="line">PLUGIN_FEED_TRANSPORT = <span class="string">&quot;Tenable Network Security Lightning&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>叫<code>plugin_feed_info.inc</code>文件复制到下面这两个文件里面</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/opt/nessus/lib/nessus/plugins/</span><br><span class="line">/opt/nessus/var/nessus/</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105151602739.png" alt="image-20211105151602739"></p>
+<p>重启<code>service nessusd restart</code>发现不能显示了一样</p>
+<p>在重新复制</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cp plugin_feed_info.inc /opt/nessus/lib/nessus/plugins/</span><br><span class="line">cp plugin_feed_info.inc /opt/nessus/var/nessus/</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105151708297.png" alt="image-20211105151708297"></p>
+<p>重启<code>service nessusd restart</code>发现可以正常显示了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105151751902.png" alt="image-20211105151751902"></p>
+<p>可以看见是免费的了，可以看见右边的插件没有了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105190646049.png" alt="image-20211105190646049"></p>
+<h2 id="破解方法二"><a href="#破解方法二" class="headerlink" title="破解方法二"></a>破解方法二</h2><p>用的是苑老师方法进行破解的</p>
+<p>下面需要的<code>plugin+update.tar.gz</code>下载 <a href="https://pan.baidu.com/s/1TxAXfjn-Bk2fRCIAbuS_UQ">https://pan.baidu.com/s/1TxAXfjn-Bk2fRCIAbuS_UQ</a> 提取码: u6x8 </p>
+<p>安装</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/opt/nessus/sbin/nessuscli update  plugin+update.tar.gz</span><br></pre></td></tr></table></figure>
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211106171610465.png" alt="image-20211106171610465"></p>
+<p>重启<code>service nessusd restart</code></p>
+<p>创建一个<code>plugin_feed_info.inc</code>文件</p>
+<p>内容下面这个202110292034是将模板版本，在安装到时候生成出来的</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">PLUGIN_SET = 202110292034;</span><br><span class="line">PLUGIN_FEED = <span class="string">&quot;ProfessionalFeed (Direct)&quot;</span>;</span><br><span class="line">PLUGIN_FEED_TRANSPORT = <span class="string">&quot;Tenable Network Security Lightning&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>叫<code>plugin_feed_info.inc</code>文件复制到下面这两个文件里面</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/opt/nessus/lib/nessus/plugins/</span><br><span class="line">/opt/nessus/var/nessus/</span><br></pre></td></tr></table></figure>
+<p>重启<code>service nessusd restart</code></p>
+<p>在执行下面这个指令</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">/opt/nessus/sbin/nessuscli update  plugin+update.tar.gz</span><br></pre></td></tr></table></figure>
+<p>重启<code>service nessusd restart</code></p>
+<p>访问<a href="https://localhost:8834/%E5%AE%89%E8%A3%85">https://localhost:8834/安装</a></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105111750478.png" alt="image-20211105111750478"></p>
+<p>登录破解完成</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="/home/zss/.config/Typora/typora-user-images/image-20211106184133502.png" alt="image-20211106184133502"></p>
+<h1 id="恢复漏洞插件"><a href="#恢复漏洞插件" class="headerlink" title="恢复漏洞插件"></a>恢复漏洞插件</h1><p>这个方法不行要用了</p>
+<p>上面在破解的时候备份了/opt/nessus/lib/nessus/plugins，新版本的Nessus会对plugin_feed_info.inc的信息进行对比，发现plugin_feed_info.inc信息不一致时，会删除/opt/nessus/lib/nessus/plugins/下的插件</p>
+<p>可以看见下面这些插件没有了</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211105213225139.png" alt="image-20211105213225139"></p>
+<p>叫我们前面复制的<code>/root/nessus</code>文件里面的全部东西给复制回去</p>
+]]></content>
+      <categories>
+        <category>黑客工具使用</category>
+        <category>Nessus</category>
+      </categories>
+      <tags>
+        <tag>Nessus</tag>
+      </tags>
+  </entry>
 </search>

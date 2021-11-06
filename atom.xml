@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-11-04T06:26:57.559Z</updated>
+  <updated>2021-11-06T11:23:59.529Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nessus破解安装</title>
+    <link href="https://www.zssnp.top/2021/11/05/Nessusanzhuang/"/>
+    <id>https://www.zssnp.top/2021/11/05/Nessusanzhuang/</id>
+    <published>2021-11-05T13:14:25.000Z</published>
+    <updated>2021-11-06T11:23:59.529Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Nessus" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Nessus/"/>
+    
+    
+    <category term="Nessus" scheme="https://www.zssnp.top/tags/Nessus/"/>
+    
+  </entry>
   
   <entry>
     <title>github+hexo搭建博客</title>
@@ -506,31 +533,6 @@
     
     
     <category term="社工setoolkit" scheme="https://www.zssnp.top/tags/%E7%A4%BE%E5%B7%A5setoolkit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux私房菜笔记</title>
-    <link href="https://www.zssnp.top/2021/04/10/linux/"/>
-    <id>https://www.zssnp.top/2021/04/10/linux/</id>
-    <published>2021-04-10T03:14:30.000Z</published>
-    <updated>2021-09-19T04:09:55.123Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://www.zssnp.top/categories/linux/"/>
-    
-    
-    <category term="linux私房菜" scheme="https://www.zssnp.top/tags/linux%E7%A7%81%E6%88%BF%E8%8F%9C/"/>
     
   </entry>
   
