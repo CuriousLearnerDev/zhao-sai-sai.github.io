@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-11-06T11:23:59.529Z</updated>
+  <updated>2021-11-24T15:21:03.452Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.zssnp.top/2021/11/24/xiaodi/"/>
+    <id>https://www.zssnp.top/2021/11/24/xiaodi/</id>
+    <published>2021-11-24T15:21:03.452Z</published>
+    <updated>2021-11-24T15:21:03.452Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>netease启动问题/lib/x86_64-linux-gnu/libgio-2.0.so.0</title>
+    <link href="https://www.zssnp.top/2021/11/11/netease/"/>
+    <id>https://www.zssnp.top/2021/11/11/netease/</id>
+    <published>2021-11-11T04:23:00.000Z</published>
+    <updated>2021-11-11T08:12:35.179Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="问题解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="问题解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Nessus破解安装</title>
@@ -479,60 +525,6 @@
     
     
     <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker安装pikachu靶场搭建</title>
-    <link href="https://www.zssnp.top/2021/04/20/pikachu/"/>
-    <id>https://www.zssnp.top/2021/04/20/pikachu/</id>
-    <published>2021-04-20T01:50:55.000Z</published>
-    <updated>2021-08-09T02:42:12.903Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="搭建" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="Docker容器搭建" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/Docker%E5%AE%B9%E5%99%A8%E6%90%AD%E5%BB%BA/"/>
-    
-    
-    <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>setoolkit社工盗号</title>
-    <link href="https://www.zssnp.top/2021/04/10/setoolkit/"/>
-    <id>https://www.zssnp.top/2021/04/10/setoolkit/</id>
-    <published>2021-04-10T07:40:30.000Z</published>
-    <updated>2021-08-08T14:45:29.237Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="setoolkit" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/setoolkit/"/>
-    
-    
-    <category term="社工setoolkit" scheme="https://www.zssnp.top/tags/%E7%A4%BE%E5%B7%A5setoolkit/"/>
     
   </entry>
   
