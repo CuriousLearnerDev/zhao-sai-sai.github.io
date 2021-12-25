@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-12-22T08:48:54.174Z</updated>
+  <updated>2021-12-25T02:57:34.471Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ccna笔记</title>
+    <link href="https://www.zssnp.top/2021/11/25/ccna/"/>
+    <id>https://www.zssnp.top/2021/11/25/ccna/</id>
+    <published>2021-11-25T01:56:32.000Z</published>
+    <updated>2021-12-25T02:57:34.471Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="ccna" scheme="https://www.zssnp.top/categories/ccna/"/>
+    
+    
+    <category term="ccna" scheme="https://www.zssnp.top/tags/ccna/"/>
+    
+  </entry>
   
   <entry>
     <title>小迪笔记培训笔记</title>
@@ -38,6 +63,31 @@
     
     
     <category term="web安全" scheme="https://www.zssnp.top/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>adb使用</title>
+    <link href="https://www.zssnp.top/2021/11/14/adb/"/>
+    <id>https://www.zssnp.top/2021/11/14/adb/</id>
+    <published>2021-11-14T10:19:30.000Z</published>
+    <updated>2021-12-25T02:50:01.612Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="adb" scheme="https://www.zssnp.top/categories/adb/"/>
+    
+    
+    <category term="自动化工具" scheme="https://www.zssnp.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -300,6 +350,31 @@
   </entry>
   
   <entry>
+    <title>5.php代码审计常见漏洞</title>
+    <link href="https://www.zssnp.top/2021/08/24/php/"/>
+    <id>https://www.zssnp.top/2021/08/24/php/</id>
+    <published>2021-08-24T12:03:25.000Z</published>
+    <updated>2021-12-25T04:50:08.884Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="php代码审计" scheme="https://www.zssnp.top/categories/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
+    
+    
+    <category term="php代码审计" scheme="https://www.zssnp.top/tags/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>lxml解析库用XPath语言提取数据</title>
     <link href="https://www.zssnp.top/2021/08/24/lxml/"/>
     <id>https://www.zssnp.top/2021/08/24/lxml/</id>
@@ -454,81 +529,6 @@
     
     
     <category term="渗透工具使用" scheme="https://www.zssnp.top/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python迭代器</title>
-    <link href="https://www.zssnp.top/2021/06/09/pythonddq/"/>
-    <id>https://www.zssnp.top/2021/06/09/pythonddq/</id>
-    <published>2021-06-09T10:20:55.000Z</published>
-    <updated>2021-08-20T00:04:29.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ranger配置和使用</title>
-    <link href="https://www.zssnp.top/2021/06/03/ranger/"/>
-    <id>https://www.zssnp.top/2021/06/03/ranger/</id>
-    <published>2021-06-03T10:19:30.000Z</published>
-    <updated>2021-07-02T05:41:20.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="好软件使用" scheme="https://www.zssnp.top/categories/%E5%A5%BD%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="好软件使用" scheme="https://www.zssnp.top/tags/%E5%A5%BD%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python正则表达式</title>
-    <link href="https://www.zssnp.top/2021/04/21/pythonzhengze/"/>
-    <id>https://www.zssnp.top/2021/04/21/pythonzhengze/</id>
-    <published>2021-04-21T10:20:55.000Z</published>
-    <updated>2021-08-20T00:04:43.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="编程" scheme="https://www.zssnp.top/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
