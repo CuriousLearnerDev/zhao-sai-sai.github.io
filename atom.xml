@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-12-25T02:57:34.471Z</updated>
+  <updated>2021-12-27T03:40:38.238Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python编写脚本提取fofa搜索的结果</title>
+    <link href="https://www.zssnp.top/2021/12/27/pythonfofa/"/>
+    <id>https://www.zssnp.top/2021/12/27/pythonfofa/</id>
+    <published>2021-12-27T01:56:32.000Z</published>
+    <updated>2021-12-27T03:40:38.238Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="脚本编写" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    
+    
+    <category term="脚本编写" scheme="https://www.zssnp.top/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    
+  </entry>
   
   <entry>
     <title>ccna笔记</title>
@@ -502,33 +527,6 @@
     
     
     <category term="Xray安全评估工具" scheme="https://www.zssnp.top/tags/Xray%E5%AE%89%E5%85%A8%E8%AF%84%E4%BC%B0%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nikto web服务器扫描器工具</title>
-    <link href="https://www.zssnp.top/2021/08/07/nikto/"/>
-    <id>https://www.zssnp.top/2021/08/07/nikto/</id>
-    <published>2021-08-07T02:42:30.000Z</published>
-    <updated>2021-08-08T14:45:50.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="nikto" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/nikto/"/>
-    
-    
-    <category term="渗透工具使用" scheme="https://www.zssnp.top/tags/%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
