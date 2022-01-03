@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-12-27T03:40:38.238Z</updated>
+  <updated>2021-12-30T03:08:20.862Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVE-2012-2122Mysql身份认证漏洞及利用复现</title>
+    <link href="https://www.zssnp.top/2021/12/28/CVE-2012-2122/"/>
+    <id>https://www.zssnp.top/2021/12/28/CVE-2012-2122/</id>
+    <published>2021-12-28T07:44:06.000Z</published>
+    <updated>2021-12-30T03:08:20.862Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="漏洞复现" scheme="https://www.zssnp.top/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+    <category term="漏洞复现" scheme="https://www.zssnp.top/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>python编写脚本提取fofa搜索的结果</title>
@@ -500,33 +525,6 @@
     
     
     <category term="burpsuite" scheme="https://www.zssnp.top/tags/burpsuite/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Xray安全评估工具</title>
-    <link href="https://www.zssnp.top/2021/08/07/Xray/"/>
-    <id>https://www.zssnp.top/2021/08/07/Xray/</id>
-    <published>2021-08-07T09:32:30.000Z</published>
-    <updated>2021-08-13T17:08:49.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="Xray" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Xray/"/>
-    
-    
-    <category term="Xray安全评估工具" scheme="https://www.zssnp.top/tags/Xray%E5%AE%89%E5%85%A8%E8%AF%84%E4%BC%B0%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
