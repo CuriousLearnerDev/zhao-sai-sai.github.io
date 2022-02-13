@@ -117,6 +117,31 @@
   </entry>
   
   <entry>
+    <title>3,无线网络,kali网卡相关命令</title>
+    <link href="https://www.zssnp.top/2021/11/16/3,802.11/"/>
+    <id>https://www.zssnp.top/2021/11/16/3,802.11/</id>
+    <published>2021-11-16T03:07:00.000Z</published>
+    <updated>2022-02-13T02:37:48.160Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>adb使用</title>
     <link href="https://www.zssnp.top/2021/11/14/adb/"/>
     <id>https://www.zssnp.top/2021/11/14/adb/</id>
@@ -138,6 +163,106 @@
     
     
     <category term="自动化工具" scheme="https://www.zssnp.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1,无线网络802.11标准</title>
+    <link href="https://www.zssnp.top/2021/11/11/1,802.11/"/>
+    <id>https://www.zssnp.top/2021/11/11/1,802.11/</id>
+    <published>2021-11-11T10:07:00.000Z</published>
+    <updated>2022-02-13T02:37:32.056Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2,无线网络之无线运行模式</title>
+    <link href="https://www.zssnp.top/2021/11/11/2,802.11/"/>
+    <id>https://www.zssnp.top/2021/11/11/2,802.11/</id>
+    <published>2021-11-11T10:07:00.000Z</published>
+    <updated>2022-02-13T02:37:43.168Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>4,无线网络,RADIOTAP头部</title>
+    <link href="https://www.zssnp.top/2021/11/11/4,802.11/"/>
+    <id>https://www.zssnp.top/2021/11/11/4,802.11/</id>
+    <published>2021-11-11T10:07:00.000Z</published>
+    <updated>2022-02-13T02:37:52.925Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5,无线网络,802.11头</title>
+    <link href="https://www.zssnp.top/2021/11/11/5,802.11/"/>
+    <id>https://www.zssnp.top/2021/11/11/5,802.11/</id>
+    <published>2021-11-11T10:07:00.000Z</published>
+    <updated>2022-02-13T02:38:00.529Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+    
+    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
   </entry>
   
@@ -396,135 +521,6 @@
     
     
     <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>5.php代码审计常见漏洞</title>
-    <link href="https://www.zssnp.top/2021/08/24/php/"/>
-    <id>https://www.zssnp.top/2021/08/24/php/</id>
-    <published>2021-08-24T12:03:25.000Z</published>
-    <updated>2021-12-25T04:50:08.884Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="php代码审计" scheme="https://www.zssnp.top/categories/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
-    
-    
-    <category term="php代码审计" scheme="https://www.zssnp.top/tags/php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lxml解析库用XPath语言提取数据</title>
-    <link href="https://www.zssnp.top/2021/08/24/lxml/"/>
-    <id>https://www.zssnp.top/2021/08/24/lxml/</id>
-    <published>2021-08-24T11:10:30.000Z</published>
-    <updated>2021-10-15T06:13:16.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解析库XPath的语法</title>
-    <link href="https://www.zssnp.top/2021/08/20/XPath/"/>
-    <id>https://www.zssnp.top/2021/08/20/XPath/</id>
-    <published>2021-08-20T07:10:30.000Z</published>
-    <updated>2021-10-15T06:13:16.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/categories/Python%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>脚本编写实现简单登录爆破</title>
-    <link href="https://www.zssnp.top/2021/08/18/jiaoben/"/>
-    <id>https://www.zssnp.top/2021/08/18/jiaoben/</id>
-    <published>2021-08-18T14:00:30.000Z</published>
-    <updated>2021-08-20T08:33:37.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="脚本编写" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
-    
-    <category term="爆破" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/%E7%88%86%E7%A0%B4/"/>
-    
-    
-    <category term="爆破" scheme="https://www.zssnp.top/tags/%E7%88%86%E7%A0%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kali安装burpsuite pro破解版2021版</title>
-    <link href="https://www.zssnp.top/2021/08/08/burp/"/>
-    <id>https://www.zssnp.top/2021/08/08/burp/</id>
-    <published>2021-08-08T09:32:30.000Z</published>
-    <updated>2021-08-12T13:55:25.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="Burpsuite" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Burpsuite/"/>
-    
-    
-    <category term="burpsuite" scheme="https://www.zssnp.top/tags/burpsuite/"/>
     
   </entry>
   

@@ -17642,4 +17642,513 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
         <tag>漏洞复现</tag>
       </tags>
   </entry>
+  <entry>
+    <title>1,无线网络802.11标准</title>
+    <url>/2021/11/11/1,802.11/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>笔记</p>
+<h1 id="IEEE协会"><a href="#IEEE协会" class="headerlink" title="IEEE协会"></a>IEEE协会</h1><p>IEEE是国际性的电子技术与 信息科学 工程师的协会</p>
+<p>这个IEEE专门定义标准的，这样才能统一</p>
+<p>其中802负责</p>
+<ul>
+<li>以太网</li>
+<li>令牌环网</li>
+<li>无线局域网</li>
+<li>网桥</li>
+</ul>
+<h1 id="802标准"><a href="#802标准" class="headerlink" title="802标准"></a>802标准</h1><p>下面这个是我列出一点802的定义的标准更多可以查看<a href="https://baike.baidu.com/item/IEEE%20802/6808672?fromtitle=IEEE802%E5%8D%8F%E8%AE%AE&fromid=3311171">https://baike.baidu.com/item/IEEE%20802/6808672?fromtitle=IEEE802%E5%8D%8F%E8%AE%AE&amp;fromid=3311171</a></p>
+<table>
+<thead>
+<tr>
+<th>标准列表</th>
+<th>应放置文件内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IEEE 802.1</td>
+<td>通用网络概念及网桥等</td>
+</tr>
+<tr>
+<td>IEEE 802.2</td>
+<td>逻辑链路控制等</td>
+</tr>
+<tr>
+<td>IEEE 802.3</td>
+<td>CSMA/CD访问方法及物理层规定</td>
+</tr>
+<tr>
+<td>IEEE 802.4</td>
+<td>ARCnet总线结构及访问方法,物理层规定</td>
+</tr>
+<tr>
+<td>IEEE 802.5</td>
+<td>Token Ring访问方法及物理层规定等</td>
+</tr>
+<tr>
+<td>IEEE 802.6</td>
+<td>城域网的访问方法及物理层规定</td>
+</tr>
+<tr>
+<td>IEEE 802.7</td>
+<td>宽带局域网</td>
+</tr>
+<tr>
+<td>IEEE 802.8</td>
+<td>光纤局域网(FDDI)</td>
+</tr>
+<tr>
+<td>IEEE 802.9</td>
+<td>ISDN局域网</td>
+</tr>
+<tr>
+<td>IEEE 802.10</td>
+<td>网络的安全</td>
+</tr>
+<tr>
+<td>IEEE 802.11</td>
+<td>无线局域网</td>
+</tr>
+</tbody></table>
+<h1 id="802-11无线局域网介绍"><a href="#802-11无线局域网介绍" class="headerlink" title="802.11无线局域网介绍"></a>802.11无线局域网介绍</h1><p>802.11他只工作在<strong>数据链路层</strong>和<strong>物理层</strong></p>
+<ul>
+<li>应用层          </li>
+<li>表示层          </li>
+<li>会话层         </li>
+<li>传输层          </li>
+<li>网络层          </li>
+<li><strong>数据链路层</strong>        <ul>
+<li><strong>逻辑链路控制子层LLC</strong></li>
+<li><strong>媒体访问控制子层MAC</strong></li>
+</ul>
+</li>
+<li><strong>物理层</strong></li>
+</ul>
+<h2 id="802-11标准"><a href="#802-11标准" class="headerlink" title="802.11标准"></a>802.11标准</h2><blockquote>
+<p>看一下他定义的标准，在下面这个都是小写的小写的都是在原来的基础之上修正的，下面这个大写的才是真正的标准</p>
+</blockquote>
+<p>更多查看<a href="https://baike.baidu.com/item/IEEE%20802.11/8447947">https://baike.baidu.com/item/IEEE%20802.11/8447947</a></p>
+<table>
+<thead>
+<tr>
+<th>标准列表</th>
+<th align="left">应放置文件内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IEEE 802.11</td>
+<td align="left">1997年，原始标准（2Mbit/s，播在2.4GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11a</td>
+<td align="left">1999年，物理层补充（54Mbit/s，播在5GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11b</td>
+<td align="left">1999年，物理层补充（11Mbit/s播在2.4GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11c</td>
+<td align="left">符合802.1D的媒体接入控制层桥接（MAC Layer Bridging）</td>
+</tr>
+<tr>
+<td>IEEE 802.11d</td>
+<td align="left">根据各国无线电规定做的调整</td>
+</tr>
+<tr>
+<td>IEEE 802.11e</td>
+<td align="left">对服务等级（Quality of Service, QoS）的支持</td>
+</tr>
+<tr>
+<td><strong>IEEE 802.11F</strong></td>
+<td align="left">基站的互连性（IAPP，Inter-Access Point Protocol），2006年2月被IEEE批准撤</td>
+</tr>
+<tr>
+<td>IEEE 802.11g</td>
+<td align="left">2003年，物理层补充（54Mbit/s，播在2.4GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11h</td>
+<td align="left">2004年，无线覆盖半径的调整，室内（indoor）和室外（outdoor）信道（5GHz频段）</td>
+</tr>
+<tr>
+<td>IEEE 802.11i</td>
+<td align="left">2004年，无线网络的安全方面的补充</td>
+</tr>
+<tr>
+<td>IEEE 802.11j</td>
+<td align="left">2004年，根据日本规定做的升级</td>
+</tr>
+<tr>
+<td>IEEE 802.11l</td>
+<td align="left">预留及准备不使用</td>
+</tr>
+<tr>
+<td>IEEE 802.11m</td>
+<td align="left">维护标准；互斥及极限</td>
+</tr>
+</tbody></table>
+<h2 id="常用的标准"><a href="#常用的标准" class="headerlink" title="常用的标准"></a>常用的标准</h2><div class="note blue no-icon flat"><p>wifi是在其实是802.11b其他的严格不能是wifi</p>
+</div>
+
+
+
+<table>
+<thead>
+<tr>
+<th>标准列表</th>
+<th align="left">应放置文件内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IEEE 802.11</td>
+<td align="left">1997年，原始标准（2Mbit/s，工作在播在2.4GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11a</td>
+<td align="left">1999年，物理层补充（54Mbit/s，工作在播在5GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11b</td>
+<td align="left">1999年，物理层补充（11Mbit/s工作在播在2.4GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11g</td>
+<td align="left">2003年，物理层补充（54Mbit/s，工作在播在2.4GHz）</td>
+</tr>
+<tr>
+<td>IEEE 802.11i</td>
+<td align="left">2004年，无线网络的安全方面的补充</td>
+</tr>
+<tr>
+<td>IEEE 802.11h</td>
+<td align="left">2004年，无线覆盖半径的调整，室内（indoor）和室外（outdoor）信道（5GHz频段）</td>
+</tr>
+</tbody></table>
+<p><strong>详细</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>标准</strong></th>
+<th><strong>工作频段</strong></th>
+<th><strong>理想速率</strong></th>
+<th><strong>信道带宽</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>802.11b</strong></td>
+<td>2.4 GHz</td>
+<td>11Mbps</td>
+<td>20MHz</td>
+</tr>
+<tr>
+<td><strong>802.11a</strong></td>
+<td>5GHz</td>
+<td>54Mbps</td>
+<td>20MHz</td>
+</tr>
+<tr>
+<td><strong>802.11g</strong></td>
+<td>2.4 GHz</td>
+<td>54Mbps</td>
+<td>20MHz</td>
+</tr>
+<tr>
+<td><strong>802.11n</strong></td>
+<td>2.4 GHz或5 GHz</td>
+<td>72Mbps(1×1, 20MHz)150Mbps(1×1, 40MHz)288Mbps(4×4，20MHz)600Mbps(4×4, 40MHz)</td>
+<td>20MHz/40MHz(信道绑定)</td>
+</tr>
+<tr>
+<td><strong>802.11ac</strong></td>
+<td>5 GHz</td>
+<td>433Mbps(1×1, 80MHz)867Mbps(1×1,160MHz)6.77Gbps(8×8,160MHz)</td>
+<td>40MHz/80MHz/160MHz</td>
+</tr>
+</tbody></table>
+<h1 id="802-11"><a href="#802-11" class="headerlink" title="802.11"></a>802.11</h1><ul>
+<li><p>发布于1997年                        </p>
+</li>
+<li><p>速率1Mbps或2Mbps                      </p>
+</li>
+<li><p>红外线传输介质（未实现）                  </p>
+</li>
+<li><p>无线射频信号编码（调制）（radio frequencies）       </p>
+<ul>
+<li>Direct-Sequence Spread-Spectrum (DSSS)—–直序扩频  </li>
+<li>Frequency Hopping Spread-Spectrum (FHSS)—–跳频扩频</li>
+</ul>
+</li>
+<li><p>媒体访问方式—–CSMA/CA c=b+log2 (1+s/n)         </p>
+<p>​    在传输前先侦探看网络是否有人在用这个频宽，在网络空闲的时候在发送，避免发送冲突</p>
+<ul>
+<li>根据算法侦听一定时长                  </li>
+<li>发送数据前发包声明                   </li>
+</ul>
+</li>
+<li><p>Request to Send/Clear to Send (RTS/CTS)</p>
+</li>
+</ul>
+<h1 id="802-11b"><a href="#802-11b" class="headerlink" title="802.11b"></a>802.11b</h1><blockquote>
+<p>802.11b在802.11上增加了cck补充代码键，提升了5.5或11 Mbit/s </p>
+</blockquote>
+<h1 id="802-11a"><a href="#802-11a" class="headerlink" title="802.11a"></a>802.11a</h1><blockquote>
+<p>802.11A几乎与802.11b同时发布</p>
+<p>802.11A开始使用了5Ghz带宽，应为2.4G真的是干扰的东西太多了微波炉、蓝牙、无绳电话都是在2.4Ghz上</p>
+</blockquote>
+<h1 id="802-11n"><a href="#802-11n" class="headerlink" title="802.11n"></a>802.11n</h1><blockquote>
+<p>他也是工作在2.4GHz，用的OFDM(Orthogonal Frequency-Division Multiplexing )信号调制方法与802.11a速率相同传输的速率，他也向后兼容802.11b并切换为CCK信号调制方法<br>如果这个网络里面有不支持802.11g他就会自动降到802.11b，这样速度就降下来了</p>
+</blockquote>
+<h1 id="802-11n-1"><a href="#802-11n-1" class="headerlink" title="802.11n"></a>802.11n</h1><blockquote>
+<p>他可以工作在2.4Ghz或者5Ghz速度可以达到300Mbps最高600Mbps</p>
+</blockquote>
+<blockquote>
+<p>为了达到这个传输速度MIMO翻译(多进多出通信技术)技术，就是用多个天线来实现的，可以收多个无线电波每个都是独立发送的</p>
+</blockquote>
+<blockquote>
+<p>如果这个网络里面有不支持802.11g他就会自动降到802.11b，这样速度就降下来了</p>
+</blockquote>
+<h1 id="2-4GHz频段介绍"><a href="#2-4GHz频段介绍" class="headerlink" title="2.4GHz频段介绍"></a>2.4GHz频段介绍</h1><p>美国 -1 to 11 (2.412 GHz - 2.462 GHz)<br>欧洲 -1 to 13 (2.412 GHz - 2.472 GHz)<br>日本 -1 to 14 (2.412 GHz - 2.482 GHz)</p>
+<p>802.11规定了每个信道要分22Mhz不够分只能重叠， 只有三个完全不重叠的信道  </p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211111173739239.png" alt="image-20211111173739239"></p>
+]]></content>
+      <categories>
+        <category>无线传输</category>
+      </categories>
+      <tags>
+        <tag>无线传输</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3,无线网络,kali网卡相关命令</title>
+    <url>/2021/11/16/3,802.11/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="查看网卡"><a href="#查看网卡" class="headerlink" title="查看网卡"></a>查看网卡</h1><blockquote>
+<p>dmesg -T：查看系统硬件的变化</p>
+</blockquote>
+<blockquote>
+<p>iwconfig：查看网卡的基本信息</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211111192703291.png" alt="image-20211111192703291"></p>
+</blockquote>
+<blockquote>
+<p>iw list        查看所以详细信息</p>
+</blockquote>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116104439079.png" alt="image-20211116104439079"><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116104459501.png" alt="image-20211116104459501"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116104508271.png" alt="image-20211116104508271"></p>
+<h1 id="查看信道频率"><a href="#查看信道频率" class="headerlink" title="查看信道频率"></a>查看信道频率</h1><blockquote>
+<p>查看信道频率    </p>
+</blockquote>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">iwlist 网卡名 frequency</span><br></pre></td></tr></table></figure>
+
+
+<p>演示</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; iwlist wlan1 frequency</span><br><span class="line">wlan1     14 channels <span class="keyword">in</span> total; available frequencies :</span><br><span class="line">          Channel 01 : 2.412 GHz</span><br><span class="line">          Channel 02 : 2.417 GHz</span><br><span class="line">          Channel 03 : 2.422 GHz</span><br><span class="line">          Channel 04 : 2.427 GHz</span><br><span class="line">          Channel 05 : 2.432 GHz</span><br><span class="line">          Channel 06 : 2.437 GHz</span><br><span class="line">          Channel 07 : 2.442 GHz</span><br><span class="line">          Channel 08 : 2.447 GHz</span><br><span class="line">          Channel 09 : 2.452 GHz</span><br><span class="line">          Channel 10 : 2.457 GHz</span><br><span class="line">          Channel 11 : 2.462 GHz</span><br><span class="line">          Channel 12 : 2.467 GHz</span><br><span class="line">          Channel 13 : 2.472 GHz</span><br><span class="line">          Channel 14 : 2.484 GHz</span><br></pre></td></tr></table></figure>
+<h1 id="扫描附近的AP"><a href="#扫描附近的AP" class="headerlink" title="扫描附近的AP"></a>扫描附近的AP</h1><blockquote>
+<p>命令</p>
+</blockquote>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">iw dev 网卡名 scan </span><br><span class="line">iw dev 网卡名 scan | grep SSID <span class="comment"># 叫WIFI名显示出来</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>演示</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">iw dev 网卡名 scan </span><br></pre></td></tr></table></figure>
+
+
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116105107636.png" alt="image-20211116105107636"></p>
+<h1 id="添加删除监听端口无线网卡"><a href="#添加删除监听端口无线网卡" class="headerlink" title="添加删除监听端口无线网卡"></a>添加删除监听端口无线网卡</h1><h2 id="添加monitor混杂模式"><a href="#添加monitor混杂模式" class="headerlink" title="添加monitor混杂模式"></a>添加monitor混杂模式</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">iw dev 自己的网卡名 interface add wlan2mon <span class="built_in">type</span> monitor </span><br></pre></td></tr></table></figure>
+<p><code>dev</code>是指定设备 <code>interface add</code> 是添加新的接口 <code>type</code>设置接口模式</p>
+<blockquote>
+<p> 启动网卡</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ifcconfig  要启动的网卡名	up #启动网卡</span><br></pre></td></tr></table></figure>
+<p>##　删除网卡</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Iw dev 要删除的网卡名 interface del</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>无线传输</category>
+      </categories>
+      <tags>
+        <tag>无线传输</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2,无线网络之无线运行模式</title>
+    <url>/2021/11/11/2,802.11/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h1><table>
+<thead>
+<tr>
+<th>无线网络运行</th>
+<th>应放置文件内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AP</td>
+<td>是路由器</td>
+</tr>
+<tr>
+<td>AP每秒钟大概10次通过beacon帧广播SSID</td>
+<td>Beacon包有里有SSID</td>
+</tr>
+<tr>
+<td>DS</td>
+<td>路由器上的网线发出来AP就叫DS</td>
+</tr>
+<tr>
+<td>BSS</td>
+<td>一个DS的一个AP局域网的网络就是BSS</td>
+</tr>
+<tr>
+<td>ESS</td>
+<td>一个DS多个AP和在一起的网络就是ESS</td>
+</tr>
+<tr>
+<td>WDS</td>
+<td>无线路由器充当无线网络的中继器</td>
+</tr>
+<tr>
+<td>SSID</td>
+<td>是网名</td>
+</tr>
+<tr>
+<td>STA</td>
+<td>连接的设备想电脑或手机</td>
+</tr>
+<tr>
+<td>monitor</td>
+<td>是复杂模式    才能抓到802.11包头</td>
+</tr>
+<tr>
+<td>STA/STATION</td>
+<td>客户端</td>
+</tr>
+<tr>
+<td>AD-HOC</td>
+<td>就是没有AP用比如手机自己模拟成为主设备（ap）自建无线网络提供给其他从设备连接</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>AP每秒钟大概10次通过beacon帧广播SSID，会叫无线电波打到网卡上Beacon帧有里有SSID</p>
+</blockquote>
+<h1 id="Infrastructure（基本服务级）"><a href="#Infrastructure（基本服务级）" class="headerlink" title="Infrastructure（基本服务级）"></a>Infrastructure（基本服务级）</h1><blockquote>
+<p>Infrastructure模式<a href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/176200">无线局域网</a>是指通过AP互连工作模式，把AP看做传统<a href="https://baike.baidu.com/item/%E5%B1%80%E5%9F%9F%E7%BD%91/98626">局域网</a>中集线器功能。</p>
+</blockquote>
+<blockquote>
+<p>Infrastructure这个网络至少要有一个AP和一个STATION(客户端)形成一个BSS（Basic Service Set ）</p>
+</blockquote>
+<h2 id="BSS"><a href="#BSS" class="headerlink" title="BSS"></a>BSS</h2><p>一个DS的一个AP局域网的网络就是BSS，下面是我自己随便花一个如图，下面这个就是BSS</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211111184527097.png" alt="image-20211111184527097"></p>
+<p>##　ESS</p>
+<p>  一个DS多个AP和在一起的网络就是ESS，下面是我自己随便花一个如图，下面这个就是ESS</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211111184731629.png" alt="image-20211111184731629"></p>
+<h1 id="AD-HOC-独立基本服务级"><a href="#AD-HOC-独立基本服务级" class="headerlink" title="AD-HOC(独立基本服务级)"></a>AD-HOC(独立基本服务级)</h1><blockquote>
+<p>AD-HOC是没有AP的</p>
+<p>没有AP，那怎么连接那里面至少有一个SSID吧，有SSID才能连接啊，就是用STA(客户端)做AP比如手机自己模拟成为主设备（ap）自建无线网络提供给其他从设备连接</p>
+</blockquote>
+<blockquote>
+<p>AD-HOC也被称为IBSS(独立基本服务级)，也叫PTP(点到点)</p>
+</blockquote>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211111185212536.png" alt="image-20211111185212536"></p>
+<h1 id="WDS（无线分布式系统）"><a href="#WDS（无线分布式系统）" class="headerlink" title="WDS（无线分布式系统）"></a>WDS（无线分布式系统）</h1><p>WDS与有线DS类似，只是通过无线连接的多个AP(路由器中继)组成的网络，无线混合模式</p>
+<p>比如一个，另外一个路由器中继，在有一个路由器中继连接那个中继路由器上</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211111191214291.png" alt="image-20211111191214291"></p>
+<h1 id="monitor（监听器模式）"><a href="#monitor（监听器模式）" class="headerlink" title="monitor（监听器模式）"></a>monitor（监听器模式）</h1><p>网卡不是monitor是抓不到802.11包头的、</p>
+]]></content>
+      <categories>
+        <category>无线传输</category>
+      </categories>
+      <tags>
+        <tag>无线传输</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4,无线网络,RADIOTAP头部</title>
+    <url>/2021/11/11/4,802.11/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="RADIOTAP头部介绍"><a href="#RADIOTAP头部介绍" class="headerlink" title="RADIOTAP头部介绍"></a>RADIOTAP头部介绍</h1><blockquote>
+<p> wireshark抓包查看一下他的头的位置</p>
+</blockquote>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116111415712.png" alt="image-20211116111415712"></p>
+<blockquote>
+<p>RADIOTAP这个包头他不在802.11标准范围之内，全部的802.11都依赖RADIOTAP这个包头</p>
+<p>但是这个RADIOTAP这个包头已经是802.11帧发射和接收的事实标准，全部的系统都会用他进行无线传输了</p>
+<p>Linux系统在驱动层和API中内建支持Radiotap </p>
+<p>802.11帧发射之前，网卡驱动在802.11头前面添加Radiotap头，反之当网卡接收到无线帧时，驱动通知MAC层，此帧头包含Radioap头  </p>
+</blockquote>
+<blockquote>
+<p>RADIOTAP厂商是可以自定义，因此包是不固定的</p>
+</blockquote>
+<h1 id="包说明"><a href="#包说明" class="headerlink" title="包说明"></a>包说明</h1><blockquote>
+<p>这个数据包1秒发出10个数据包</p>
+</blockquote>
+<p>包的字段介绍</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116115129778.png" alt="image-20211116115129778"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116115155169.png" alt="image-20211116115155169"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116120118302.png" alt="image-20211116120118302"></p>
+]]></content>
+      <categories>
+        <category>无线传输</category>
+      </categories>
+      <tags>
+        <tag>无线传输</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5,无线网络,802.11头</title>
+    <url>/2021/11/11/5,802.11/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><h1 id="802-11头术语"><a href="#802-11头术语" class="headerlink" title="802.11头术语"></a>802.11头术语</h1><ul>
+<li><p>DU (Data Unit)即数据单元：信息传输的最小数据集合 </p>
+</li>
+<li><p>传递过程逐层封装 (Encapsulation)   </p>
+<ul>
+<li>这个逐层封装就是每一层都进行封装</li>
+</ul>
+</li>
+<li><p>SDU：就是上一层封装好的包给下一层接收的包叫SDU对于下层来说</p>
+</li>
+<li><p>PDU：就是对于SDU上层来说就叫做PDU</p>
+</li>
+<li><p>数据链路层可以细分为2层</p>
+<ul>
+<li>逻辑链路子层（LLC）</li>
+<li>媒体访问子层（MAC）</li>
+</ul>
+</li>
+<li><p>MPDU和MSDU</p>
+<ul>
+<li><p>MSDU：逻辑链路子层封装后传给MAC  对于MAC而言就成为MSDU、</p>
+</li>
+<li><p>MPDU：下面是MAC的处理过程</p>
+<ul>
+<li>MSDU→MIC →分帧→添加IV→加密→添加MAC头部→MPDU</li>
+<li>整个过程叫做MPDU</li>
+</ul>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123609684.png" alt="image-20211116123609684"></p>
+</li>
+</ul>
+</li>
+<li><p>PPDU：</p>
+<ul>
+<li><p>MPDU/PSDU +物理头 =PPDU →RF发射</p>
+</li>
+<li><p>添加完物理头整个过程就叫做PPDU</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123609684.png" alt="image-20211116123609684"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="802-11，MAC头部"><a href="#802-11，MAC头部" class="headerlink" title="802.11，MAC头部"></a>802.11，MAC头部</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123733837.png" alt="image-20211116123733837"></p>
+<h2 id="802-11-MAC头部结构"><a href="#802-11-MAC头部结构" class="headerlink" title="802.11 MAC头部结构"></a>802.11 MAC头部结构</h2><ul>
+<li>Frame Control（帧控制域）</li>
+<li>Duration/ID（持续时间/标识）</li>
+<li>Address（地址域）</li>
+<li>Sequence Control（序列控制域）</li>
+</ul>
+<p>Frame Control（帧控制域）</p>
+]]></content>
+      <categories>
+        <category>无线传输</category>
+      </categories>
+      <tags>
+        <tag>无线传输</tag>
+      </tags>
+  </entry>
 </search>
