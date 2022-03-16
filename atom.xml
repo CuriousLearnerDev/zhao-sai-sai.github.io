@@ -6,7 +6,7 @@
   <link href="https://www.zssnp.top/atom.xml" rel="self"/>
   
   <link href="https://www.zssnp.top/"/>
-  <updated>2021-12-30T03:08:20.862Z</updated>
+  <updated>2022-03-16T06:48:32.771Z</updated>
   <id>https://www.zssnp.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>向日葵命令执行漏洞复现（CNVD-2022-10270）</title>
+    <link href="https://www.zssnp.top/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    <id>https://www.zssnp.top/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</id>
+    <published>2022-03-16T06:19:30.000Z</published>
+    <updated>2022-03-16T06:48:32.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="漏洞复现" scheme="https://www.zssnp.top/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+    <category term="漏洞复现" scheme="https://www.zssnp.top/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>CVE-2012-2122Mysql身份认证漏洞及利用复现</title>
@@ -494,33 +519,6 @@
     
     
     <category term="提权" scheme="https://www.zssnp.top/tags/%E6%8F%90%E6%9D%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>全站视频解析技术</title>
-    <link href="https://www.zssnp.top/2021/08/26/wyy/"/>
-    <id>https://www.zssnp.top/2021/08/26/wyy/</id>
-    <published>2021-08-26T07:10:30.000Z</published>
-    <updated>2021-08-29T01:07:35.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="脚本编写" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
-    
-    <category term="爬虫" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="Python爬虫" scheme="https://www.zssnp.top/tags/Python%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
