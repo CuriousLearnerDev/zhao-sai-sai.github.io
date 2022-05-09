@@ -3,11 +3,11 @@
   <title>ZSSのW啥都学</title>
   
   
-  <link href="https://www.zssnp.top/atom.xml" rel="self"/>
+  <link href="https://zhao-sai-sai.github.io.git/atom.xml" rel="self"/>
   
-  <link href="https://www.zssnp.top/"/>
-  <updated>2022-03-16T06:48:32.771Z</updated>
-  <id>https://www.zssnp.top/</id>
+  <link href="https://zhao-sai-sai.github.io.git/"/>
+  <updated>2022-05-09T11:24:53.646Z</updated>
+  <id>https://zhao-sai-sai.github.io.git/</id>
   
   <author>
     <name>W啥都学</name>
@@ -17,9 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>802.11头和无线通信过程</title>
+    <link href="https://zhao-sai-sai.github.io.git/2022/05/09/802.11/"/>
+    <id>https://zhao-sai-sai.github.io.git/2022/05/09/802.11/</id>
+    <published>2022-05-09T03:07:00.000Z</published>
+    <updated>2022-05-09T11:24:53.646Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="无线渗透" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>向日葵命令执行漏洞复现（CNVD-2022-10270）</title>
-    <link href="https://www.zssnp.top/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
-    <id>https://www.zssnp.top/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    <id>https://zhao-sai-sai.github.io.git/2022/03/16/%E5%90%91%E6%97%A5%E8%91%B5%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</id>
     <published>2022-03-16T06:19:30.000Z</published>
     <updated>2022-03-16T06:48:32.771Z</updated>
     
@@ -34,17 +59,17 @@
     
     
     
-    <category term="漏洞复现" scheme="https://www.zssnp.top/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    <category term="漏洞复现" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
     
     
-    <category term="漏洞复现" scheme="https://www.zssnp.top/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    <category term="漏洞复现" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
     <title>CVE-2012-2122Mysql身份认证漏洞及利用复现</title>
-    <link href="https://www.zssnp.top/2021/12/28/CVE-2012-2122/"/>
-    <id>https://www.zssnp.top/2021/12/28/CVE-2012-2122/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/12/28/CVE-2012-2122/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/12/28/CVE-2012-2122/</id>
     <published>2021-12-28T07:44:06.000Z</published>
     <updated>2021-12-30T03:08:20.862Z</updated>
     
@@ -59,17 +84,17 @@
     
     
     
-    <category term="漏洞复现" scheme="https://www.zssnp.top/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    <category term="漏洞复现" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
     
     
-    <category term="漏洞复现" scheme="https://www.zssnp.top/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    <category term="漏洞复现" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
     <title>python编写脚本提取fofa搜索的结果</title>
-    <link href="https://www.zssnp.top/2021/12/27/pythonfofa/"/>
-    <id>https://www.zssnp.top/2021/12/27/pythonfofa/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/12/27/pythonfofa/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/12/27/pythonfofa/</id>
     <published>2021-12-27T01:56:32.000Z</published>
     <updated>2022-04-08T10:36:13.935Z</updated>
     
@@ -84,17 +109,17 @@
     
     
     
-    <category term="脚本编写" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    <category term="脚本编写" scheme="https://zhao-sai-sai.github.io.git/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
     
     
-    <category term="脚本编写" scheme="https://www.zssnp.top/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    <category term="脚本编写" scheme="https://zhao-sai-sai.github.io.git/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
     
   </entry>
   
   <entry>
     <title>ccna笔记</title>
-    <link href="https://www.zssnp.top/2021/11/25/ccna/"/>
-    <id>https://www.zssnp.top/2021/11/25/ccna/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/25/ccna/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/25/ccna/</id>
     <published>2021-11-25T01:56:32.000Z</published>
     <updated>2021-12-25T02:57:34.471Z</updated>
     
@@ -109,17 +134,17 @@
     
     
     
-    <category term="ccna" scheme="https://www.zssnp.top/categories/ccna/"/>
+    <category term="ccna" scheme="https://zhao-sai-sai.github.io.git/categories/ccna/"/>
     
     
-    <category term="ccna" scheme="https://www.zssnp.top/tags/ccna/"/>
+    <category term="ccna" scheme="https://zhao-sai-sai.github.io.git/tags/ccna/"/>
     
   </entry>
   
   <entry>
     <title>小迪笔记培训笔记</title>
-    <link href="https://www.zssnp.top/2021/11/22/xiaodi/"/>
-    <id>https://www.zssnp.top/2021/11/22/xiaodi/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/22/xiaodi/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/22/xiaodi/</id>
     <published>2021-11-22T01:56:32.000Z</published>
     <updated>2021-12-22T08:48:54.174Z</updated>
     
@@ -134,17 +159,17 @@
     
     
     
-    <category term="小迪学习笔记" scheme="https://www.zssnp.top/categories/%E5%B0%8F%E8%BF%AA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="小迪学习笔记" scheme="https://zhao-sai-sai.github.io.git/categories/%E5%B0%8F%E8%BF%AA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="web安全" scheme="https://www.zssnp.top/tags/web%E5%AE%89%E5%85%A8/"/>
+    <category term="web安全" scheme="https://zhao-sai-sai.github.io.git/tags/web%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
   <entry>
     <title>3,无线网络,kali网卡相关命令</title>
-    <link href="https://www.zssnp.top/2021/11/16/3,802.11/"/>
-    <id>https://www.zssnp.top/2021/11/16/3,802.11/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/16/3,802.11/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/16/3,802.11/</id>
     <published>2021-11-16T03:07:00.000Z</published>
     <updated>2022-02-13T02:37:48.160Z</updated>
     
@@ -159,17 +184,17 @@
     
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
   </entry>
   
   <entry>
     <title>adb使用</title>
-    <link href="https://www.zssnp.top/2021/11/14/adb/"/>
-    <id>https://www.zssnp.top/2021/11/14/adb/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/14/adb/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/14/adb/</id>
     <published>2021-11-14T10:19:30.000Z</published>
     <updated>2021-12-25T02:50:01.612Z</updated>
     
@@ -184,17 +209,17 @@
     
     
     
-    <category term="adb" scheme="https://www.zssnp.top/categories/adb/"/>
+    <category term="adb" scheme="https://zhao-sai-sai.github.io.git/categories/adb/"/>
     
     
-    <category term="自动化工具" scheme="https://www.zssnp.top/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
+    <category term="自动化工具" scheme="https://zhao-sai-sai.github.io.git/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>1,无线网络802.11标准</title>
-    <link href="https://www.zssnp.top/2021/11/11/1,802.11/"/>
-    <id>https://www.zssnp.top/2021/11/11/1,802.11/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/11/1,802.11/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/11/1,802.11/</id>
     <published>2021-11-11T10:07:00.000Z</published>
     <updated>2022-02-13T02:37:32.056Z</updated>
     
@@ -209,17 +234,17 @@
     
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
   </entry>
   
   <entry>
     <title>2,无线网络之无线运行模式</title>
-    <link href="https://www.zssnp.top/2021/11/11/2,802.11/"/>
-    <id>https://www.zssnp.top/2021/11/11/2,802.11/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/11/2,802.11/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/11/2,802.11/</id>
     <published>2021-11-11T10:07:00.000Z</published>
     <updated>2022-02-13T02:37:43.168Z</updated>
     
@@ -234,17 +259,17 @@
     
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
   </entry>
   
   <entry>
     <title>4,无线网络,RADIOTAP头部</title>
-    <link href="https://www.zssnp.top/2021/11/11/4,802.11/"/>
-    <id>https://www.zssnp.top/2021/11/11/4,802.11/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/11/4,802.11/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/11/4,802.11/</id>
     <published>2021-11-11T10:07:00.000Z</published>
     <updated>2022-02-13T02:37:52.925Z</updated>
     
@@ -259,17 +284,17 @@
     
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
   </entry>
   
   <entry>
     <title>5,无线网络,802.11头</title>
-    <link href="https://www.zssnp.top/2021/11/11/5,802.11/"/>
-    <id>https://www.zssnp.top/2021/11/11/5,802.11/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/11/5,802.11/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/11/5,802.11/</id>
     <published>2021-11-11T10:07:00.000Z</published>
     <updated>2022-02-13T02:38:00.529Z</updated>
     
@@ -284,17 +309,17 @@
     
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
     
-    <category term="无线传输" scheme="https://www.zssnp.top/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
+    <category term="无线传输" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%97%A0%E7%BA%BF%E4%BC%A0%E8%BE%93/"/>
     
   </entry>
   
   <entry>
     <title>netease启动问题/lib/x86_64-linux-gnu/libgio-2.0.so.0</title>
-    <link href="https://www.zssnp.top/2021/11/11/netease/"/>
-    <id>https://www.zssnp.top/2021/11/11/netease/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/11/netease/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/11/netease/</id>
     <published>2021-11-11T04:23:00.000Z</published>
     <updated>2021-11-11T08:12:35.000Z</updated>
     
@@ -309,17 +334,17 @@
     
     
     
-    <category term="问题解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <category term="问题解决" scheme="https://zhao-sai-sai.github.io.git/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
     
-    <category term="问题解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <category term="问题解决" scheme="https://zhao-sai-sai.github.io.git/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
   <entry>
     <title>Nessus破解安装</title>
-    <link href="https://www.zssnp.top/2021/11/05/Nessusanzhuang/"/>
-    <id>https://www.zssnp.top/2021/11/05/Nessusanzhuang/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/05/Nessusanzhuang/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/05/Nessusanzhuang/</id>
     <published>2021-11-05T13:14:25.000Z</published>
     <updated>2021-11-06T11:23:59.000Z</updated>
     
@@ -334,19 +359,19 @@
     
     
     
-    <category term="黑客工具使用" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <category term="黑客工具使用" scheme="https://zhao-sai-sai.github.io.git/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-    <category term="Nessus" scheme="https://www.zssnp.top/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Nessus/"/>
+    <category term="Nessus" scheme="https://zhao-sai-sai.github.io.git/categories/%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Nessus/"/>
     
     
-    <category term="Nessus" scheme="https://www.zssnp.top/tags/Nessus/"/>
+    <category term="Nessus" scheme="https://zhao-sai-sai.github.io.git/tags/Nessus/"/>
     
   </entry>
   
   <entry>
     <title>github+hexo搭建博客</title>
-    <link href="https://www.zssnp.top/2021/11/04/hexo/"/>
-    <id>https://www.zssnp.top/2021/11/04/hexo/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/11/04/hexo/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/11/04/hexo/</id>
     <published>2021-11-04T04:53:00.000Z</published>
     <updated>2021-11-04T06:26:57.000Z</updated>
     
@@ -361,19 +386,19 @@
     
     
     
-    <category term="搭建" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="其他" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%90%AD%E5%BB%BA/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="搭建" scheme="https://www.zssnp.top/tags/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>树莓派Samba文件共享</title>
-    <link href="https://www.zssnp.top/2021/10/17/Samba/"/>
-    <id>https://www.zssnp.top/2021/10/17/Samba/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/10/17/Samba/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/10/17/Samba/</id>
     <published>2021-10-17T03:19:30.000Z</published>
     <updated>2022-01-21T08:17:09.137Z</updated>
     
@@ -388,19 +413,19 @@
     
     
     
-    <category term="搭建" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/"/>
+    <category term="搭建" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%90%AD%E5%BB%BA/"/>
     
-    <category term="其他" scheme="https://www.zssnp.top/categories/%E6%90%AD%E5%BB%BA/%E5%85%B6%E4%BB%96/"/>
+    <category term="其他" scheme="https://zhao-sai-sai.github.io.git/categories/%E6%90%AD%E5%BB%BA/%E5%85%B6%E4%BB%96/"/>
     
     
-    <category term="树莓派" scheme="https://www.zssnp.top/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    <category term="树莓派" scheme="https://zhao-sai-sai.github.io.git/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>vim/vi编辑器使用</title>
-    <link href="https://www.zssnp.top/2021/10/16/vim/"/>
-    <id>https://www.zssnp.top/2021/10/16/vim/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/10/16/vim/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/10/16/vim/</id>
     <published>2021-10-16T03:19:30.000Z</published>
     <updated>2021-10-28T05:10:42.000Z</updated>
     
@@ -415,17 +440,17 @@
     
     
     
-    <category term="linux" scheme="https://www.zssnp.top/categories/linux/"/>
+    <category term="linux" scheme="https://zhao-sai-sai.github.io.git/categories/linux/"/>
     
     
-    <category term="linux" scheme="https://www.zssnp.top/tags/linux/"/>
+    <category term="linux" scheme="https://zhao-sai-sai.github.io.git/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>钉钉脚本编写和和思路</title>
-    <link href="https://www.zssnp.top/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/"/>
-    <id>https://www.zssnp.top/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/09/09/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF/</id>
     <published>2021-09-09T11:10:30.000Z</published>
     <updated>2021-09-15T11:47:04.000Z</updated>
     
@@ -440,17 +465,17 @@
     
     
     
-    <category term="脚本编写" scheme="https://www.zssnp.top/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    <category term="脚本编写" scheme="https://zhao-sai-sai.github.io.git/categories/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
     
     
-    <category term="钉钉" scheme="https://www.zssnp.top/tags/%E9%92%89%E9%92%89/"/>
+    <category term="钉钉" scheme="https://zhao-sai-sai.github.io.git/tags/%E9%92%89%E9%92%89/"/>
     
   </entry>
   
   <entry>
     <title>screenfetch脚本工具卡住问题解决</title>
-    <link href="https://www.zssnp.top/2021/09/08/screenfetch/"/>
-    <id>https://www.zssnp.top/2021/09/08/screenfetch/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/09/08/screenfetch/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/09/08/screenfetch/</id>
     <published>2021-09-08T13:50:30.000Z</published>
     <updated>2021-09-08T13:44:58.000Z</updated>
     
@@ -465,17 +490,17 @@
     
     
     
-    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+    <category term="问题的解决" scheme="https://zhao-sai-sai.github.io.git/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
     
-    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+    <category term="问题的解决" scheme="https://zhao-sai-sai.github.io.git/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
   <entry>
     <title>双系统linux启动出现error:unknown filesystem</title>
-    <link href="https://www.zssnp.top/2021/09/08/linuxyindao/"/>
-    <id>https://www.zssnp.top/2021/09/08/linuxyindao/</id>
+    <link href="https://zhao-sai-sai.github.io.git/2021/09/08/linuxyindao/"/>
+    <id>https://zhao-sai-sai.github.io.git/2021/09/08/linuxyindao/</id>
     <published>2021-09-08T01:10:30.000Z</published>
     <updated>2021-10-15T06:13:16.000Z</updated>
     
@@ -490,35 +515,10 @@
     
     
     
-    <category term="问题的解决" scheme="https://www.zssnp.top/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
+    <category term="问题的解决" scheme="https://zhao-sai-sai.github.io.git/categories/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
     
-    <category term="问题的解决" scheme="https://www.zssnp.top/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>后渗透阶段Windows系统提权</title>
-    <link href="https://www.zssnp.top/2021/08/28/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/"/>
-    <id>https://www.zssnp.top/2021/08/28/1.%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E6%8F%90%E6%9D%83/</id>
-    <published>2021-08-28T11:02:25.000Z</published>
-    <updated>2021-10-15T06:13:21.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="提权" scheme="https://www.zssnp.top/categories/%E6%8F%90%E6%9D%83/"/>
-    
-    
-    <category term="提权" scheme="https://www.zssnp.top/tags/%E6%8F%90%E6%9D%83/"/>
+    <category term="问题的解决" scheme="https://zhao-sai-sai.github.io.git/tags/%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/"/>
     
   </entry>
   
