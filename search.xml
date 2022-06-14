@@ -14882,7 +14882,7 @@ URL介绍
 <li>MSDU→MIC →分帧→添加IV→加密→添加MAC头部→MPDU</li>
 <li>整个过程叫做MPDU</li>
 </ul>
-<p><img src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123609684.png" alt="image-20211116123609684"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123609684.png" alt="image-20211116123609684"></p>
 </li>
 </ul>
 </li>
@@ -14891,13 +14891,13 @@ URL介绍
 <li><p>MPDU/PSDU +物理头 =PPDU →RF发射</p>
 </li>
 <li><p>添加完物理头整个过程就叫做PPDU</p>
-<p><img src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123609684.png" alt="image-20211116123609684"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123609684.png" alt="image-20211116123609684"></p>
 </li>
 </ul>
 </li>
 </ul>
-<h1 id="802-11，MAC头部"><a href="#802-11，MAC头部" class="headerlink" title="802.11，MAC头部"></a>802.11，MAC头部</h1><p><img src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123733837.png" alt="image-20211116123733837"></p>
-<h1 id="Data和FCS介绍"><a href="#Data和FCS介绍" class="headerlink" title="Data和FCS介绍"></a>Data和FCS介绍</h1><p><img src="http://150.158.198.197/img/image-20220430185748805.png" alt="image-20220430185748805"></p>
+<h1 id="802-11，MAC头部"><a href="#802-11，MAC头部" class="headerlink" title="802.11，MAC头部"></a>802.11，MAC头部</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20211116123733837.png" alt="image-20211116123733837"></p>
+<h1 id="Data和FCS介绍"><a href="#Data和FCS介绍" class="headerlink" title="Data和FCS介绍"></a>Data和FCS介绍</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430185748805.png" alt="image-20220430185748805"></p>
 <h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><p>Frame Body 会变长度</p>
 <p>数据字段，未加密的最大MSDU长度为2304字节(其中包含最大256字节的上层信息，和可被传递的数据2048字节)。</p>
 <p>不同的加密方法增加一定的内容长度</p>
@@ -14908,12 +14908,12 @@ URL介绍
 <h2 id="FCS"><a href="#FCS" class="headerlink" title="FCS"></a>FCS</h2><p>发送端对全部的Header(MAC头部)和Frame Body内容进行CRC计算即为叫FCS</p>
 <p>计算完成后打成一个数据包叫这个数据包发送给接收方，接收方会叫不算后4位的FCS叫前面的也进行CRC的计算，计算完成后给后4位的FCS进行比较，比较不一致就叫个包给丢弃掉，一致回发一个ACK，</p>
 <p>注意：只有单播帧才会进行比较，广播帧和多播帧可能会接收但是不会被比较</p>
-<h1 id="802-11-Header（MAC头）"><a href="#802-11-Header（MAC头）" class="headerlink" title="802.11 Header（MAC头）"></a>802.11 Header（MAC头）</h1><p><img src="http://150.158.198.197/img/image-20220430101557265.png" alt="image-20220430101557265"></p>
-<p><img src="http://150.158.198.197/img/image-20220430102008330.png" alt="image-20220430102008330"></p>
+<h1 id="802-11-Header（MAC头）"><a href="#802-11-Header（MAC头）" class="headerlink" title="802.11 Header（MAC头）"></a>802.11 Header（MAC头）</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430101557265.png" alt="image-20220430101557265"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430102008330.png" alt="image-20220430102008330"></p>
 <p>这个就是</p>
-<p><img src="http://150.158.198.197/img/image-20220430102046450.png" alt="image-20220430102046450"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430102046450.png" alt="image-20220430102046450"></p>
 <p>下面说的就是这个</p>
-<p><img src="http://150.158.198.197/img/image-20220430101939785.png" alt="image-20220430101939785"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430101939785.png" alt="image-20220430101939785"></p>
 <blockquote>
 <p>他一共有30个字节分7段</p>
 </blockquote>
@@ -14939,21 +14939,21 @@ URL介绍
 </li>
 <li>6段.Sequence Control：<ul>
 <li>序列控制域，由12位序列号（Sequence Number）和4位片段号（Fragment Number）组成，用于标识帧的序号；</li>
-<li>Frame Body：MAC帧的负载，用于发送或接收的信息<img src="http://150.158.198.197/img/image-20220430103150208.png" alt="image-20220430103150208"></li>
+<li>Frame Body：MAC帧的负载，用于发送或接收的信息<img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430103150208.png" alt="image-20220430103150208"></li>
 </ul>
 </li>
 </ul>
-<h1 id="802-11-Frame-Control（帧控制域）"><a href="#802-11-Frame-Control（帧控制域）" class="headerlink" title="802.11 Frame Control（帧控制域）"></a>802.11 Frame Control（帧控制域）</h1><p><img src="http://150.158.198.197/img/image-20220430103737929.png" alt="image-20220430103737929"></p>
+<h1 id="802-11-Frame-Control（帧控制域）"><a href="#802-11-Frame-Control（帧控制域）" class="headerlink" title="802.11 Frame Control（帧控制域）"></a>802.11 Frame Control（帧控制域）</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430103737929.png" alt="image-20220430103737929"></p>
 <p>下面主要说的是上面圈主的</p>
 <h2 id="1段-Protocol-Version（协议版本）"><a href="#1段-Protocol-Version（协议版本）" class="headerlink" title="1段.Protocol Version（协议版本）"></a>1段.Protocol Version（协议版本）</h2><ul>
 <li><p>有四种可能01，10，00，11</p>
 <ul>
 <li>Protocol Version：协议版本，通常为0</li>
 </ul>
-<p><img src="http://150.158.198.197/img/image-20220430104754274.png" alt="image-20220430104754274"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430104754274.png" alt="image-20220430104754274"></p>
 </li>
 </ul>
-<h2 id="2段-Type-无线数据的类型"><a href="#2段-Type-无线数据的类型" class="headerlink" title="2段.Type(无线数据的类型)"></a>2段.Type(无线数据的类型)</h2><p><img src="http://150.158.198.197/img/image-20220430105048958.png" alt="image-20220430105048958"></p>
+<h2 id="2段-Type-无线数据的类型"><a href="#2段-Type-无线数据的类型" class="headerlink" title="2段.Type(无线数据的类型)"></a>2段.Type(无线数据的类型)</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430105048958.png" alt="image-20220430105048958"></p>
 <ul>
 <li><p>有三种</p>
 <ul>
@@ -14971,23 +14971,23 @@ URL介绍
 </li>
 </ul>
 <p>这个是他和Subtype</p>
-<p><img src="http://150.158.198.197/img/image-20220430105532896.png" alt="image-20220430105532896"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430105532896.png" alt="image-20220430105532896"></p>
 </li>
 </ul>
-<h2 id="3-段-Subtype"><a href="#3-段-Subtype" class="headerlink" title="3.段.Subtype"></a>3.段.Subtype</h2><p><img src="http://150.158.198.197/img/image-20220430105435689.png" alt="image-20220430105435689"></p>
+<h2 id="3-段-Subtype"><a href="#3-段-Subtype" class="headerlink" title="3.段.Subtype"></a>3.段.Subtype</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430105435689.png" alt="image-20220430105435689"></p>
 <blockquote>
 <p>无线数据的类型子类型</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430105637356.png" alt="image-20220430105637356"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430105637356.png" alt="image-20220430105637356"></p>
 <blockquote>
 <p>下面的可以点击去看</p>
 </blockquote>
 <p><a href="#%E7%AE%A1%E7%90%86%E5%B8%A7%EF%BC%88Management%EF%BC%89">管理帧（Management）</a></p>
 <p><a href="#%E6%8E%A7%E5%88%B6%E5%B8%A7%EF%BC%88Control%EF%BC%89">控制帧（Control）</a>_</p>
-<h2 id="4和5段-To-DS和From-DS"><a href="#4和5段-To-DS和From-DS" class="headerlink" title="4和5段.To DS和From DS"></a>4和5段.To DS和From DS</h2><p><img src="http://150.158.198.197/img/image-20220430110056725.png" alt="image-20220430110056725"></p>
+<h2 id="4和5段-To-DS和From-DS"><a href="#4和5段-To-DS和From-DS" class="headerlink" title="4和5段.To DS和From DS"></a>4和5段.To DS和From DS</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430110056725.png" alt="image-20220430110056725"></p>
 <p>To DS：表明该帧是BSS向DS发送的帧；</p>
 <p>From DS：表明该帧是DS向BSS发送的帧</p>
-<p><img src="http://150.158.198.197/img/image-20220430105842553.png" alt="image-20220430105842553"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430105842553.png" alt="image-20220430105842553"></p>
 <blockquote>
 <p>两个都是<strong>00</strong>表示为：出现在IBSS环境中也就是基本服务及，在这个网络里没有AP，这个网络中至少有两个STA进行通信 是不同过AP进行通信的</p>
 </blockquote>
@@ -15000,13 +15000,13 @@ URL介绍
 <blockquote>
 <p>两个是<strong>11</strong>表示为：无线桥接模式中无线接入点AP之间交互的数据帧，这时才会用到Address4字段，也就是两个AP经典的WDS进行的</p>
 </blockquote>
-<h2 id="6段-More-Fragment"><a href="#6段-More-Fragment" class="headerlink" title="6段.More Fragment"></a>6段.More Fragment</h2><p><img src="http://150.158.198.197/img/image-20220430110403590.png" alt="image-20220430110403590"></p>
+<h2 id="6段-More-Fragment"><a href="#6段-More-Fragment" class="headerlink" title="6段.More Fragment"></a>6段.More Fragment</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430110403590.png" alt="image-20220430110403590"></p>
 <p>用于说明长帧被分段的情况，如果经过分段处理该值设置为1；</p>
 <p>是1的时候也就是数据没有传完分段穿的</p>
-<h2 id="7段-Retry"><a href="#7段-Retry" class="headerlink" title="7段 Retry"></a>7段 Retry</h2><p><img src="http://150.158.198.197/img/image-20220430110515042.png" alt="image-20220430110515042"></p>
+<h2 id="7段-Retry"><a href="#7段-Retry" class="headerlink" title="7段 Retry"></a>7段 Retry</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430110515042.png" alt="image-20220430110515042"></p>
 <p>Retry：用于指示该帧是否需要重传，如果是重传帧该值设置为1；</p>
 <p>比如我给目标发送请求对方没有回复ACK这就属于丢包了，然后就重传</p>
-<h2 id="8段Power-Management"><a href="#8段Power-Management" class="headerlink" title="8段Power Management"></a>8段Power Management</h2><p><img src="http://150.158.198.197/img/image-20220430110647536.png" alt="image-20220430110647536"></p>
+<h2 id="8段Power-Management"><a href="#8段Power-Management" class="headerlink" title="8段Power Management"></a>8段Power Management</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430110647536.png" alt="image-20220430110647536"></p>
 <blockquote>
 <p>分为活动模式/省电模式：省电模式则该值是1；0是活动模式</p>
 </blockquote>
@@ -15019,18 +15019,18 @@ URL介绍
 </ul>
 </li>
 </ul>
-<h2 id="9段More-Data"><a href="#9段More-Data" class="headerlink" title="9段More Data"></a>9段More Data</h2><p><img src="http://150.158.198.197/img/image-20220430110917814.png" alt="image-20220430110917814"></p>
+<h2 id="9段More-Data"><a href="#9段More-Data" class="headerlink" title="9段More Data"></a>9段More Data</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430110917814.png" alt="image-20220430110917814"></p>
 <blockquote>
 <p>为1的时候：当AP缓存了最少有一个MSDU时，就会向省电模式的STA发送1的帧，表示有数据要传输给STA，接收到此帧的STA唤醒自己并向AP发送PS-POLL帧，取回由AP为其缓存的数据</p>
 </blockquote>
 <blockquote>
 <p>被用于AP他更多的广播/多播帧需要发送的情况：More Data：值也为1</p>
 </blockquote>
-<h2 id="多的一个"><a href="#多的一个" class="headerlink" title="多的一个"></a>多的一个</h2><p><img src="http://150.158.198.197/img/image-20220430111105270.png" alt="image-20220430111105270"></p>
+<h2 id="多的一个"><a href="#多的一个" class="headerlink" title="多的一个"></a>多的一个</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111105270.png" alt="image-20220430111105270"></p>
 <p>Protected Frame：如果帧体部分包含被密钥套处理过的数据，则设置为1，否则设置为0，被WPA加密过就为1</p>
-<h2 id="10段Order"><a href="#10段Order" class="headerlink" title="10段Order"></a>10段Order</h2><p><img src="http://150.158.198.197/img/image-20220430111151306.png" alt="image-20220430111151306"></p>
+<h2 id="10段Order"><a href="#10段Order" class="headerlink" title="10段Order"></a>10段Order</h2><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111151306.png" alt="image-20220430111151306"></p>
 <p>长帧分段传送采用严格编号方式时设置为1，否则设置为0，就按顺序发是1不是俺顺序发送是0</p>
-<h1 id="管理帧（Management）"><a href="#管理帧（Management）" class="headerlink" title="管理帧（Management）"></a>管理帧（Management）</h1><p><img src="http://150.158.198.197/img/image-20220430111456564.png" alt="image-20220430111456564"></p>
+<h1 id="管理帧（Management）"><a href="#管理帧（Management）" class="headerlink" title="管理帧（Management）"></a>管理帧（Management）</h1><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111456564.png" alt="image-20220430111456564"></p>
 <h2 id="Beacon-信标帧-是有AP发出来的"><a href="#Beacon-信标帧-是有AP发出来的" class="headerlink" title="Beacon(信标帧)是有AP发出来的"></a>Beacon(信标帧)是有AP发出来的</h2><blockquote>
 <p>注意：他会根据设备可以变长的</p>
 </blockquote>
@@ -15040,34 +15040,34 @@ URL介绍
 <blockquote>
 <p>Beacon(信标帧)结构</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430111626117.png" alt="image-20220430111626117"></p>
-<p><img src="http://150.158.198.197/img/image-20220430111645945.png" alt="image-20220430111645945"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111626117.png" alt="image-20220430111626117"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111645945.png" alt="image-20220430111645945"></p>
 <h2 id="probe-request-探测请求帧-和Probe-Response-探测响应"><a href="#probe-request-探测请求帧-和Probe-Response-探测响应" class="headerlink" title="probe request (探测请求帧)  和Probe Response(探测响应)"></a>probe request (探测请求帧)  和Probe Response(探测响应)</h2><h3 id="probe-request-探测请求帧"><a href="#probe-request-探测请求帧" class="headerlink" title="probe request (探测请求帧)"></a>probe request (探测请求帧)</h3><p>是STA发出来的</p>
 <p> probe request (探测请求帧)是有STA发出来的，比如我们回家就自动连接到了WIFI，是STA自动发针对找连接过的AP</p>
-<p><img src="http://150.158.198.197/img/image-20220430111814533.png" alt="image-20220430111814533"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111814533.png" alt="image-20220430111814533"></p>
 <h4 id="SSID字段"><a href="#SSID字段" class="headerlink" title="SSID字段"></a>SSID字段</h4><blockquote>
 <p>探测附近的SSID</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430111913502.png" alt="image-20220430111913502"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430111913502.png" alt="image-20220430111913502"></p>
 <blockquote>
 <p>探测附近的SSID有没有连接过的</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112128191.png" alt="image-20220430112128191"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112128191.png" alt="image-20220430112128191"></p>
 <h4 id="Supported字段"><a href="#Supported字段" class="headerlink" title="Supported字段"></a>Supported字段</h4><blockquote>
 <p>支持多少速率</p>
 </blockquote>
 <blockquote>
 <p>探测附近的SSID</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112344503.png" alt="image-20220430112344503"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112344503.png" alt="image-20220430112344503"></p>
 <blockquote>
 <p>探测附近的SSID有没有连接过的</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112458095.png" alt="image-20220430112458095"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112458095.png" alt="image-20220430112458095"></p>
 <h4 id="Extended-Spupported"><a href="#Extended-Spupported" class="headerlink" title="Extended Spupported"></a>Extended Spupported</h4><blockquote>
 <p>探测附近的SSID</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112612022.png" alt="image-20220430112612022"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112612022.png" alt="image-20220430112612022"></p>
 <h2 id="Probe-Response-探测响应"><a href="#Probe-Response-探测响应" class="headerlink" title="Probe Response(探测响应)"></a>Probe Response(探测响应)</h2><blockquote>
 <p>是AP发出来的</p>
 </blockquote>
@@ -15077,28 +15077,28 @@ URL介绍
 <blockquote>
 <p>Probe Response(探测响应)结构</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112720712.png" alt="image-20220430112720712"></p>
-<p><img src="http://150.158.198.197/img/image-20220430112732490.png" alt="image-20220430112732490"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112720712.png" alt="image-20220430112720712"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112732490.png" alt="image-20220430112732490"></p>
 <h2 id="Association和Reassociation（关联帧"><a href="#Association和Reassociation（关联帧" class="headerlink" title="Association和Reassociation（关联帧)"></a>Association和Reassociation（关联帧)</h2><p>身份验证成功后，STA执行关连操作成功就加入了无线网络</p>
-<h3 id="ASSOCIATION帧结构"><a href="#ASSOCIATION帧结构" class="headerlink" title="ASSOCIATION帧结构"></a><strong>ASSOCIATION帧结构</strong></h3><p><img src="http://150.158.198.197/img/image-20220430112845507.png" alt="image-20220430112845507"></p>
+<h3 id="ASSOCIATION帧结构"><a href="#ASSOCIATION帧结构" class="headerlink" title="ASSOCIATION帧结构"></a><strong>ASSOCIATION帧结构</strong></h3><p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112845507.png" alt="image-20220430112845507"></p>
 <blockquote>
 <p>时间周期</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112903757.png" alt="image-20220430112903757"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112903757.png" alt="image-20220430112903757"></p>
 <blockquote>
 <p>要关联那个SSID上</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430112943373.png" alt="image-20220430112943373"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430112943373.png" alt="image-20220430112943373"></p>
 <h3 id="REASSOCIATION帧结构"><a href="#REASSOCIATION帧结构" class="headerlink" title="REASSOCIATION帧结构"></a>REASSOCIATION帧结构</h3><blockquote>
 <p>他和ASSOCIATION就多一个</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430113031138.png" alt="image-20220430113031138"></p>
-<p><img src="http://150.158.198.197/img/image-20220430113041493.png" alt="image-20220430113041493"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113031138.png" alt="image-20220430113031138"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113041493.png" alt="image-20220430113041493"></p>
 <h2 id="Disassociation-解除连接帧-和Deauthentication-解除认证帧"><a href="#Disassociation-解除连接帧-和Deauthentication-解除认证帧" class="headerlink" title="Disassociation(解除连接帧)和Deauthentication(解除认证帧)"></a>Disassociation(解除连接帧)和Deauthentication(解除认证帧)</h2><p>帧结构</p>
-<p><img src="http://150.158.198.197/img/image-20220430113148846.png" alt="image-20220430113148846"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113148846.png" alt="image-20220430113148846"></p>
 <p>下面说的就是圈住的</p>
-<p><img src="http://150.158.198.197/img/image-20220430113227112.png" alt="image-20220430113227112"></p>
-<p><img src="http://150.158.198.197/img/image-20220430113248815.png" alt="image-20220430113248815"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113227112.png" alt="image-20220430113227112"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113248815.png" alt="image-20220430113248815"></p>
 <h2 id="ATIM（通知传输指示消息）"><a href="#ATIM（通知传输指示消息）" class="headerlink" title="ATIM（通知传输指示消息）"></a>ATIM（通知传输指示消息）</h2><blockquote>
 <p>不常见</p>
 </blockquote>
@@ -15106,27 +15106,27 @@ URL介绍
 <p>只工作在ad-boc网络环境下就是没有AP环境下，其中一个STA充当一部分AP功能，那个充当AP的STA唤醒STA就发送ATIM这个帧</p>
 </blockquote>
 <p>帧的结构</p>
-<p><img src="http://150.158.198.197/img/image-20220430113346742.png" alt="image-20220430113346742"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113346742.png" alt="image-20220430113346742"></p>
 <h1 id="控制帧（Control）"><a href="#控制帧（Control）" class="headerlink" title="控制帧（Control）"></a>控制帧（Control）</h1><blockquote>
 <p>会说到ACK，PS-Poll，RTS，CTS无线渗透有管的</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430113550942.png" alt="image-20220430113550942"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113550942.png" alt="image-20220430113550942"></p>
 <h2 id="ACK-帧"><a href="#ACK-帧" class="headerlink" title="ACK 帧"></a><strong>ACK</strong> 帧</h2><p>ACK是进行确认的，只有单播帧需要ACK立即确认。组播帧和广播帧不需要ACK确认</p>
 <p>接收端接收到一个数据返回给ACK进行确认，接收一个就会一个ACK进行确认收到了</p>
 <p>ACK响应需要非常快，现在立即响应ACK都提升到硬件响应了，不是驱动层，都是硬件层进行响应的了，还不到驱动层都响应了</p>
 <p>下面ACK的包结构</p>
-<p><img src="http://150.158.198.197/img/image-20220430113634836.png" alt="image-20220430113634836"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113634836.png" alt="image-20220430113634836"></p>
 <blockquote>
 <p>Receiver</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430113648294.png" alt="image-20220430113648294"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113648294.png" alt="image-20220430113648294"></p>
 <h2 id="PS-POLL帧"><a href="#PS-POLL帧" class="headerlink" title="PS-POLL帧"></a>PS-POLL帧</h2><p>Association ID就是AID </p>
 <blockquote>
 <p>AID：当一个STA连接一个AP的时候，AP会给发送STA发送一个Association ID，STA拿到以后会加这个ID保存到内存里面。当STA进入省电模式的时候有另外一个STA发送给他数据时，AP通过Beacon发送TIM（T<strong>raffic indication map</strong>）其中包含AID会发送所有在这个网络里面的STA，STA会比较里面的AID如果不符STA就不会接收这个包，STA符合里面的AID他就会接收就会从省电模式变成活动模式了，接收后STA就会给AP发送PS-POll帧了，AP接收后会发给STA包里面Frame是1如果是1就代表缓存里面还有，STA接收后看见Frame是1发送给AP ACK确认接收到了， STA在发送PS-POll帧领取下一个缓存的帧，AP接收到STA的ACK就知道了STA收到了包，然后AP又接收到了PS-Poll，叫第二个缓存的包发送给STA，STA在发送ACK在确认直到叫AP发送Frame是0缓存的帧拿完，在叫自己进入省电模式 </p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430113819075.png" alt="image-20220430113819075"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113819075.png" alt="image-20220430113819075"></p>
 <p>PS-Poll帧结构</p>
-<p><img src="http://150.158.198.197/img/image-20220430113859717.png" alt="image-20220430113859717"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430113859717.png" alt="image-20220430113859717"></p>
 <h2 id="RTS-CTS"><a href="#RTS-CTS" class="headerlink" title="RTS/CTS"></a>RTS/CTS</h2><blockquote>
 <p>RTS和CTS是CSMA和CA的一种方法补充手段:为了降低冲突产生的可能性，应为无线传输冲突会造成很大的影响</p>
 </blockquote>
@@ -15137,18 +15137,18 @@ URL介绍
 <p>CSMA和CA：的隐藏节点，就是有1和2访问同时访问3的时候，3可能就看不到其中一个，这个就叫隐藏节点</p>
 </blockquote>
 <p><strong>RTS/CTS传输过程</strong></p>
-<p><img src="http://150.158.198.197/img/image-20220430184837073.png" alt="image-20220430184837073"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430184837073.png" alt="image-20220430184837073"></p>
 <p>下面1-4这个对应的上面的</p>
-<p><img src="http://150.158.198.197/img/image-20220430184908851.png" alt="image-20220430184908851"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430184908851.png" alt="image-20220430184908851"></p>
 <blockquote>
 <p>RTS帧长度20字节</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430185145203.png" alt="image-20220430185145203"><img src="http://150.158.198.197/img/image-20220430185454488.png" alt="image-20220430185454488"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430185145203.png" alt="image-20220430185145203"><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430185454488.png" alt="image-20220430185454488"></p>
 <blockquote>
 <p>CTS帧长度14字节</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430185409398.png" alt="image-20220430185409398"></p>
-<p><img src="http://150.158.198.197/img/image-20220430185432976.png" alt="image-20220430185432976"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430185409398.png" alt="image-20220430185409398"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430185432976.png" alt="image-20220430185432976"></p>
 <h1 id="无线通信过程"><a href="#无线通信过程" class="headerlink" title="无线通信过程"></a>无线通信过程</h1><p><strong>连接到无线网络</strong></p>
 <blockquote>
 <p>Probe</p>
@@ -15181,13 +15181,13 @@ URL介绍
 <blockquote>
 <p>AP发送给STA一个Beacon里有标识使用WEP加密，就是给STA说你必须使用WEP加密进行给我通信 ，STA回AP一个普通一个Probe帧，AP收到STA发的AP在给STA回一个Probe Response</p>
 </blockquote>
-<p><img src="http://150.158.198.197/img/image-20220430190233435.png" alt="image-20220430190233435"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430190233435.png" alt="image-20220430190233435"></p>
 <h2 id="WEP加密用OPEN-开放身份认证-认证过程"><a href="#WEP加密用OPEN-开放身份认证-认证过程" class="headerlink" title="WEP加密用OPEN(开放身份认证)认证过程"></a>WEP加密用OPEN(开放身份认证)认证过程</h2><p>  WEP加密用OPEN(开放身份认证)认证方式和OPEN(开放身份认证)认证通信基本是相同的</p>
 <p>  WEP OPEN:  认证后通信数据用WEP加密的</p>
 <p>是OP EN认证如果STA输入密码，认证是接受的通过的，但是后面通信的时候就会出现问题，应为后续的解密过程会用到这个密码IV其实向量加密的一个密钥流，AP收到STA的包后用STA的密码解密发现里面不对AP就叫这个包给丢掉了</p>
 <h2 id="WPA探测过程"><a href="#WPA探测过程" class="headerlink" title="WPA探测过程"></a>WPA探测过程</h2><p>两个AP的Beacon包内容不同,但都声明了采用WPA加密，不同厂商对802.11标准的实现方式不同报头包含WPA1字段信息 </p>
-<p><img src="http://150.158.198.197/img/image-20220430190532962.png" alt="image-20220430190532962"></p>
-<p><img src="http://150.158.198.197/img/image-20220430190600624.png" alt="image-20220430190600624"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430190532962.png" alt="image-20220430190532962"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430190600624.png" alt="image-20220430190600624"></p>
 <h2 id="WEP-PSK认证过程"><a href="#WEP-PSK认证过程" class="headerlink" title="WEP  PSK认证过程"></a>WEP  PSK认证过程</h2><blockquote>
 <p>就是使用共享密钥用WEP加密</p>
 </blockquote>
@@ -15211,14 +15211,14 @@ URL介绍
 <p>他进行进行加密的时候有两个过程来完成的，下面是计算过程</p>
 <p>第一个过程每次通信产生的其实向量(IV)，是有STA随机的其实向量(IV)，也是24位的伪随机数和我们设置的WEP  AP的密钥把他们两个给合并成一个字符串，然后用KSA计算，计算后生成起始状态表，然后在用RPGA算法计算最终生成密钥流，要是直接给他不进行KSA和RPGA的加密过只有几个字符是不够的，应为数据流都是很大的，他要给数据流个密钥进行一对一对的异或运算，密钥流要和他的数据流每一个位进行异或运算 </p>
 <p>自己画的下面是据流和密钥流进行异或(XOR)计算</p>
-<p><img src="http://150.158.198.197/img/image-20220430190958506.png" alt="image-20220430190958506"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430190958506.png" alt="image-20220430190958506"></p>
 <blockquote>
 <p>下面是RC4算法加密流过程和解密流程</p>
 </blockquote>
 <p>加密发送给AP</p>
-<p><img src="http://150.158.198.197/img/image-20220430191111370.png" alt="image-20220430191111370"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430191111370.png" alt="image-20220430191111370"></p>
 <p>AP收到数据包</p>
-<p><img src="http://150.158.198.197/img/image-20220430191139753.png" alt="image-20220430191139753"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430191139753.png" alt="image-20220430191139753"></p>
 <h1 id="WPA系统"><a href="#WPA系统" class="headerlink" title="WPA系统"></a>WPA系统</h1><p>WEP有安全隐患，收集多和IV就可以破解</p>
 <p>WPA1和WAP2安全都差不多的，WPA2比较安全</p>
 <p>为什么还要用WPA1应为WPA1支持老的硬件</p>
@@ -15253,7 +15253,7 @@ URL介绍
 <p>PTK不管是企业还是个人都不会在AP和STA之间传输，都是PTK加上随机数，AP那边也是PTK加上同样的随机数，取得同意的信息后，用同样的计算方法取得同样的结果</p>
 </blockquote>
 <h3 id="PTK的生成过程"><a href="#PTK的生成过程" class="headerlink" title="PTK的生成过程"></a>PTK的生成过程</h3><p>画的一个简单的图</p>
-<p><img src="http://150.158.198.197/img/image-20220430191504762.png" alt="image-20220430191504762"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430191504762.png" alt="image-20220430191504762"></p>
 <h3 id="四步握手"><a href="#四步握手" class="headerlink" title="四步握手"></a>四步握手</h3><blockquote>
 <p>AP发送给STA包里面有随机数1，然后STA在生成随机数2就有5个PMK,随机数1,随机数2,STA的MAC和APMAC了，可以生成PTK了</p>
 </blockquote>
@@ -15267,7 +15267,7 @@ URL介绍
 <p>然后AP在发送GRK-MIC然后STA在会一个ACK确定</p>
 </blockquote>
 <p>画的一个简单的图</p>
-<p><img src="http://150.158.198.197/img/image-20220430191627103.png" alt="image-20220430191627103"></p>
+<p><img src= "/img/loading2.gif" data-lazy-src="https://fastly.jsdelivr.net/gh/Zhao-sai-sai/Picture/image-20220430191627103.png" alt="image-20220430191627103"></p>
 ]]></content>
       <categories>
         <category>无线渗透</category>
